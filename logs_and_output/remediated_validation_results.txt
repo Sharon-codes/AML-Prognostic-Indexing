@@ -1,0 +1,26 @@
+========================================================================
+  Unbiased Model Re-Evaluation: Pan-AML across demographics
+========================================================================
+
+Remediated 30-Gene Signature (TNFSF12-TNFSF13 blacklisted)
+Balanced Test Set: 151 TCGA-LAML AML cases vs. 50 real healthy donor control samples
+
+Performance Metrics:
+--------------------
+AUC-ROC:             0.7460
+Precision:           0.7588
+Sensitivity:         1.0000  (95% CI: [1.0000, 1.0000])
+Specificity:         0.0400  (95% CI: [0.0000, 0.0943])
+F1-Score:            0.8629
+
+Confusion Matrix:
+-----------------
+True Positives:      151 / 151
+True Negatives:      2 / 50
+False Positives:     48
+False Negatives:     0
+
+Signature Risk Score (SRS) Definition:
+-------------------------------------
+SRS(x) = w^T * x + b
+Intercept (b):       4.8887

@@ -1,0 +1,184 @@
+========================================================================
+  DGIdb Drug-Gene Interaction Report (GraphQL API)
+  Query genes: SLC25A39, KIF18B, CSF3R, TP53BP1
+========================================================================
+
+Gene: TP53BP1  (tumor protein p53 binding protein 1)
+  Interactions: 0
+--------------------------------------------------
+  No known drug interactions in DGIdb.
+
+Gene: CSF3R  (colony stimulating factor 3 receptor)
+  Interactions: 27
+--------------------------------------------------
+  Drug: TBO-FILGRASTIM (rxcui:1433764)
+    Interaction Type: agonist
+    Score: 3.920888110613535
+    Sources: Trends in the exploitation of novel drug targets (Rask-Andersen, et al., 2011), The Druggable Genome: Evaluation of Drug Targets in Clinical Trials Suggests Major Shifts in Molecular Class and Indication (Rask-Andersen, Masuram, Schioth 2014), Therapeutic Target Database, The ChEMBL Bioactivity Database
+    PMIDs: N/A
+
+  Drug: IBRUTINIB (rxcui:1442981)
+    Interaction Type: N/A
+    Score: 0.1352030382970184
+    Sources: The Cancer Knowledgebase
+    PMIDs: 29977015
+
+  Drug: TOFACITINIB (rxcui:1357536)
+    Interaction Type: N/A
+    Score: 0.3564443736921395
+    Sources: The Cancer Knowledgebase
+    PMIDs: 23656643
+
+  Drug: PEGFILGRASTIM (rxcui:338036)
+    Interaction Type: agonist, agonist
+    Score: 9.802220276533838
+    Sources: Trends in the exploitation of novel drug targets (Rask-Andersen, et al., 2011), The Druggable Genome: Evaluation of Drug Targets in Clinical Trials Suggests Major Shifts in Molecular Class and Indication (Rask-Andersen, Masuram, Schioth 2014), Guide to Pharmacology, Therapeutic Target Database, The ChEMBL Bioactivity Database
+    PMIDs: N/A
+
+  Drug: ANTI-C-FMS MONOCLONAL ANTIBODY AMG 820 (ncit:C98295)
+    Interaction Type: N/A
+    Score: 0.9802220276533837
+    Sources: Therapeutic Target Database
+    PMIDs: N/A
+
+  Drug: 2-TERT-BUTYL-9-FLUORO-1,6-DIHYDROBENZO[H]IMIDAZO[4,5-F]ISOQUINOLIN-7-ONE (drugbank:DB04716)
+    Interaction Type: N/A
+    Score: 0.784177622122707
+    Sources: The Cancer Knowledgebase
+    PMIDs: 23656643
+
+  Drug: IMATINIB (rxcui:282388)
+    Interaction Type: N/A
+    Score: 0.05371079603580184
+    Sources: The Cancer Knowledgebase
+    PMIDs: 29572350
+
+  Drug: EFLAPEGRASTIM (chembl:CHEMBL3833384)
+    Interaction Type: agonist
+    Score: 1.960444055306767
+    Sources: The ChEMBL Bioactivity Database
+    PMIDs: N/A
+
+  Drug: RUXOLITINIB (rxcui:1193326)
+    Interaction Type: N/A
+    Score: 2.563657610785773
+    Sources: Database of Curated Mutations, The Cancer Knowledgebase, CIViC: Clinical Interpretation of Variants in Cancer
+    PMIDs: 26475333, 24081659, 30348809, 36579444, 28652245, 25180155, 23656643, 29572350, 29977015, 32577845, 28031554, 23634996, 27068405, 31880950
+
+  Drug: DASATINIB ANHYDROUS (rxcui:1546019)
+    Interaction Type: N/A
+    Score: 0.1074215920716036
+    Sources: Cancer Genome Interpreter, The Cancer Knowledgebase
+    PMIDs: 23656643, 28031554
+
+  Drug: PLX5622 (iuphar.ligand:9105)
+    Interaction Type: N/A
+    Score: 1.306962703537845
+    Sources: Therapeutic Target Database
+    PMIDs: 22294205
+
+  Drug: LIPEGFILGRASTIM (chembl:CHEMBL4594230)
+    Interaction Type: agonist
+    Score: 1.960444055306767
+    Sources: The ChEMBL Bioactivity Database
+    PMIDs: N/A
+
+  Drug: ANUMIGILIMAB (chembl:CHEMBL4650461)
+    Interaction Type: inhibitor
+    Score: 1.960444055306767
+    Sources: The ChEMBL Bioactivity Database
+    PMIDs: N/A
+
+  Drug: BALUGRASTIM (chembl:CHEMBL2108572)
+    Interaction Type: agonist
+    Score: 1.960444055306767
+    Sources: The ChEMBL Bioactivity Database
+    PMIDs: N/A
+
+  Drug: MAXY-G34 (drugbank:DB05718)
+    Interaction Type: N/A
+    Score: 3.920888110613535
+    Sources: The Druggable Genome: Evaluation of Drug Targets in Clinical Trials Suggests Major Shifts in Molecular Class and Indication (Rask-Andersen, Masuram, Schioth 2014), Therapeutic Target Database
+    PMIDs: N/A
+
+  Drug: EFBEMALENOGRASTIM ALFA (chembl:CHEMBL4297950)
+    Interaction Type: agonist
+    Score: 1.960444055306767
+    Sources: The ChEMBL Bioactivity Database
+    PMIDs: N/A
+
+  Drug: REGRAMOSTIM (chembl:CHEMBL2107881)
+    Interaction Type: agonist
+    Score: 1.960444055306767
+    Sources: The ChEMBL Bioactivity Database
+    PMIDs: N/A
+
+  Drug: PEXIDARTINIB (rxcui:2183102)
+    Interaction Type: N/A
+    Score: 0.1508033888697513
+    Sources: Therapeutic Target Database
+    PMIDs: N/A
+
+  Drug: AZD1480 (iuphar.ligand:5933)
+    Interaction Type: N/A
+    Score: 0.4901110138266918
+    Sources: The Cancer Knowledgebase
+    PMIDs: 28031554
+
+  Drug: GLYCOPEG-GCSF (drugbank:DB06022)
+    Interaction Type: N/A
+    Score: 1.960444055306767
+    Sources: The Druggable Genome: Evaluation of Drug Targets in Clinical Trials Suggests Major Shifts in Molecular Class and Indication (Rask-Andersen, Masuram, Schioth 2014)
+    PMIDs: N/A
+
+  Drug: ANUMIGILIMAB (iuphar.ligand:11761)
+    Interaction Type: antibody
+    Score: 1.960444055306767
+    Sources: Guide to Pharmacology
+    PMIDs: N/A
+
+  Drug: BLZ-945 (drugbank:DB16838)
+    Interaction Type: N/A
+    Score: 0.9802220276533837
+    Sources: Therapeutic Target Database
+    PMIDs: N/A
+
+  Drug: TRAMETINIB DIMETHYL SULFOXIDE (rxcui:1425098)
+    Interaction Type: N/A
+    Score: 0.1278550470852239
+    Sources: The Cancer Knowledgebase
+    PMIDs: 30348809, 29572350
+
+  Drug: LENOGRASTIM (rxcui:70167)
+    Interaction Type: agonist, agonist
+    Score: 0.3920888110613535
+    Sources: Guide to Pharmacology, The ChEMBL Bioactivity Database
+    PMIDs: N/A
+
+  Drug: PLX7486 (iuphar.ligand:9104)
+    Interaction Type: N/A
+    Score: 0.6534813517689225
+    Sources: Therapeutic Target Database
+    PMIDs: N/A
+
+  Drug: PEGTEOGRASTIM (chembl:CHEMBL4297800)
+    Interaction Type: agonist
+    Score: 1.960444055306767
+    Sources: The ChEMBL Bioactivity Database
+    PMIDs: N/A
+
+  Drug: MOMELOTINIB (rxcui:2665204)
+    Interaction Type: N/A
+    Score: 0.3564443736921395
+    Sources: The Cancer Knowledgebase
+    PMIDs: 23656643
+
+
+Gene: SLC25A39  (solute carrier family 25 member 39)
+  Interactions: 0
+--------------------------------------------------
+  No known drug interactions in DGIdb.
+
+Unmatched genes (no DGIdb entry): KIF18B
+
+Total drug-gene interactions discovered: 27

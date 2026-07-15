@@ -1,0 +1,14 @@
+# Ignore all files in the data directory (large genomic datasets)
+data/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Editor and OS metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

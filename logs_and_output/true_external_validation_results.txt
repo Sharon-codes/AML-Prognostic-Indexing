@@ -1,0 +1,15 @@
+========================================================================
+  True External Validation Results
+========================================================================
+
+AML samples (TCGA-LAML): 151
+Healthy controls (GTEx BM): 5
+
+AUC-ROC:    0.9828
+Precision:  0.9934
+Recall:     1.0000
+F1-Score:   0.9967
+Accuracy:   0.9936
+
+AML correct:     151 / 151
+Healthy correct: 4 / 5

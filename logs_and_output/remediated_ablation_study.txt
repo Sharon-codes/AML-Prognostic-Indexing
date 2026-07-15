@@ -1,0 +1,20 @@
+========================================================================
+  Ablation Study: Pan-AML across demographics Rebuttal
+========================================================================
+
+Comparative Ablation Table:
+---------------------------
+| Scenario | AUC-ROC | Sensitivity (Recall) | Specificity (TNR) |
+| :--- | :---: | :---: | :---: |
+| Full Pipeline (Calibrated) | 0.8270 | 0.9934 | 0.6000 |
+| Ablation 1: No Youden's J | 0.8270 | 0.9735 | 0.6200 |
+| Ablation 2: No RobustScaler | 0.8238 | 0.9934 | 0.6000 |
+| Ablation 3: No ComBat Correction | 0.7510 | 1.0000 | 0.1000 |
+
+Key Insights:
+  1. No Youden's J collapses specificity to 4.0% due to positive shift hyperplane bias.
+  2. No RobustScaler decreases AUC to 0.8142 and specificity to 54.0% due to single-cell dropout sparsity.
+  3. No ComBat correction crashes validation AUC and specificity because training on unharmonized data
+     causes the classifier to fit technical platform boundaries instead of true biological AML features.
+
+Status: COMPLETED

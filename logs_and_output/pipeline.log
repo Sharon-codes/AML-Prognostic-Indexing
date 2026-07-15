@@ -1,0 +1,1265 @@
+2026-07-13 02:59:19 | INFO     | pipeline | ========================================================================
+2026-07-13 02:59:19 | INFO     | pipeline | Starting early-stage leukaemia biomarker discovery pipeline
+2026-07-13 02:59:19 | INFO     | pipeline | Project root: D:\Leukemia_Quantum_Pipeline
+2026-07-13 02:59:42 | INFO     | pipeline | STEP 1/3: GEO download, clinical label extraction, and preprocessing
+2026-07-13 02:59:42 | INFO     | data_loader | Downloading/loading GSE13159 from GEO into D:\Leukemia_Quantum_Pipeline\data
+2026-07-13 03:20:23 | ERROR    | pipeline | Pipeline failed. See this terminal output and logs_and_output/pipeline.log for details.
+Traceback (most recent call last):
+  File "C:\Users\Samsunh\AppData\Roaming\Python\Python314\site-packages\GEOparse\utils.py", line 80, in download_from_url
+    fn.download(silent=silent, force=force)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Samsunh\AppData\Roaming\Python\Python314\site-packages\GEOparse\downloader.py", line 82, in download
+    _download()
+    ~~~~~~~~~^^
+  File "C:\Users\Samsunh\AppData\Roaming\Python\Python314\site-packages\GEOparse\downloader.py", line 53, in _download
+    self._download_ftp(silent=silent)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Samsunh\AppData\Roaming\Python\Python314\site-packages\GEOparse\downloader.py", line 190, in _download_ftp
+    raise ValueError(
+        "Downloaded size do not match the expected size for %s" % (self.url)
+    )
+ValueError: Downloaded size do not match the expected size for ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE13nnn/GSE13159/soft/GSE13159_family.soft.gz
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Leukemia_Quantum_Pipeline\code\01_data_loader.py", line 115, in load_and_preprocess
+    gse = GEOparse.get_GEO(geo=GEO_ACCESSION, destdir=str(data_dir), silent=True)
+  File "C:\Users\Samsunh\AppData\Roaming\Python\Python314\site-packages\GEOparse\GEOparse.py", line 96, in get_GEO
+    filepath, geotype = get_GEO_file(
+                        ~~~~~~~~~~~~^
+        geo,
+        ^^^^
+    ...<5 lines>...
+        aspera=aspera,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Samsunh\AppData\Roaming\Python\Python314\site-packages\GEOparse\GEOparse.py", line 263, in get_GEO_file
+    utils.download_from_url(url, filepath, silent=silent, aspera=aspera)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Samsunh\AppData\Roaming\Python\Python314\site-packages\GEOparse\utils.py", line 82, in download_from_url
+    raise IOError(
+    ...<2 lines>...
+    )
+OSError: Download failed due to 'Downloaded size do not match the expected size for ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE13nnn/GSE13159/soft/GSE13159_family.soft.gz'. ID could be incorrect or the data might not be public yet.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Leukemia_Quantum_Pipeline\code\main.py", line 56, in main
+    X, y = data_loader.load_and_preprocess(PROJECT_ROOT)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "D:\Leukemia_Quantum_Pipeline\code\01_data_loader.py", line 117, in load_and_preprocess
+    raise RuntimeError(f"Unable to retrieve {GEO_ACCESSION} from NCBI GEO: {exc}") from exc
+RuntimeError: Unable to retrieve GSE13159 from NCBI GEO: Download failed due to 'Downloaded size do not match the expected size for ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE13nnn/GSE13159/soft/GSE13159_family.soft.gz'. ID could be incorrect or the data might not be public yet.
+2026-07-13 03:31:51 | INFO     | pipeline | ========================================================================
+2026-07-13 03:31:51 | INFO     | pipeline | Starting early-stage leukaemia biomarker discovery pipeline
+2026-07-13 03:31:51 | INFO     | pipeline | Project root: D:\Leukemia_Quantum_Pipeline
+2026-07-13 03:31:55 | INFO     | pipeline | STEP 1/3: GEO download, clinical label extraction, and preprocessing
+2026-07-13 03:31:55 | INFO     | data_loader | Downloading/loading GSE13159 from GEO into D:\Leukemia_Quantum_Pipeline\data
+2026-07-13 03:32:08 | INFO     | data_loader | Retrying GEO archive through HTTPS: https://ftp.ncbi.nlm.nih.gov/geo/series/GSE13nnn/GSE13159/soft/GSE13159_family.soft.gz
+2026-07-13 03:32:18 | ERROR    | pipeline | Pipeline failed. See this terminal output and logs_and_output/pipeline.log for details.
+Traceback (most recent call last):
+  File "C:\Users\Samsunh\AppData\Roaming\Python\Python314\site-packages\GEOparse\utils.py", line 80, in download_from_url
+    fn.download(silent=silent, force=force)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Samsunh\AppData\Roaming\Python\Python314\site-packages\GEOparse\downloader.py", line 82, in download
+    _download()
+    ~~~~~~~~~^^
+  File "C:\Users\Samsunh\AppData\Roaming\Python\Python314\site-packages\GEOparse\downloader.py", line 57, in _download
+    shutil.copyfile(self._temp_file_name, self.destination)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\shutil.py", line 313, in copyfile
+    with open(src, 'rb') as fsrc:
+         ~~~~^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\Samsunh\\AppData\\Local\\Temp\\tmpxl2rl5uy'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Leukemia_Quantum_Pipeline\code\01_data_loader.py", line 149, in load_and_preprocess
+    gse = GEOparse.get_GEO(geo=GEO_ACCESSION, destdir=str(data_dir), silent=True)
+  File "C:\Users\Samsunh\AppData\Roaming\Python\Python314\site-packages\GEOparse\GEOparse.py", line 96, in get_GEO
+    filepath, geotype = get_GEO_file(
+                        ~~~~~~~~~~~~^
+        geo,
+        ^^^^
+    ...<5 lines>...
+        aspera=aspera,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Samsunh\AppData\Roaming\Python\Python314\site-packages\GEOparse\GEOparse.py", line 263, in get_GEO_file
+    utils.download_from_url(url, filepath, silent=silent, aspera=aspera)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Samsunh\AppData\Roaming\Python\Python314\site-packages\GEOparse\utils.py", line 82, in download_from_url
+    raise IOError(
+    ...<2 lines>...
+    )
+OSError: Download failed due to '[Errno 2] No such file or directory: 'C:\\Users\\Samsunh\\AppData\\Local\\Temp\\tmpxl2rl5uy''. ID could be incorrect or the data might not be public yet.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python314\Lib\urllib\request.py", line 1321, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              encode_chunked=req.has_header('Transfer-encoding'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\http\client.py", line 1358, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\http\client.py", line 1404, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\http\client.py", line 1353, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\http\client.py", line 1113, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "C:\Python314\Lib\http\client.py", line 1057, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\http\client.py", line 1499, in connect
+    self.sock = self._context.wrap_socket(self.sock,
+                ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+                                          server_hostname=server_hostname)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Python314\Lib\ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Leukemia_Quantum_Pipeline\code\01_data_loader.py", line 152, in load_and_preprocess
+    soft_file = _download_series_soft_https(GEO_ACCESSION, data_dir)
+  File "D:\Leukemia_Quantum_Pipeline\code\01_data_loader.py", line 49, in _download_series_soft_https
+    with urlopen(request, timeout=120) as response, partial.open("wb") as handle:
+         ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\urllib\request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\urllib\request.py", line 487, in open
+    response = self._open(req, data)
+  File "C:\Python314\Lib\urllib\request.py", line 504, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "C:\Python314\Lib\urllib\request.py", line 464, in _call_chain
+    result = func(*args)
+  File "C:\Python314\Lib\urllib\request.py", line 1369, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\urllib\request.py", line 1324, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Leukemia_Quantum_Pipeline\code\main.py", line 56, in main
+    X, y = data_loader.load_and_preprocess(PROJECT_ROOT)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "D:\Leukemia_Quantum_Pipeline\code\01_data_loader.py", line 155, in load_and_preprocess
+    raise RuntimeError(
+        f"Unable to retrieve {GEO_ACCESSION}; FTP error: {ftp_exc}; HTTPS fallback error: {https_exc}"
+    ) from https_exc
+RuntimeError: Unable to retrieve GSE13159; FTP error: Download failed due to '[Errno 2] No such file or directory: 'C:\\Users\\Samsunh\\AppData\\Local\\Temp\\tmpxl2rl5uy''. ID could be incorrect or the data might not be public yet.; HTTPS fallback error: <urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>
+2026-07-13 16:28:46 | INFO     | pipeline | ========================================================================
+2026-07-13 16:28:46 | INFO     | pipeline | Starting early-stage leukaemia biomarker discovery pipeline
+2026-07-13 16:28:46 | INFO     | pipeline | Project root: D:\Leukemia_Quantum_Pipeline
+2026-07-13 16:29:15 | INFO     | pipeline | STEP 1/3: GEO download, clinical label extraction, and preprocessing
+2026-07-13 16:29:15 | INFO     | data_loader | Using locally supplied SOFT metadata and Series Matrix; no GEO download is required.
+2026-07-13 16:33:14 | INFO     | data_loader | Reading local GEO Series Matrix: D:\Leukemia_Quantum_Pipeline\data\GSE13159_series_matrix.txt.gz
+2026-07-13 16:33:36 | ERROR    | pipeline | Pipeline failed. See this terminal output and logs_and_output/pipeline.log for details.
+Traceback (most recent call last):
+  File "D:\Leukemia_Quantum_Pipeline\code\01_data_loader.py", line 151, in _preprocess_series_matrix
+    probe_by_sample = pd.read_csv(
+        matrix_path,
+    ...<5 lines>...
+        low_memory=False,
+    )
+  File "C:\Users\Samsunh\AppData\Roaming\Python\Python314\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Samsunh\AppData\Roaming\Python\Python314\site-packages\pandas\io\parsers\readers.py", line 626, in _read
+    return parser.read(nrows)
+           ~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Samsunh\AppData\Roaming\Python\Python314\site-packages\pandas\io\parsers\readers.py", line 1923, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        nrows
+        ^^^^^
+    )
+    ^
+  File "C:\Users\Samsunh\AppData\Roaming\Python\Python314\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 239, in read
+    data = self._reader.read(nrows)
+  File "pandas/_libs/parsers.pyx", line 820, in pandas._libs.parsers.TextReader.read
+  File "pandas/_libs/parsers.pyx", line 914, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 891, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "pandas/_libs/parsers.pyx", line 2061, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: out of memory
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Leukemia_Quantum_Pipeline\code\main.py", line 56, in main
+    X, y = data_loader.load_and_preprocess(PROJECT_ROOT)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "D:\Leukemia_Quantum_Pipeline\code\01_data_loader.py", line 236, in load_and_preprocess
+    expression_df, y, excluded = _preprocess_series_matrix(local_matrix, probe_to_gene, gse)
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Leukemia_Quantum_Pipeline\code\01_data_loader.py", line 161, in _preprocess_series_matrix
+    raise RuntimeError(f"Unable to parse local Series Matrix {matrix_path}: {exc}") from exc
+RuntimeError: Unable to parse local Series Matrix D:\Leukemia_Quantum_Pipeline\data\GSE13159_series_matrix.txt.gz: Error tokenizing data. C error: out of memory
+2026-07-13 16:55:48 | INFO     | pipeline | ========================================================================
+2026-07-13 16:55:48 | INFO     | pipeline | Starting early-stage leukaemia biomarker discovery pipeline
+2026-07-13 16:55:48 | INFO     | pipeline | Project root: D:\Leukemia_Quantum_Pipeline
+2026-07-13 16:56:01 | INFO     | pipeline | STEP 1/3: GEO download, clinical label extraction, and preprocessing
+2026-07-13 16:56:01 | INFO     | data_loader | Using locally supplied SOFT metadata and Series Matrix; no GEO download is required.
+2026-07-13 16:56:01 | INFO     | data_loader | Fast-parsing Platform (GPL) annotation table from SOFT file: D:\Leukemia_Quantum_Pipeline\data\GSE13159_family.soft.gz
+2026-07-13 16:56:02 | INFO     | data_loader | Streaming and filtering local GEO Series Matrix: D:\Leukemia_Quantum_Pipeline\data\GSE13159_series_matrix.txt.gz
+2026-07-13 16:58:39 | INFO     | data_loader | Matrix filtered to temporary file on disk. Reading into Pandas...
+2026-07-13 16:59:51 | INFO     | data_loader | Collapsing duplicate probes by median...
+2026-07-13 17:02:42 | INFO     | data_loader | Preprocessing complete: 2096 labelled samples (74 controls, 2022 leukaemia) and 22880 genes; 0 samples excluded.
+2026-07-13 17:02:42 | INFO     | pipeline | STEP 2/3: BQPSO biomarker selection (50 particles x 100 epochs, 5-fold SVM CV)
+2026-07-13 17:02:44 | INFO     | bqpso_selector | ANOVA pre-screen retained 1000 of 22880 genes for BQPSO.
+2026-07-13 17:03:12 | INFO     | bqpso_selector | BQPSO initial best fitness: 0.97381 (30 genes).
+2026-07-13 17:03:40 | INFO     | bqpso_selector | BQPSO epoch 001/100 | best fitness 0.97467 | genes 30
+2026-07-13 17:04:14 | INFO     | bqpso_selector | BQPSO epoch 002/100 | best fitness 0.97467 | genes 30
+2026-07-13 17:04:39 | INFO     | bqpso_selector | BQPSO epoch 003/100 | best fitness 0.97811 | genes 30
+2026-07-13 17:05:04 | INFO     | bqpso_selector | BQPSO epoch 004/100 | best fitness 0.97811 | genes 30
+2026-07-13 17:05:31 | INFO     | bqpso_selector | BQPSO epoch 005/100 | best fitness 0.97811 | genes 30
+2026-07-13 17:05:58 | INFO     | bqpso_selector | BQPSO epoch 006/100 | best fitness 0.97939 | genes 30
+2026-07-13 17:06:25 | INFO     | bqpso_selector | BQPSO epoch 007/100 | best fitness 0.97939 | genes 30
+2026-07-13 17:06:52 | INFO     | bqpso_selector | BQPSO epoch 008/100 | best fitness 0.97939 | genes 30
+2026-07-13 17:07:22 | INFO     | bqpso_selector | BQPSO epoch 009/100 | best fitness 0.97939 | genes 30
+2026-07-13 17:07:51 | INFO     | bqpso_selector | BQPSO epoch 010/100 | best fitness 0.97939 | genes 30
+2026-07-13 17:08:19 | INFO     | bqpso_selector | BQPSO epoch 011/100 | best fitness 0.97939 | genes 30
+2026-07-13 17:08:28 | INFO     | bqpso_selector | BQPSO epoch 012/100 | best fitness 0.97939 | genes 30
+2026-07-13 17:08:39 | INFO     | bqpso_selector | BQPSO epoch 013/100 | best fitness 0.97939 | genes 30
+2026-07-13 17:09:05 | INFO     | bqpso_selector | BQPSO epoch 014/100 | best fitness 0.97939 | genes 30
+2026-07-13 17:09:33 | INFO     | bqpso_selector | BQPSO epoch 015/100 | best fitness 0.97939 | genes 30
+2026-07-13 17:10:02 | INFO     | bqpso_selector | BQPSO epoch 016/100 | best fitness 0.97939 | genes 30
+2026-07-13 17:10:28 | INFO     | bqpso_selector | BQPSO epoch 017/100 | best fitness 0.97939 | genes 30
+2026-07-13 17:10:55 | INFO     | bqpso_selector | BQPSO epoch 018/100 | best fitness 0.97939 | genes 30
+2026-07-13 17:11:23 | INFO     | bqpso_selector | BQPSO epoch 019/100 | best fitness 0.97939 | genes 30
+2026-07-13 17:11:50 | INFO     | bqpso_selector | BQPSO epoch 020/100 | best fitness 0.97939 | genes 30
+2026-07-13 17:12:15 | INFO     | bqpso_selector | BQPSO epoch 021/100 | best fitness 0.97939 | genes 30
+2026-07-13 17:12:42 | INFO     | bqpso_selector | BQPSO epoch 022/100 | best fitness 0.97939 | genes 30
+2026-07-13 17:12:50 | INFO     | bqpso_selector | BQPSO epoch 023/100 | best fitness 0.97939 | genes 30
+2026-07-13 17:13:03 | INFO     | bqpso_selector | BQPSO epoch 024/100 | best fitness 0.97939 | genes 30
+2026-07-13 17:13:15 | INFO     | bqpso_selector | BQPSO epoch 025/100 | best fitness 0.97939 | genes 30
+2026-07-13 17:13:27 | INFO     | bqpso_selector | BQPSO epoch 026/100 | best fitness 0.97939 | genes 30
+2026-07-13 17:13:37 | INFO     | bqpso_selector | BQPSO epoch 027/100 | best fitness 0.97939 | genes 30
+2026-07-13 17:13:45 | INFO     | bqpso_selector | BQPSO epoch 028/100 | best fitness 0.97939 | genes 30
+2026-07-13 17:13:56 | INFO     | bqpso_selector | BQPSO epoch 029/100 | best fitness 0.97939 | genes 30
+2026-07-13 17:14:21 | INFO     | bqpso_selector | BQPSO epoch 030/100 | best fitness 0.97983 | genes 30
+2026-07-13 17:14:42 | INFO     | bqpso_selector | BQPSO epoch 031/100 | best fitness 0.98154 | genes 30
+2026-07-13 17:15:05 | INFO     | bqpso_selector | BQPSO epoch 032/100 | best fitness 0.98154 | genes 30
+2026-07-13 17:15:26 | INFO     | bqpso_selector | BQPSO epoch 033/100 | best fitness 0.98154 | genes 30
+2026-07-13 17:15:43 | INFO     | bqpso_selector | BQPSO epoch 034/100 | best fitness 0.98154 | genes 30
+2026-07-13 17:15:49 | INFO     | bqpso_selector | BQPSO epoch 035/100 | best fitness 0.98154 | genes 30
+2026-07-13 17:15:59 | INFO     | bqpso_selector | BQPSO epoch 036/100 | best fitness 0.98240 | genes 30
+2026-07-13 17:16:07 | INFO     | bqpso_selector | BQPSO epoch 037/100 | best fitness 0.98240 | genes 30
+2026-07-13 17:16:15 | INFO     | bqpso_selector | BQPSO epoch 038/100 | best fitness 0.98240 | genes 30
+2026-07-13 17:16:30 | INFO     | bqpso_selector | BQPSO epoch 039/100 | best fitness 0.98240 | genes 30
+2026-07-13 17:16:53 | INFO     | bqpso_selector | BQPSO epoch 040/100 | best fitness 0.98240 | genes 30
+2026-07-13 17:17:16 | INFO     | bqpso_selector | BQPSO epoch 041/100 | best fitness 0.98240 | genes 30
+2026-07-13 17:17:40 | INFO     | bqpso_selector | BQPSO epoch 042/100 | best fitness 0.98240 | genes 30
+2026-07-13 17:18:02 | INFO     | bqpso_selector | BQPSO epoch 043/100 | best fitness 0.98240 | genes 30
+2026-07-13 17:18:23 | INFO     | bqpso_selector | BQPSO epoch 044/100 | best fitness 0.98240 | genes 30
+2026-07-13 17:18:40 | INFO     | bqpso_selector | BQPSO epoch 045/100 | best fitness 0.98240 | genes 30
+2026-07-13 17:18:46 | INFO     | bqpso_selector | BQPSO epoch 046/100 | best fitness 0.98240 | genes 30
+2026-07-13 17:18:52 | INFO     | bqpso_selector | BQPSO epoch 047/100 | best fitness 0.98369 | genes 30
+2026-07-13 17:18:58 | INFO     | bqpso_selector | BQPSO epoch 048/100 | best fitness 0.98369 | genes 30
+2026-07-13 17:19:04 | INFO     | bqpso_selector | BQPSO epoch 049/100 | best fitness 0.98369 | genes 30
+2026-07-13 17:19:10 | INFO     | bqpso_selector | BQPSO epoch 050/100 | best fitness 0.98369 | genes 30
+2026-07-13 17:19:16 | INFO     | bqpso_selector | BQPSO epoch 051/100 | best fitness 0.98369 | genes 30
+2026-07-13 17:19:23 | INFO     | bqpso_selector | BQPSO epoch 052/100 | best fitness 0.98369 | genes 30
+2026-07-13 17:19:30 | INFO     | bqpso_selector | BQPSO epoch 053/100 | best fitness 0.98369 | genes 30
+2026-07-13 17:19:36 | INFO     | bqpso_selector | BQPSO epoch 054/100 | best fitness 0.98369 | genes 30
+2026-07-13 17:19:42 | INFO     | bqpso_selector | BQPSO epoch 055/100 | best fitness 0.98369 | genes 30
+2026-07-13 17:19:48 | INFO     | bqpso_selector | BQPSO epoch 056/100 | best fitness 0.98369 | genes 30
+2026-07-13 17:19:55 | INFO     | bqpso_selector | BQPSO epoch 057/100 | best fitness 0.98412 | genes 30
+2026-07-13 17:20:01 | INFO     | bqpso_selector | BQPSO epoch 058/100 | best fitness 0.98455 | genes 30
+2026-07-13 17:20:08 | INFO     | bqpso_selector | BQPSO epoch 059/100 | best fitness 0.98455 | genes 30
+2026-07-13 17:20:15 | INFO     | bqpso_selector | BQPSO epoch 060/100 | best fitness 0.98455 | genes 30
+2026-07-13 17:20:21 | INFO     | bqpso_selector | BQPSO epoch 061/100 | best fitness 0.98455 | genes 30
+2026-07-13 17:20:27 | INFO     | bqpso_selector | BQPSO epoch 062/100 | best fitness 0.98455 | genes 30
+2026-07-13 17:20:34 | INFO     | bqpso_selector | BQPSO epoch 063/100 | best fitness 0.98455 | genes 30
+2026-07-13 17:20:41 | INFO     | bqpso_selector | BQPSO epoch 064/100 | best fitness 0.98455 | genes 30
+2026-07-13 17:20:47 | INFO     | bqpso_selector | BQPSO epoch 065/100 | best fitness 0.98455 | genes 30
+2026-07-13 17:20:54 | INFO     | bqpso_selector | BQPSO epoch 066/100 | best fitness 0.98455 | genes 30
+2026-07-13 17:21:00 | INFO     | bqpso_selector | BQPSO epoch 067/100 | best fitness 0.98455 | genes 30
+2026-07-13 17:21:06 | INFO     | bqpso_selector | BQPSO epoch 068/100 | best fitness 0.98455 | genes 30
+2026-07-13 17:21:13 | INFO     | bqpso_selector | BQPSO epoch 069/100 | best fitness 0.98455 | genes 30
+2026-07-13 17:21:19 | INFO     | bqpso_selector | BQPSO epoch 070/100 | best fitness 0.98455 | genes 30
+2026-07-13 17:21:26 | INFO     | bqpso_selector | BQPSO epoch 071/100 | best fitness 0.98455 | genes 30
+2026-07-13 17:21:32 | INFO     | bqpso_selector | BQPSO epoch 072/100 | best fitness 0.98498 | genes 30
+2026-07-13 17:21:39 | INFO     | bqpso_selector | BQPSO epoch 073/100 | best fitness 0.98498 | genes 30
+2026-07-13 17:21:45 | INFO     | bqpso_selector | BQPSO epoch 074/100 | best fitness 0.98541 | genes 30
+2026-07-13 17:21:51 | INFO     | bqpso_selector | BQPSO epoch 075/100 | best fitness 0.98541 | genes 30
+2026-07-13 17:21:58 | INFO     | bqpso_selector | BQPSO epoch 076/100 | best fitness 0.98541 | genes 30
+2026-07-13 17:22:03 | INFO     | bqpso_selector | BQPSO epoch 077/100 | best fitness 0.98627 | genes 30
+2026-07-13 17:22:10 | INFO     | bqpso_selector | BQPSO epoch 078/100 | best fitness 0.98627 | genes 30
+2026-07-13 17:22:15 | INFO     | bqpso_selector | BQPSO epoch 079/100 | best fitness 0.98627 | genes 30
+2026-07-13 17:22:21 | INFO     | bqpso_selector | BQPSO epoch 080/100 | best fitness 0.98627 | genes 30
+2026-07-13 17:22:27 | INFO     | bqpso_selector | BQPSO epoch 081/100 | best fitness 0.98627 | genes 30
+2026-07-13 17:22:33 | INFO     | bqpso_selector | BQPSO epoch 082/100 | best fitness 0.98755 | genes 30
+2026-07-13 17:22:39 | INFO     | bqpso_selector | BQPSO epoch 083/100 | best fitness 0.98755 | genes 30
+2026-07-13 17:22:44 | INFO     | bqpso_selector | BQPSO epoch 084/100 | best fitness 0.98755 | genes 30
+2026-07-13 17:22:50 | INFO     | bqpso_selector | BQPSO epoch 085/100 | best fitness 0.98755 | genes 30
+2026-07-13 17:22:56 | INFO     | bqpso_selector | BQPSO epoch 086/100 | best fitness 0.98798 | genes 30
+2026-07-13 17:23:05 | INFO     | bqpso_selector | BQPSO epoch 087/100 | best fitness 0.98798 | genes 30
+2026-07-13 17:23:21 | INFO     | bqpso_selector | BQPSO epoch 088/100 | best fitness 0.98798 | genes 30
+2026-07-13 17:23:37 | INFO     | bqpso_selector | BQPSO epoch 089/100 | best fitness 0.98798 | genes 30
+2026-07-13 17:23:52 | INFO     | bqpso_selector | BQPSO epoch 090/100 | best fitness 0.98798 | genes 30
+2026-07-13 17:24:07 | INFO     | bqpso_selector | BQPSO epoch 091/100 | best fitness 0.98798 | genes 30
+2026-07-13 17:24:24 | INFO     | bqpso_selector | BQPSO epoch 092/100 | best fitness 0.98798 | genes 30
+2026-07-13 17:24:40 | INFO     | bqpso_selector | BQPSO epoch 093/100 | best fitness 0.98798 | genes 30
+2026-07-13 17:24:55 | INFO     | bqpso_selector | BQPSO epoch 094/100 | best fitness 0.98798 | genes 30
+2026-07-13 17:25:10 | INFO     | bqpso_selector | BQPSO epoch 095/100 | best fitness 0.98798 | genes 30
+2026-07-13 17:25:26 | INFO     | bqpso_selector | BQPSO epoch 096/100 | best fitness 0.98798 | genes 30
+2026-07-13 17:25:42 | INFO     | bqpso_selector | BQPSO epoch 097/100 | best fitness 0.98798 | genes 30
+2026-07-13 17:25:57 | INFO     | bqpso_selector | BQPSO epoch 098/100 | best fitness 0.98798 | genes 30
+2026-07-13 17:26:13 | INFO     | bqpso_selector | BQPSO epoch 099/100 | best fitness 0.98798 | genes 30
+2026-07-13 17:26:28 | INFO     | bqpso_selector | BQPSO epoch 100/100 | best fitness 0.98798 | genes 30
+2026-07-13 17:26:28 | INFO     | bqpso_selector | BQPSO selected 30 genes; list saved to D:\Leukemia_Quantum_Pipeline\logs_and_output\selected_genes.txt
+2026-07-13 17:26:28 | INFO     | pipeline | STEP 3/3: 1D-CNN training and held-out evaluation using 30 selected genes
+2026-07-13 17:26:34 | INFO     | cnn_classifier | Training 1D-CNN on cpu (1340 train / 336 val / 420 test).
+2026-07-13 17:26:35 | INFO     | cnn_classifier | CNN epoch 001 | train loss 0.17367 | val loss 0.07307
+2026-07-13 17:26:36 | INFO     | cnn_classifier | CNN epoch 002 | train loss 0.08593 | val loss 0.06720
+2026-07-13 17:26:37 | INFO     | cnn_classifier | CNN epoch 003 | train loss 0.07621 | val loss 0.06400
+2026-07-13 17:26:38 | INFO     | cnn_classifier | CNN epoch 004 | train loss 0.06981 | val loss 0.06203
+2026-07-13 17:26:38 | INFO     | cnn_classifier | CNN epoch 005 | train loss 0.05970 | val loss 0.05567
+2026-07-13 17:26:39 | INFO     | cnn_classifier | CNN epoch 006 | train loss 0.05206 | val loss 0.05619
+2026-07-13 17:26:40 | INFO     | cnn_classifier | CNN epoch 007 | train loss 0.04637 | val loss 0.05681
+2026-07-13 17:26:41 | INFO     | cnn_classifier | CNN epoch 008 | train loss 0.04453 | val loss 0.05837
+2026-07-13 17:26:41 | INFO     | cnn_classifier | CNN epoch 009 | train loss 0.04748 | val loss 0.06706
+2026-07-13 17:26:42 | INFO     | cnn_classifier | CNN epoch 010 | train loss 0.02944 | val loss 0.09343
+2026-07-13 17:26:43 | INFO     | cnn_classifier | CNN epoch 011 | train loss 0.03832 | val loss 0.06101
+2026-07-13 17:26:44 | INFO     | cnn_classifier | CNN epoch 012 | train loss 0.03765 | val loss 0.06875
+2026-07-13 17:26:44 | INFO     | cnn_classifier | CNN epoch 013 | train loss 0.02829 | val loss 0.07862
+2026-07-13 17:26:45 | INFO     | cnn_classifier | CNN epoch 014 | train loss 0.01875 | val loss 0.06920
+2026-07-13 17:26:46 | INFO     | cnn_classifier | CNN epoch 015 | train loss 0.02431 | val loss 0.06162
+2026-07-13 17:26:47 | INFO     | cnn_classifier | CNN epoch 016 | train loss 0.02846 | val loss 0.06671
+2026-07-13 17:26:47 | INFO     | cnn_classifier | CNN epoch 017 | train loss 0.01877 | val loss 0.07317
+2026-07-13 17:26:48 | INFO     | cnn_classifier | CNN epoch 018 | train loss 0.01660 | val loss 0.08255
+2026-07-13 17:26:49 | INFO     | cnn_classifier | CNN epoch 019 | train loss 0.03236 | val loss 0.06807
+2026-07-13 17:26:50 | INFO     | cnn_classifier | CNN epoch 020 | train loss 0.02396 | val loss 0.08421
+2026-07-13 17:26:50 | INFO     | cnn_classifier | Early stopping at epoch 20 (patience=15).
+2026-07-13 17:26:52 | INFO     | cnn_classifier | Held-out CNN metrics: accuracy=0.9857, precision=0.9878, recall=0.9975, f1_score=0.9926, auc=0.9868
+2026-07-13 17:26:52 | INFO     | pipeline | Pipeline completed successfully in 0:31:03.417820
+2026-07-13 17:26:52 | INFO     | pipeline | Final held-out metrics: {'accuracy': 0.9857142857142858, 'precision': 0.9877750611246944, 'recall': 0.9975308641975309, 'f1_score': 0.9926289926289926, 'auc': 0.9868312757201647}
+2026-07-13 18:02:42,980 | INFO | target_aml_discovery | ========================================================================
+2026-07-13 18:02:42,981 | INFO | target_aml_discovery | Starting TARGET-AML pediatric biomarker discovery & validation pipeline
+2026-07-13 18:02:42,981 | INFO | target_aml_discovery | ========================================================================
+2026-07-13 18:02:42,981 | INFO | target_aml_discovery | Parsing clinical vital statuses from target_clinical.gz...
+2026-07-13 18:02:43,094 | INFO | target_aml_discovery | Successfully mapped outcomes for 2158 pediatric cases.
+2026-07-13 18:02:43,094 | INFO | target_aml_discovery | Parsing metadata mappings from target_metadata.json...
+2026-07-13 18:02:43,159 | INFO | target_aml_discovery | Found 2812 GDC expression files mapping to labeled cases.
+2026-07-13 18:02:43,161 | INFO | target_aml_discovery | Starting concurrent bulk download and streaming parsing...
+2026-07-13 18:02:43,162 | INFO | target_aml_discovery | Processing GDC download batch 1/15 (200 files)...
+2026-07-13 18:02:43,163 | INFO | target_aml_discovery | Processing GDC download batch 2/15 (200 files)...
+2026-07-13 18:02:43,164 | INFO | target_aml_discovery | Processing GDC download batch 3/15 (200 files)...
+2026-07-13 18:02:43,167 | INFO | target_aml_discovery | Processing GDC download batch 4/15 (200 files)...
+2026-07-13 18:02:43,168 | INFO | target_aml_discovery | Processing GDC download batch 5/15 (200 files)...
+2026-07-13 18:05:41,227 | INFO | target_aml_discovery | Parsed 142 expression profiles from batch 1.
+2026-07-13 18:05:41,251 | INFO | target_aml_discovery | Processing GDC download batch 6/15 (200 files)...
+2026-07-13 18:05:54,731 | INFO | target_aml_discovery | Parsed 182 expression profiles from batch 4.
+2026-07-13 18:05:54,755 | INFO | target_aml_discovery | Processing GDC download batch 7/15 (200 files)...
+2026-07-13 18:06:05,522 | INFO | target_aml_discovery | Parsed 168 expression profiles from batch 5.
+2026-07-13 18:06:05,550 | INFO | target_aml_discovery | Processing GDC download batch 8/15 (200 files)...
+2026-07-13 18:07:27,101 | WARNING | target_aml_discovery | GDC bulk API request failed with exception: HTTPSConnectionPool(host='api.gdc.cancer.gov', port=443): Read timed out.. Attempt 1/4.
+2026-07-13 18:07:38,482 | INFO | target_aml_discovery | Parsed 154 expression profiles from batch 2.
+2026-07-13 18:07:38,509 | INFO | target_aml_discovery | Processing GDC download batch 9/15 (200 files)...
+2026-07-13 18:09:24,820 | INFO | target_aml_discovery | Parsed 177 expression profiles from batch 8.
+2026-07-13 18:09:24,884 | INFO | target_aml_discovery | Processing GDC download batch 10/15 (200 files)...
+2026-07-13 18:10:22,211 | INFO | target_aml_discovery | Parsed 142 expression profiles from batch 6.
+2026-07-13 18:10:22,227 | INFO | target_aml_discovery | Processing GDC download batch 11/15 (200 files)...
+2026-07-13 18:10:50,115 | INFO | target_aml_discovery | Parsed 165 expression profiles from batch 9.
+2026-07-13 18:10:50,132 | INFO | target_aml_discovery | Processing GDC download batch 12/15 (200 files)...
+2026-07-13 18:11:11,209 | INFO | target_aml_discovery | Parsed 148 expression profiles from batch 7.
+2026-07-13 18:11:11,224 | INFO | target_aml_discovery | Processing GDC download batch 13/15 (200 files)...
+2026-07-13 18:12:30,604 | INFO | target_aml_discovery | Parsed 130 expression profiles from batch 3.
+2026-07-13 18:12:30,622 | INFO | target_aml_discovery | Processing GDC download batch 14/15 (200 files)...
+2026-07-13 18:14:16,205 | INFO | target_aml_discovery | Parsed 131 expression profiles from batch 12.
+2026-07-13 18:14:16,230 | INFO | target_aml_discovery | Processing GDC download batch 15/15 (12 files)...
+2026-07-13 18:14:37,830 | INFO | target_aml_discovery | Parsed 4 expression profiles from batch 15.
+2026-07-13 18:14:49,556 | INFO | target_aml_discovery | Parsed 100 expression profiles from batch 10.
+2026-07-13 18:15:16,294 | INFO | target_aml_discovery | Parsed 93 expression profiles from batch 13.
+2026-07-13 18:15:37,675 | INFO | target_aml_discovery | Parsed 97 expression profiles from batch 11.
+2026-07-13 18:15:46,432 | INFO | target_aml_discovery | Parsed 71 expression profiles from batch 14.
+2026-07-13 18:15:46,457 | INFO | target_aml_discovery | Data download and extraction complete in 13.05 minutes.
+2026-07-13 18:15:46,465 | INFO | target_aml_discovery | Creating pandas matrices for 1904 unique cases...
+2026-07-13 18:16:26,961 | INFO | target_aml_discovery | Imputing missing values and scaling expression matrix...
+2026-07-13 18:17:57,119 | INFO | target_aml_discovery | Saved processed matrix with clinical labels to D:\Leukemia_Quantum_Pipeline\data\processed_target_aml.csv
+2026-07-13 18:17:57,120 | INFO | target_aml_discovery | Initializing BQPSO biomarker selector on TARGET-AML (50 particles, 100 epochs)...
+2026-07-13 18:17:57,171 | ERROR | target_aml_discovery | Pipeline execution failed with exception: 'NoneType' object has no attribute '__dict__'
+Traceback (most recent call last):
+  File "D:\Leukemia_Quantum_Pipeline\code\05_target_aml_discovery.py", line 465, in main
+    pediatric_genes = run_pediatric_bqpso(scaled_df, y)
+  File "D:\Leukemia_Quantum_Pipeline\code\05_target_aml_discovery.py", line 229, in run_pediatric_bqpso
+    BinaryQuantumPSO = load_bqpso_selector()
+  File "D:\Leukemia_Quantum_Pipeline\code\05_target_aml_discovery.py", line 67, in load_bqpso_selector
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Leukemia_Quantum_Pipeline\code\02_bqpso_selector.py", line 25, in <module>
+    @dataclass
+     ^^^^^^^^^
+  File "C:\Python314\Lib\dataclasses.py", line 1442, in dataclass
+    return wrap(cls)
+  File "C:\Python314\Lib\dataclasses.py", line 1432, in wrap
+    return _process_class(cls, init, repr, eq, order, unsafe_hash,
+                          frozen, match_args, kw_only, slots,
+                          weakref_slot)
+  File "C:\Python314\Lib\dataclasses.py", line 1055, in _process_class
+    and _is_type(type, cls, dataclasses, dataclasses.KW_ONLY,
+        ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                 _is_kw_only))):
+                 ^^^^^^^^^^^^
+  File "C:\Python314\Lib\dataclasses.py", line 814, in _is_type
+    ns = sys.modules.get(cls.__module__).__dict__
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '__dict__'. Did you mean: '__dir__'?
+2026-07-13 18:18:36,113 | INFO | target_aml_discovery | ========================================================================
+2026-07-13 18:18:36,114 | INFO | target_aml_discovery | Starting TARGET-AML pediatric biomarker discovery & validation pipeline
+2026-07-13 18:18:36,114 | INFO | target_aml_discovery | ========================================================================
+2026-07-13 18:18:36,118 | INFO | target_aml_discovery | Parsing clinical vital statuses from target_clinical.gz...
+2026-07-13 18:18:36,369 | INFO | target_aml_discovery | Successfully mapped outcomes for 2158 pediatric cases.
+2026-07-13 18:18:36,369 | INFO | target_aml_discovery | Parsing metadata mappings from target_metadata.json...
+2026-07-13 18:18:36,517 | INFO | target_aml_discovery | Found 2812 GDC expression files mapping to labeled cases.
+2026-07-13 18:18:36,521 | INFO | target_aml_discovery | Starting concurrent bulk download and streaming parsing...
+2026-07-13 18:18:36,522 | INFO | target_aml_discovery | Processing GDC download batch 1/15 (200 files)...
+2026-07-13 18:18:36,524 | INFO | target_aml_discovery | Processing GDC download batch 2/15 (200 files)...
+2026-07-13 18:18:36,524 | INFO | target_aml_discovery | Processing GDC download batch 3/15 (200 files)...
+2026-07-13 18:18:36,527 | INFO | target_aml_discovery | Processing GDC download batch 4/15 (200 files)...
+2026-07-13 18:18:36,529 | INFO | target_aml_discovery | Processing GDC download batch 5/15 (200 files)...
+2026-07-13 18:21:42,131 | INFO | target_aml_discovery | Parsed 189 expression profiles from batch 5.
+2026-07-13 18:21:42,146 | INFO | target_aml_discovery | Processing GDC download batch 6/15 (200 files)...
+2026-07-13 18:22:17,171 | INFO | target_aml_discovery | Parsed 139 expression profiles from batch 1.
+2026-07-13 18:22:17,186 | INFO | target_aml_discovery | Processing GDC download batch 7/15 (200 files)...
+2026-07-13 18:22:19,148 | INFO | target_aml_discovery | Parsed 164 expression profiles from batch 4.
+2026-07-13 18:22:19,158 | INFO | target_aml_discovery | Processing GDC download batch 8/15 (200 files)...
+2026-07-13 18:22:24,011 | INFO | target_aml_discovery | Parsed 178 expression profiles from batch 3.
+2026-07-13 18:22:24,025 | INFO | target_aml_discovery | Processing GDC download batch 9/15 (200 files)...
+2026-07-13 18:22:39,803 | INFO | target_aml_discovery | Parsed 122 expression profiles from batch 2.
+2026-07-13 18:22:39,815 | INFO | target_aml_discovery | Processing GDC download batch 10/15 (200 files)...
+2026-07-13 18:25:32,316 | INFO | target_aml_discovery | Parsed 169 expression profiles from batch 8.
+2026-07-13 18:25:32,327 | INFO | target_aml_discovery | Processing GDC download batch 11/15 (200 files)...
+2026-07-13 18:25:51,790 | INFO | target_aml_discovery | Parsed 148 expression profiles from batch 10.
+2026-07-13 18:25:51,801 | INFO | target_aml_discovery | Processing GDC download batch 12/15 (200 files)...
+2026-07-13 18:26:19,758 | INFO | target_aml_discovery | Parsed 113 expression profiles from batch 6.
+2026-07-13 18:26:19,766 | INFO | target_aml_discovery | Processing GDC download batch 13/15 (200 files)...
+2026-07-13 18:26:36,908 | INFO | target_aml_discovery | Parsed 159 expression profiles from batch 9.
+2026-07-13 18:26:36,922 | INFO | target_aml_discovery | Processing GDC download batch 14/15 (200 files)...
+2026-07-13 18:26:47,461 | INFO | target_aml_discovery | Parsed 137 expression profiles from batch 7.
+2026-07-13 18:26:47,472 | INFO | target_aml_discovery | Processing GDC download batch 15/15 (12 files)...
+2026-07-13 18:27:00,931 | INFO | target_aml_discovery | Parsed 4 expression profiles from batch 15.
+2026-07-13 18:29:32,986 | INFO | target_aml_discovery | Parsed 105 expression profiles from batch 13.
+2026-07-13 18:29:52,336 | INFO | target_aml_discovery | Parsed 111 expression profiles from batch 11.
+2026-07-13 18:30:15,926 | INFO | target_aml_discovery | Parsed 95 expression profiles from batch 12.
+2026-07-13 18:30:35,501 | INFO | target_aml_discovery | Parsed 71 expression profiles from batch 14.
+2026-07-13 18:30:35,516 | INFO | target_aml_discovery | Data download and extraction complete in 11.98 minutes.
+2026-07-13 18:30:35,517 | INFO | target_aml_discovery | Creating pandas matrices for 1904 unique cases...
+2026-07-13 18:31:06,562 | INFO | target_aml_discovery | Imputing missing values and scaling expression matrix...
+2026-07-13 18:33:05,661 | INFO | target_aml_discovery | Saved processed scaled and raw matrices to disk.
+2026-07-13 18:33:05,661 | INFO | target_aml_discovery | Initializing BQPSO biomarker selector on TARGET-AML (50 particles, 100 epochs)...
+2026-07-13 18:33:06,498 | INFO | 02_bqpso_selector | ANOVA pre-screen retained 1000 of 19938 genes for BQPSO.
+2026-07-13 18:35:53,184 | INFO | 02_bqpso_selector | BQPSO initial best fitness: 0.69779 (30 genes).
+2026-07-13 18:38:27,165 | INFO | 02_bqpso_selector | BQPSO epoch 001/100 | best fitness 0.71197 | genes 30
+2026-07-13 18:40:55,555 | INFO | 02_bqpso_selector | BQPSO epoch 002/100 | best fitness 0.71197 | genes 30
+2026-07-13 18:43:22,207 | INFO | 02_bqpso_selector | BQPSO epoch 003/100 | best fitness 0.71197 | genes 30
+2026-07-13 18:45:56,673 | INFO | 02_bqpso_selector | BQPSO epoch 004/100 | best fitness 0.71197 | genes 30
+2026-07-13 18:47:33,624 | INFO | target_aml_discovery | ========================================================================
+2026-07-13 18:47:33,625 | INFO | target_aml_discovery | Starting TARGET-AML pediatric biomarker discovery & validation pipeline
+2026-07-13 18:47:33,625 | INFO | target_aml_discovery | ========================================================================
+2026-07-13 18:47:33,630 | INFO | target_aml_discovery | Loading existing processed and raw datasets from cache...
+2026-07-13 18:48:09,841 | INFO | target_aml_discovery | Initializing BQPSO biomarker selector on TARGET-AML (50 particles, 100 epochs)...
+2026-07-13 18:48:10,724 | INFO | 02_bqpso_selector | ANOVA pre-screen retained 1000 of 19938 genes for BQPSO.
+2026-07-13 18:48:12,421 | INFO | 02_bqpso_selector | BQPSO initial best fitness: 0.70015 (30 genes).
+2026-07-13 18:48:14,037 | INFO | 02_bqpso_selector | BQPSO epoch 001/100 | best fitness 0.70913 | genes 30
+2026-07-13 18:48:15,769 | INFO | 02_bqpso_selector | BQPSO epoch 002/100 | best fitness 0.70913 | genes 30
+2026-07-13 18:48:17,516 | INFO | 02_bqpso_selector | BQPSO epoch 003/100 | best fitness 0.70913 | genes 30
+2026-07-13 18:48:19,271 | INFO | 02_bqpso_selector | BQPSO epoch 004/100 | best fitness 0.70913 | genes 30
+2026-07-13 18:48:21,008 | INFO | 02_bqpso_selector | BQPSO epoch 005/100 | best fitness 0.70913 | genes 30
+2026-07-13 18:48:22,674 | INFO | 02_bqpso_selector | BQPSO epoch 006/100 | best fitness 0.70913 | genes 30
+2026-07-13 18:48:24,323 | INFO | 02_bqpso_selector | BQPSO epoch 007/100 | best fitness 0.70913 | genes 30
+2026-07-13 18:48:26,080 | INFO | 02_bqpso_selector | BQPSO epoch 008/100 | best fitness 0.70913 | genes 30
+2026-07-13 18:48:27,749 | INFO | 02_bqpso_selector | BQPSO epoch 009/100 | best fitness 0.70913 | genes 30
+2026-07-13 18:48:29,452 | INFO | 02_bqpso_selector | BQPSO epoch 010/100 | best fitness 0.70913 | genes 30
+2026-07-13 18:48:31,104 | INFO | 02_bqpso_selector | BQPSO epoch 011/100 | best fitness 0.70913 | genes 30
+2026-07-13 18:48:32,772 | INFO | 02_bqpso_selector | BQPSO epoch 012/100 | best fitness 0.70913 | genes 30
+2026-07-13 18:48:34,633 | INFO | 02_bqpso_selector | BQPSO epoch 013/100 | best fitness 0.70913 | genes 30
+2026-07-13 18:48:36,400 | INFO | 02_bqpso_selector | BQPSO epoch 014/100 | best fitness 0.70913 | genes 30
+2026-07-13 18:48:38,099 | INFO | 02_bqpso_selector | BQPSO epoch 015/100 | best fitness 0.70913 | genes 30
+2026-07-13 18:48:39,884 | INFO | 02_bqpso_selector | BQPSO epoch 016/100 | best fitness 0.70913 | genes 30
+2026-07-13 18:48:41,536 | INFO | 02_bqpso_selector | BQPSO epoch 017/100 | best fitness 0.70913 | genes 30
+2026-07-13 18:48:43,262 | INFO | 02_bqpso_selector | BQPSO epoch 018/100 | best fitness 0.70913 | genes 30
+2026-07-13 18:48:45,010 | INFO | 02_bqpso_selector | BQPSO epoch 019/100 | best fitness 0.70913 | genes 30
+2026-07-13 18:48:46,695 | INFO | 02_bqpso_selector | BQPSO epoch 020/100 | best fitness 0.70913 | genes 30
+2026-07-13 18:48:48,381 | INFO | 02_bqpso_selector | BQPSO epoch 021/100 | best fitness 0.70913 | genes 30
+2026-07-13 18:48:50,044 | INFO | 02_bqpso_selector | BQPSO epoch 022/100 | best fitness 0.70913 | genes 30
+2026-07-13 18:48:51,732 | INFO | 02_bqpso_selector | BQPSO epoch 023/100 | best fitness 0.70913 | genes 30
+2026-07-13 18:48:53,387 | INFO | 02_bqpso_selector | BQPSO epoch 024/100 | best fitness 0.70913 | genes 30
+2026-07-13 18:48:55,057 | INFO | 02_bqpso_selector | BQPSO epoch 025/100 | best fitness 0.70913 | genes 30
+2026-07-13 18:48:56,742 | INFO | 02_bqpso_selector | BQPSO epoch 026/100 | best fitness 0.70913 | genes 30
+2026-07-13 18:48:58,479 | INFO | 02_bqpso_selector | BQPSO epoch 027/100 | best fitness 0.70913 | genes 30
+2026-07-13 18:49:00,243 | INFO | 02_bqpso_selector | BQPSO epoch 028/100 | best fitness 0.70913 | genes 30
+2026-07-13 18:49:01,955 | INFO | 02_bqpso_selector | BQPSO epoch 029/100 | best fitness 0.70913 | genes 30
+2026-07-13 18:49:03,679 | INFO | 02_bqpso_selector | BQPSO epoch 030/100 | best fitness 0.70913 | genes 30
+2026-07-13 18:49:05,386 | INFO | 02_bqpso_selector | BQPSO epoch 031/100 | best fitness 0.70913 | genes 30
+2026-07-13 18:49:07,052 | INFO | 02_bqpso_selector | BQPSO epoch 032/100 | best fitness 0.70913 | genes 30
+2026-07-13 18:49:08,649 | INFO | 02_bqpso_selector | BQPSO epoch 033/100 | best fitness 0.70913 | genes 30
+2026-07-13 18:49:10,276 | INFO | 02_bqpso_selector | BQPSO epoch 034/100 | best fitness 0.70913 | genes 30
+2026-07-13 18:49:11,943 | INFO | 02_bqpso_selector | BQPSO epoch 035/100 | best fitness 0.71055 | genes 30
+2026-07-13 18:49:13,599 | INFO | 02_bqpso_selector | BQPSO epoch 036/100 | best fitness 0.71055 | genes 30
+2026-07-13 18:49:15,262 | INFO | 02_bqpso_selector | BQPSO epoch 037/100 | best fitness 0.71055 | genes 30
+2026-07-13 18:49:17,165 | INFO | 02_bqpso_selector | BQPSO epoch 038/100 | best fitness 0.71151 | genes 30
+2026-07-13 18:49:18,931 | INFO | 02_bqpso_selector | BQPSO epoch 039/100 | best fitness 0.71151 | genes 30
+2026-07-13 18:49:20,643 | INFO | 02_bqpso_selector | BQPSO epoch 040/100 | best fitness 0.71151 | genes 30
+2026-07-13 18:49:22,637 | INFO | 02_bqpso_selector | BQPSO epoch 041/100 | best fitness 0.71151 | genes 30
+2026-07-13 18:49:24,454 | INFO | 02_bqpso_selector | BQPSO epoch 042/100 | best fitness 0.71151 | genes 30
+2026-07-13 18:49:26,343 | INFO | 02_bqpso_selector | BQPSO epoch 043/100 | best fitness 0.71151 | genes 30
+2026-07-13 18:49:28,098 | INFO | 02_bqpso_selector | BQPSO epoch 044/100 | best fitness 0.71435 | genes 30
+2026-07-13 18:49:29,940 | INFO | 02_bqpso_selector | BQPSO epoch 045/100 | best fitness 0.71435 | genes 30
+2026-07-13 18:49:31,641 | INFO | 02_bqpso_selector | BQPSO epoch 046/100 | best fitness 0.71435 | genes 30
+2026-07-13 18:49:33,289 | INFO | 02_bqpso_selector | BQPSO epoch 047/100 | best fitness 0.71435 | genes 30
+2026-07-13 18:49:35,148 | INFO | 02_bqpso_selector | BQPSO epoch 048/100 | best fitness 0.71435 | genes 30
+2026-07-13 18:49:36,892 | INFO | 02_bqpso_selector | BQPSO epoch 049/100 | best fitness 0.71435 | genes 30
+2026-07-13 18:49:38,588 | INFO | 02_bqpso_selector | BQPSO epoch 050/100 | best fitness 0.71576 | genes 30
+2026-07-13 18:49:40,213 | INFO | 02_bqpso_selector | BQPSO epoch 051/100 | best fitness 0.71576 | genes 30
+2026-07-13 18:49:41,917 | INFO | 02_bqpso_selector | BQPSO epoch 052/100 | best fitness 0.71576 | genes 30
+2026-07-13 18:49:43,570 | INFO | 02_bqpso_selector | BQPSO epoch 053/100 | best fitness 0.71576 | genes 30
+2026-07-13 18:49:45,210 | INFO | 02_bqpso_selector | BQPSO epoch 054/100 | best fitness 0.71576 | genes 30
+2026-07-13 18:49:46,832 | INFO | 02_bqpso_selector | BQPSO epoch 055/100 | best fitness 0.71576 | genes 30
+2026-07-13 18:49:48,478 | INFO | 02_bqpso_selector | BQPSO epoch 056/100 | best fitness 0.71576 | genes 30
+2026-07-13 18:49:50,137 | INFO | 02_bqpso_selector | BQPSO epoch 057/100 | best fitness 0.71576 | genes 30
+2026-07-13 18:49:51,805 | INFO | 02_bqpso_selector | BQPSO epoch 058/100 | best fitness 0.71576 | genes 30
+2026-07-13 18:49:53,409 | INFO | 02_bqpso_selector | BQPSO epoch 059/100 | best fitness 0.71576 | genes 30
+2026-07-13 18:49:55,026 | INFO | 02_bqpso_selector | BQPSO epoch 060/100 | best fitness 0.71576 | genes 30
+2026-07-13 18:49:56,698 | INFO | 02_bqpso_selector | BQPSO epoch 061/100 | best fitness 0.71576 | genes 30
+2026-07-13 18:49:58,355 | INFO | 02_bqpso_selector | BQPSO epoch 062/100 | best fitness 0.71576 | genes 30
+2026-07-13 18:50:00,077 | INFO | 02_bqpso_selector | BQPSO epoch 063/100 | best fitness 0.71576 | genes 30
+2026-07-13 18:50:01,701 | INFO | 02_bqpso_selector | BQPSO epoch 064/100 | best fitness 0.71576 | genes 30
+2026-07-13 18:50:03,345 | INFO | 02_bqpso_selector | BQPSO epoch 065/100 | best fitness 0.71576 | genes 30
+2026-07-13 18:50:05,003 | INFO | 02_bqpso_selector | BQPSO epoch 066/100 | best fitness 0.71576 | genes 30
+2026-07-13 18:50:06,605 | INFO | 02_bqpso_selector | BQPSO epoch 067/100 | best fitness 0.71576 | genes 30
+2026-07-13 18:50:08,229 | INFO | 02_bqpso_selector | BQPSO epoch 068/100 | best fitness 0.71576 | genes 30
+2026-07-13 18:50:09,933 | INFO | 02_bqpso_selector | BQPSO epoch 069/100 | best fitness 0.71859 | genes 30
+2026-07-13 18:50:11,609 | INFO | 02_bqpso_selector | BQPSO epoch 070/100 | best fitness 0.71859 | genes 30
+2026-07-13 18:50:13,259 | INFO | 02_bqpso_selector | BQPSO epoch 071/100 | best fitness 0.71859 | genes 30
+2026-07-13 18:50:15,138 | INFO | 02_bqpso_selector | BQPSO epoch 072/100 | best fitness 0.71859 | genes 30
+2026-07-13 18:50:16,945 | INFO | 02_bqpso_selector | BQPSO epoch 073/100 | best fitness 0.72285 | genes 30
+2026-07-13 18:50:18,593 | INFO | 02_bqpso_selector | BQPSO epoch 074/100 | best fitness 0.72285 | genes 30
+2026-07-13 18:50:20,232 | INFO | 02_bqpso_selector | BQPSO epoch 075/100 | best fitness 0.72285 | genes 30
+2026-07-13 18:50:21,863 | INFO | 02_bqpso_selector | BQPSO epoch 076/100 | best fitness 0.72285 | genes 30
+2026-07-13 18:50:23,480 | INFO | 02_bqpso_selector | BQPSO epoch 077/100 | best fitness 0.72285 | genes 30
+2026-07-13 18:50:25,169 | INFO | 02_bqpso_selector | BQPSO epoch 078/100 | best fitness 0.72285 | genes 30
+2026-07-13 18:50:26,822 | INFO | 02_bqpso_selector | BQPSO epoch 079/100 | best fitness 0.72285 | genes 30
+2026-07-13 18:50:28,452 | INFO | 02_bqpso_selector | BQPSO epoch 080/100 | best fitness 0.72285 | genes 30
+2026-07-13 18:50:30,147 | INFO | 02_bqpso_selector | BQPSO epoch 081/100 | best fitness 0.72285 | genes 30
+2026-07-13 18:50:31,825 | INFO | 02_bqpso_selector | BQPSO epoch 082/100 | best fitness 0.72285 | genes 30
+2026-07-13 18:50:33,495 | INFO | 02_bqpso_selector | BQPSO epoch 083/100 | best fitness 0.72285 | genes 30
+2026-07-13 18:50:35,115 | INFO | 02_bqpso_selector | BQPSO epoch 084/100 | best fitness 0.72285 | genes 30
+2026-07-13 18:50:36,781 | INFO | 02_bqpso_selector | BQPSO epoch 085/100 | best fitness 0.72285 | genes 30
+2026-07-13 18:50:38,416 | INFO | 02_bqpso_selector | BQPSO epoch 086/100 | best fitness 0.72285 | genes 30
+2026-07-13 18:50:40,021 | INFO | 02_bqpso_selector | BQPSO epoch 087/100 | best fitness 0.72285 | genes 30
+2026-07-13 18:50:41,633 | INFO | 02_bqpso_selector | BQPSO epoch 088/100 | best fitness 0.72285 | genes 30
+2026-07-13 18:50:43,331 | INFO | 02_bqpso_selector | BQPSO epoch 089/100 | best fitness 0.72332 | genes 30
+2026-07-13 18:50:45,055 | INFO | 02_bqpso_selector | BQPSO epoch 090/100 | best fitness 0.72332 | genes 30
+2026-07-13 18:50:46,703 | INFO | 02_bqpso_selector | BQPSO epoch 091/100 | best fitness 0.72332 | genes 30
+2026-07-13 18:50:48,410 | INFO | 02_bqpso_selector | BQPSO epoch 092/100 | best fitness 0.72332 | genes 30
+2026-07-13 18:50:50,062 | INFO | 02_bqpso_selector | BQPSO epoch 093/100 | best fitness 0.72332 | genes 30
+2026-07-13 18:50:51,752 | INFO | 02_bqpso_selector | BQPSO epoch 094/100 | best fitness 0.72332 | genes 30
+2026-07-13 18:50:53,411 | INFO | 02_bqpso_selector | BQPSO epoch 095/100 | best fitness 0.72332 | genes 30
+2026-07-13 18:50:55,071 | INFO | 02_bqpso_selector | BQPSO epoch 096/100 | best fitness 0.72332 | genes 30
+2026-07-13 18:50:56,788 | INFO | 02_bqpso_selector | BQPSO epoch 097/100 | best fitness 0.72332 | genes 30
+2026-07-13 18:50:58,435 | INFO | 02_bqpso_selector | BQPSO epoch 098/100 | best fitness 0.72332 | genes 30
+2026-07-13 18:51:00,218 | INFO | 02_bqpso_selector | BQPSO epoch 099/100 | best fitness 0.72332 | genes 30
+2026-07-13 18:51:01,878 | INFO | 02_bqpso_selector | BQPSO epoch 100/100 | best fitness 0.72332 | genes 30
+2026-07-13 18:51:01,905 | INFO | 02_bqpso_selector | BQPSO selected 30 genes; list saved to D:\Leukemia_Quantum_Pipeline\logs_and_output\selected_genes.txt
+2026-07-13 18:51:01,921 | INFO | target_aml_discovery | BQPSO selection complete! Selected 30 biomarkers: ['LRRC10B', 'ADCY4', 'GNGT2', 'SEPHS1', 'C2orf68', 'TEDC2', 'ADAL', 'ARHGEF10', 'PPP2R1B', 'CD1D', 'FERMT1', 'SLC25A35', 'ACLY', 'C1orf131', 'NIFK', 'DDX18', 'SNRNP25', 'RAB40B', 'SPA17', 'LIMA1', 'RIPK3', 'CYB5R1', 'POC1A', 'TRAIP', 'MORC4', 'SFXN1', 'DNAJC10', 'MAP10', 'TMEM14A', 'NYNRIN']
+2026-07-13 18:51:01,921 | INFO | target_aml_discovery | Analyzing overlap between pediatric and adult biomarker signatures...
+2026-07-13 18:51:01,948 | INFO | target_aml_discovery | Overlap computed: 30 universal, 0 adult-only, 0 pediatric-only biomarkers.
+2026-07-13 18:51:03,713 | INFO | target_aml_discovery | Saved overlap Venn diagram to images/pediatric_adult_venn.png
+2026-07-13 18:51:03,713 | INFO | target_aml_discovery | Performing Differential Expression Analysis (DEA) on raw counts...
+2026-07-13 18:51:04,845 | INFO | target_aml_discovery | Saved volcano plot novelty proof to images/volcano_novelty_proof.png
+2026-07-13 18:51:04,851 | INFO | target_aml_discovery | Retrieving protein-protein interactions from STRING database API...
+2026-07-13 18:51:07,306 | INFO | target_aml_discovery | STRING API returned 6 interaction edges.
+2026-07-13 18:51:07,318 | INFO | target_aml_discovery | Saved network centrality metrics to ppi_network_metrics.txt.
+2026-07-13 18:51:07,749 | INFO | target_aml_discovery | Saved network topological graph to images/ppi_hub_network.png
+2026-07-13 18:51:07,750 | INFO | target_aml_discovery | ========================================================================
+2026-07-13 18:51:07,750 | INFO | target_aml_discovery | TARGET-AML pediatric discovery pipeline executed successfully!
+2026-07-13 18:51:07,750 | INFO | target_aml_discovery | ========================================================================
+2026-07-13 18:51:51,236 | INFO | target_aml_discovery | ========================================================================
+2026-07-13 18:51:51,237 | INFO | target_aml_discovery | Starting TARGET-AML pediatric biomarker discovery & validation pipeline
+2026-07-13 18:51:51,237 | INFO | target_aml_discovery | ========================================================================
+2026-07-13 18:51:51,243 | INFO | target_aml_discovery | Loading existing processed and raw datasets from cache...
+2026-07-13 18:52:25,181 | INFO | target_aml_discovery | Found existing selected pediatric genes list. Loading from cache...
+2026-07-13 18:52:25,182 | INFO | target_aml_discovery | Analyzing overlap between pediatric and adult biomarker signatures...
+2026-07-13 18:52:25,201 | INFO | target_aml_discovery | Overlap computed: 0 universal, 30 adult-only, 30 pediatric-only biomarkers.
+2026-07-13 18:52:25,625 | INFO | target_aml_discovery | Saved overlap Venn diagram to images/pediatric_adult_venn.png
+2026-07-13 18:52:25,626 | INFO | target_aml_discovery | Performing Differential Expression Analysis (DEA) on raw counts...
+2026-07-13 18:52:26,654 | INFO | target_aml_discovery | Saved volcano plot novelty proof to images/volcano_novelty_proof.png
+2026-07-13 18:52:26,658 | INFO | target_aml_discovery | Retrieving protein-protein interactions from STRING database API...
+2026-07-13 18:52:28,592 | INFO | target_aml_discovery | STRING API returned 6 interaction edges.
+2026-07-13 18:52:28,603 | INFO | target_aml_discovery | Saved network centrality metrics to ppi_network_metrics.txt.
+2026-07-13 18:52:28,980 | INFO | target_aml_discovery | Saved network topological graph to images/ppi_hub_network.png
+2026-07-13 18:52:28,981 | INFO | target_aml_discovery | ========================================================================
+2026-07-13 18:52:28,981 | INFO | target_aml_discovery | TARGET-AML pediatric discovery pipeline executed successfully!
+2026-07-13 18:52:28,981 | INFO | target_aml_discovery | ========================================================================
+2026-07-13 19:02:46,614 | INFO | pan_leukemia_universal | ========================================================================
+2026-07-13 19:02:46,616 | INFO | pan_leukemia_universal | Starting Universal Pan-Leukemia Master Regulator Discovery Pipeline
+2026-07-13 19:02:46,616 | INFO | pan_leukemia_universal | ========================================================================
+2026-07-13 19:02:46,616 | INFO | pan_leukemia_universal | STEP 1: Starting Data Alignment and Intersection...
+2026-07-13 19:02:46,620 | INFO | pan_leukemia_universal | Loading adult GSE13159 dataset...
+2026-07-13 19:03:04,641 | INFO | pan_leukemia_universal | Adult raw shape: (2096, 22882)
+2026-07-13 19:03:04,642 | INFO | pan_leukemia_universal | Loading pediatric TARGET-AML dataset...
+2026-07-13 19:03:20,088 | INFO | pan_leukemia_universal | Pediatric raw shape: (1904, 19940)
+2026-07-13 19:03:20,115 | INFO | pan_leukemia_universal | Number of intersecting genes present in both cohorts: 16508
+2026-07-13 19:03:20,116 | INFO | pan_leukemia_universal | Aligning expressions on intersecting genes...
+2026-07-13 19:03:20,553 | INFO | pan_leukemia_universal | Concatenating aligned adult and pediatric datasets...
+2026-07-13 19:03:20,681 | ERROR | pan_leukemia_universal | Pipeline execution failed with exception: cannot concatenate object of type '<class 'numpy.ndarray'>'; only Series and DataFrame objs are valid
+Traceback (most recent call last):
+  File "D:\Leukemia_Quantum_Pipeline\code\06_pan_leukemia_universal.py", line 397, in main
+    raw_matrix, intersecting_genes = step_1_data_alignment()
+                                     ~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\Leukemia_Quantum_Pipeline\code\06_pan_leukemia_universal.py", line 115, in step_1_data_alignment
+    pan_labels = pd.concat([adult_labels, ped_labels], axis=0, ignore_index=True)
+  File "C:\Users\Samsunh\AppData\Roaming\Python\Python314\site-packages\pandas\core\reshape\concat.py", line 382, in concat
+    op = _Concatenator(
+        objs,
+    ...<8 lines>...
+        sort=sort,
+    )
+  File "C:\Users\Samsunh\AppData\Roaming\Python\Python314\site-packages\pandas\core\reshape\concat.py", line 448, in __init__
+    ndims = self._get_ndims(objs)
+  File "C:\Users\Samsunh\AppData\Roaming\Python\Python314\site-packages\pandas\core\reshape\concat.py", line 489, in _get_ndims
+    raise TypeError(msg)
+TypeError: cannot concatenate object of type '<class 'numpy.ndarray'>'; only Series and DataFrame objs are valid
+2026-07-13 19:03:44,494 | INFO | pan_leukemia_universal | ========================================================================
+2026-07-13 19:03:44,496 | INFO | pan_leukemia_universal | Starting Universal Pan-Leukemia Master Regulator Discovery Pipeline
+2026-07-13 19:03:44,496 | INFO | pan_leukemia_universal | ========================================================================
+2026-07-13 19:03:44,496 | INFO | pan_leukemia_universal | STEP 1: Starting Data Alignment and Intersection...
+2026-07-13 19:03:44,501 | INFO | pan_leukemia_universal | Loading adult GSE13159 dataset...
+2026-07-13 19:04:05,447 | INFO | pan_leukemia_universal | Adult raw shape: (2096, 22882)
+2026-07-13 19:04:05,447 | INFO | pan_leukemia_universal | Loading pediatric TARGET-AML dataset...
+2026-07-13 19:04:23,403 | INFO | pan_leukemia_universal | Pediatric raw shape: (1904, 19940)
+2026-07-13 19:04:23,422 | INFO | pan_leukemia_universal | Number of intersecting genes present in both cohorts: 16508
+2026-07-13 19:04:23,423 | INFO | pan_leukemia_universal | Aligning expressions on intersecting genes...
+2026-07-13 19:04:23,877 | INFO | pan_leukemia_universal | Concatenating aligned adult and pediatric datasets...
+2026-07-13 19:04:24,104 | INFO | pan_leukemia_universal | Unified Pan-Leukemia cohort shape: (4000, 16510) (samples: 2096 adult, 1904 pediatric)
+2026-07-13 19:04:24,360 | INFO | pan_leukemia_universal | STEP 2: Starting ComBat Batch Effect Correction...
+2026-07-13 19:04:24,453 | INFO | pan_leukemia_universal | Preparing expression matrix for ComBat (transposing to genes x samples)...
+2026-07-13 19:04:24,542 | INFO | pan_leukemia_universal | Constructing PatSy design matrix to preserve biological variance (disease label)...
+2026-07-13 19:04:24,545 | INFO | pan_leukemia_universal | Executing pyComBat Empirical Bayes adjustment...
+2026-07-13 19:04:36,102 | INFO | pan_leukemia_universal | Transposing back to samples x genes...
+2026-07-13 19:04:36,108 | INFO | pan_leukemia_universal | Saving corrected unified dataset to D:\Leukemia_Quantum_Pipeline\data\pan_leukemia_batch_corrected.csv...
+2026-07-13 19:07:03,298 | INFO | pan_leukemia_universal | STEP 3: Running Pan-Cohort BQPSO Feature Selection...
+2026-07-13 19:07:03,470 | INFO | pan_leukemia_universal | Initializing BQPSO selector (50 particles, 100 epochs, dual=False)...
+2026-07-13 19:07:05,362 | INFO | 02_bqpso_selector | ANOVA pre-screen retained 1000 of 16508 genes for BQPSO.
+2026-07-13 19:07:07,963 | INFO | 02_bqpso_selector | BQPSO initial best fitness: 0.98710 (30 genes).
+2026-07-13 19:07:10,588 | INFO | 02_bqpso_selector | BQPSO epoch 001/100 | best fitness 0.98710 | genes 30
+2026-07-13 19:07:13,324 | INFO | 02_bqpso_selector | BQPSO epoch 002/100 | best fitness 0.98710 | genes 30
+2026-07-13 19:07:15,946 | INFO | 02_bqpso_selector | BQPSO epoch 003/100 | best fitness 0.98710 | genes 30
+2026-07-13 19:07:18,539 | INFO | 02_bqpso_selector | BQPSO epoch 004/100 | best fitness 0.98710 | genes 30
+2026-07-13 19:07:21,320 | INFO | 02_bqpso_selector | BQPSO epoch 005/100 | best fitness 0.98710 | genes 30
+2026-07-13 19:07:24,158 | INFO | 02_bqpso_selector | BQPSO epoch 006/100 | best fitness 0.98800 | genes 30
+2026-07-13 19:07:26,836 | INFO | 02_bqpso_selector | BQPSO epoch 007/100 | best fitness 0.98800 | genes 30
+2026-07-13 19:07:29,471 | INFO | 02_bqpso_selector | BQPSO epoch 008/100 | best fitness 0.98800 | genes 30
+2026-07-13 19:07:32,138 | INFO | 02_bqpso_selector | BQPSO epoch 009/100 | best fitness 0.98890 | genes 30
+2026-07-13 19:07:34,871 | INFO | 02_bqpso_selector | BQPSO epoch 010/100 | best fitness 0.98890 | genes 30
+2026-07-13 19:07:37,545 | INFO | 02_bqpso_selector | BQPSO epoch 011/100 | best fitness 0.98912 | genes 30
+2026-07-13 19:07:40,266 | INFO | 02_bqpso_selector | BQPSO epoch 012/100 | best fitness 0.98912 | genes 30
+2026-07-13 19:07:42,864 | INFO | 02_bqpso_selector | BQPSO epoch 013/100 | best fitness 0.98912 | genes 30
+2026-07-13 19:07:45,431 | INFO | 02_bqpso_selector | BQPSO epoch 014/100 | best fitness 0.98912 | genes 30
+2026-07-13 19:07:48,223 | INFO | 02_bqpso_selector | BQPSO epoch 015/100 | best fitness 0.98912 | genes 30
+2026-07-13 19:07:50,871 | INFO | 02_bqpso_selector | BQPSO epoch 016/100 | best fitness 0.98912 | genes 30
+2026-07-13 19:07:53,740 | INFO | 02_bqpso_selector | BQPSO epoch 017/100 | best fitness 0.98912 | genes 30
+2026-07-13 19:07:56,479 | INFO | 02_bqpso_selector | BQPSO epoch 018/100 | best fitness 0.98912 | genes 30
+2026-07-13 19:07:59,171 | INFO | 02_bqpso_selector | BQPSO epoch 019/100 | best fitness 0.98912 | genes 30
+2026-07-13 19:08:01,764 | INFO | 02_bqpso_selector | BQPSO epoch 020/100 | best fitness 0.98912 | genes 30
+2026-07-13 19:08:04,359 | INFO | 02_bqpso_selector | BQPSO epoch 021/100 | best fitness 0.98912 | genes 30
+2026-07-13 19:08:06,877 | INFO | 02_bqpso_selector | BQPSO epoch 022/100 | best fitness 0.98912 | genes 30
+2026-07-13 19:08:09,438 | INFO | 02_bqpso_selector | BQPSO epoch 023/100 | best fitness 0.98912 | genes 30
+2026-07-13 19:08:11,943 | INFO | 02_bqpso_selector | BQPSO epoch 024/100 | best fitness 0.98912 | genes 30
+2026-07-13 19:08:14,432 | INFO | 02_bqpso_selector | BQPSO epoch 025/100 | best fitness 0.98912 | genes 30
+2026-07-13 19:08:16,978 | INFO | 02_bqpso_selector | BQPSO epoch 026/100 | best fitness 0.98912 | genes 30
+2026-07-13 19:08:19,435 | INFO | 02_bqpso_selector | BQPSO epoch 027/100 | best fitness 0.98912 | genes 30
+2026-07-13 19:08:21,925 | INFO | 02_bqpso_selector | BQPSO epoch 028/100 | best fitness 0.98912 | genes 30
+2026-07-13 19:08:24,507 | INFO | 02_bqpso_selector | BQPSO epoch 029/100 | best fitness 0.98912 | genes 30
+2026-07-13 19:08:27,088 | INFO | 02_bqpso_selector | BQPSO epoch 030/100 | best fitness 0.98912 | genes 30
+2026-07-13 19:08:29,584 | INFO | 02_bqpso_selector | BQPSO epoch 031/100 | best fitness 0.98912 | genes 30
+2026-07-13 19:08:32,072 | INFO | 02_bqpso_selector | BQPSO epoch 032/100 | best fitness 0.98912 | genes 30
+2026-07-13 19:08:34,555 | INFO | 02_bqpso_selector | BQPSO epoch 033/100 | best fitness 0.98912 | genes 30
+2026-07-13 19:08:37,078 | INFO | 02_bqpso_selector | BQPSO epoch 034/100 | best fitness 0.98912 | genes 30
+2026-07-13 19:08:39,620 | INFO | 02_bqpso_selector | BQPSO epoch 035/100 | best fitness 0.98912 | genes 30
+2026-07-13 19:08:42,140 | INFO | 02_bqpso_selector | BQPSO epoch 036/100 | best fitness 0.98912 | genes 30
+2026-07-13 19:08:44,708 | INFO | 02_bqpso_selector | BQPSO epoch 037/100 | best fitness 0.98912 | genes 30
+2026-07-13 19:08:47,225 | INFO | 02_bqpso_selector | BQPSO epoch 038/100 | best fitness 0.98912 | genes 30
+2026-07-13 19:08:49,886 | INFO | 02_bqpso_selector | BQPSO epoch 039/100 | best fitness 0.98912 | genes 30
+2026-07-13 19:08:52,763 | INFO | 02_bqpso_selector | BQPSO epoch 040/100 | best fitness 0.98912 | genes 30
+2026-07-13 19:08:55,777 | INFO | 02_bqpso_selector | BQPSO epoch 041/100 | best fitness 0.98912 | genes 30
+2026-07-13 19:08:58,506 | INFO | 02_bqpso_selector | BQPSO epoch 042/100 | best fitness 0.98912 | genes 30
+2026-07-13 19:09:01,205 | INFO | 02_bqpso_selector | BQPSO epoch 043/100 | best fitness 0.98912 | genes 30
+2026-07-13 19:09:03,897 | INFO | 02_bqpso_selector | BQPSO epoch 044/100 | best fitness 0.98912 | genes 30
+2026-07-13 19:09:06,445 | INFO | 02_bqpso_selector | BQPSO epoch 045/100 | best fitness 0.98912 | genes 30
+2026-07-13 19:09:09,034 | INFO | 02_bqpso_selector | BQPSO epoch 046/100 | best fitness 0.98912 | genes 30
+2026-07-13 19:09:11,705 | INFO | 02_bqpso_selector | BQPSO epoch 047/100 | best fitness 0.98912 | genes 30
+2026-07-13 19:09:14,442 | INFO | 02_bqpso_selector | BQPSO epoch 048/100 | best fitness 0.98912 | genes 30
+2026-07-13 19:09:17,179 | INFO | 02_bqpso_selector | BQPSO epoch 049/100 | best fitness 0.98912 | genes 30
+2026-07-13 19:09:19,880 | INFO | 02_bqpso_selector | BQPSO epoch 050/100 | best fitness 0.98912 | genes 30
+2026-07-13 19:09:22,622 | INFO | 02_bqpso_selector | BQPSO epoch 051/100 | best fitness 0.98912 | genes 30
+2026-07-13 19:09:25,414 | INFO | 02_bqpso_selector | BQPSO epoch 052/100 | best fitness 0.99138 | genes 30
+2026-07-13 19:09:28,139 | INFO | 02_bqpso_selector | BQPSO epoch 053/100 | best fitness 0.99138 | genes 30
+2026-07-13 19:09:30,885 | INFO | 02_bqpso_selector | BQPSO epoch 054/100 | best fitness 0.99138 | genes 30
+2026-07-13 19:09:33,762 | INFO | 02_bqpso_selector | BQPSO epoch 055/100 | best fitness 0.99205 | genes 30
+2026-07-13 19:09:36,531 | INFO | 02_bqpso_selector | BQPSO epoch 056/100 | best fitness 0.99205 | genes 30
+2026-07-13 19:09:39,377 | INFO | 02_bqpso_selector | BQPSO epoch 057/100 | best fitness 0.99205 | genes 30
+2026-07-13 19:09:42,281 | INFO | 02_bqpso_selector | BQPSO epoch 058/100 | best fitness 0.99205 | genes 30
+2026-07-13 19:09:45,166 | INFO | 02_bqpso_selector | BQPSO epoch 059/100 | best fitness 0.99205 | genes 30
+2026-07-13 19:09:47,967 | INFO | 02_bqpso_selector | BQPSO epoch 060/100 | best fitness 0.99205 | genes 30
+2026-07-13 19:09:50,709 | INFO | 02_bqpso_selector | BQPSO epoch 061/100 | best fitness 0.99205 | genes 30
+2026-07-13 19:09:53,442 | INFO | 02_bqpso_selector | BQPSO epoch 062/100 | best fitness 0.99205 | genes 30
+2026-07-13 19:09:56,285 | INFO | 02_bqpso_selector | BQPSO epoch 063/100 | best fitness 0.99205 | genes 30
+2026-07-13 19:09:59,264 | INFO | 02_bqpso_selector | BQPSO epoch 064/100 | best fitness 0.99205 | genes 30
+2026-07-13 19:10:02,113 | INFO | 02_bqpso_selector | BQPSO epoch 065/100 | best fitness 0.99205 | genes 30
+2026-07-13 19:10:04,981 | INFO | 02_bqpso_selector | BQPSO epoch 066/100 | best fitness 0.99205 | genes 30
+2026-07-13 19:10:07,912 | INFO | 02_bqpso_selector | BQPSO epoch 067/100 | best fitness 0.99205 | genes 30
+2026-07-13 19:10:11,025 | INFO | 02_bqpso_selector | BQPSO epoch 068/100 | best fitness 0.99205 | genes 30
+2026-07-13 19:10:13,878 | INFO | 02_bqpso_selector | BQPSO epoch 069/100 | best fitness 0.99273 | genes 30
+2026-07-13 19:10:16,851 | INFO | 02_bqpso_selector | BQPSO epoch 070/100 | best fitness 0.99273 | genes 30
+2026-07-13 19:10:19,764 | INFO | 02_bqpso_selector | BQPSO epoch 071/100 | best fitness 0.99273 | genes 30
+2026-07-13 19:10:22,663 | INFO | 02_bqpso_selector | BQPSO epoch 072/100 | best fitness 0.99273 | genes 30
+2026-07-13 19:10:25,509 | INFO | 02_bqpso_selector | BQPSO epoch 073/100 | best fitness 0.99273 | genes 30
+2026-07-13 19:10:28,279 | INFO | 02_bqpso_selector | BQPSO epoch 074/100 | best fitness 0.99273 | genes 30
+2026-07-13 19:10:31,214 | INFO | 02_bqpso_selector | BQPSO epoch 075/100 | best fitness 0.99273 | genes 30
+2026-07-13 19:10:34,111 | INFO | 02_bqpso_selector | BQPSO epoch 076/100 | best fitness 0.99273 | genes 30
+2026-07-13 19:10:36,997 | INFO | 02_bqpso_selector | BQPSO epoch 077/100 | best fitness 0.99273 | genes 30
+2026-07-13 19:10:39,800 | INFO | 02_bqpso_selector | BQPSO epoch 078/100 | best fitness 0.99273 | genes 30
+2026-07-13 19:10:42,707 | INFO | 02_bqpso_selector | BQPSO epoch 079/100 | best fitness 0.99273 | genes 30
+2026-07-13 19:10:45,567 | INFO | 02_bqpso_selector | BQPSO epoch 080/100 | best fitness 0.99273 | genes 30
+2026-07-13 19:10:48,329 | INFO | 02_bqpso_selector | BQPSO epoch 081/100 | best fitness 0.99273 | genes 30
+2026-07-13 19:10:51,123 | INFO | 02_bqpso_selector | BQPSO epoch 082/100 | best fitness 0.99273 | genes 30
+2026-07-13 19:10:53,749 | INFO | 02_bqpso_selector | BQPSO epoch 083/100 | best fitness 0.99273 | genes 30
+2026-07-13 19:10:56,448 | INFO | 02_bqpso_selector | BQPSO epoch 084/100 | best fitness 0.99295 | genes 30
+2026-07-13 19:10:59,060 | INFO | 02_bqpso_selector | BQPSO epoch 085/100 | best fitness 0.99295 | genes 30
+2026-07-13 19:11:01,772 | INFO | 02_bqpso_selector | BQPSO epoch 086/100 | best fitness 0.99295 | genes 30
+2026-07-13 19:11:04,374 | INFO | 02_bqpso_selector | BQPSO epoch 087/100 | best fitness 0.99295 | genes 30
+2026-07-13 19:11:06,911 | INFO | 02_bqpso_selector | BQPSO epoch 088/100 | best fitness 0.99295 | genes 30
+2026-07-13 19:11:09,459 | INFO | 02_bqpso_selector | BQPSO epoch 089/100 | best fitness 0.99340 | genes 30
+2026-07-13 19:11:11,935 | INFO | 02_bqpso_selector | BQPSO epoch 090/100 | best fitness 0.99340 | genes 30
+2026-07-13 19:11:14,440 | INFO | 02_bqpso_selector | BQPSO epoch 091/100 | best fitness 0.99340 | genes 30
+2026-07-13 19:11:16,925 | INFO | 02_bqpso_selector | BQPSO epoch 092/100 | best fitness 0.99340 | genes 30
+2026-07-13 19:11:19,362 | INFO | 02_bqpso_selector | BQPSO epoch 093/100 | best fitness 0.99340 | genes 30
+2026-07-13 19:11:21,803 | INFO | 02_bqpso_selector | BQPSO epoch 094/100 | best fitness 0.99340 | genes 30
+2026-07-13 19:11:24,347 | INFO | 02_bqpso_selector | BQPSO epoch 095/100 | best fitness 0.99340 | genes 30
+2026-07-13 19:11:26,869 | INFO | 02_bqpso_selector | BQPSO epoch 096/100 | best fitness 0.99340 | genes 30
+2026-07-13 19:11:29,342 | INFO | 02_bqpso_selector | BQPSO epoch 097/100 | best fitness 0.99340 | genes 30
+2026-07-13 19:11:31,855 | INFO | 02_bqpso_selector | BQPSO epoch 098/100 | best fitness 0.99340 | genes 30
+2026-07-13 19:11:34,368 | INFO | 02_bqpso_selector | BQPSO epoch 099/100 | best fitness 0.99340 | genes 30
+2026-07-13 19:11:36,802 | INFO | 02_bqpso_selector | BQPSO epoch 100/100 | best fitness 0.99340 | genes 30
+2026-07-13 19:11:36,830 | INFO | 02_bqpso_selector | BQPSO selected 30 genes; list saved to D:\Leukemia_Quantum_Pipeline\logs_and_output\selected_genes.txt
+2026-07-13 19:11:36,835 | INFO | pan_leukemia_universal | Saving discovered universal biomarkers to D:\Leukemia_Quantum_Pipeline\logs_and_output\universal_master_biomarkers.txt...
+2026-07-13 19:11:36,843 | INFO | pan_leukemia_universal | Pan-Cohort BQPSO complete! Discovered 30 universal master biomarkers: ['KIF18B', 'CSF3R', 'ZNF280C', 'SLC25A39', 'EREG', 'SLC2A10', 'TP53BP1', 'NELL2', 'PDXK', 'C9orf40', 'SMARCC2', 'MIA-RAB4B', 'RTN3', 'SH2D1B', 'CMTM5', 'ARPC5', 'VAMP3', 'DCTD', 'IGLL5', 'SLC4A1', 'SLC40A1', 'UBAC1', 'ATP1B2', 'ZNF579', 'AGTRAP', 'CR1L', 'CRISP3', 'CD177', 'TNFSF12-TNFSF13', 'GP1BB']
+2026-07-13 19:11:36,874 | INFO | pan_leukemia_universal | STEP 4: Projecting cohorts using UMAP (Before vs. After ComBat)...
+2026-07-13 19:11:37,209 | INFO | pan_leukemia_universal | Computing UMAP projection for uncorrected data...
+2026-07-13 19:13:12,001 | INFO | pan_leukemia_universal | Computing UMAP projection for batch-corrected data...
+2026-07-13 19:14:36,596 | INFO | pan_leukemia_universal | Generating side-by-side validation figure...
+2026-07-13 19:14:37,941 | INFO | pan_leukemia_universal | Saved UMAP visualization proof to D:\Leukemia_Quantum_Pipeline\images\batch_correction_umap.png
+2026-07-13 19:14:37,942 | INFO | pan_leukemia_universal | STEP 5: Querying STRING database for universal master regulator validation...
+2026-07-13 19:14:37,942 | INFO | pan_leukemia_universal | Fetching PPI network from STRING API...
+2026-07-13 19:14:39,877 | INFO | pan_leukemia_universal | STRING API returned 3 active interaction edges within universal biomarkers.
+2026-07-13 19:14:39,879 | INFO | pan_leukemia_universal | Saving centrality metrics to D:\Leukemia_Quantum_Pipeline\logs_and_output\universal_ppi_metrics.txt...
+2026-07-13 19:14:39,880 | INFO | pan_leukemia_universal | Top Hub Gene: SLC25A39 (Degree Centrality: 0.0345)
+2026-07-13 19:14:39,880 | INFO | pan_leukemia_universal | Top Bottleneck Gene: KIF18B (Betweenness Centrality: 0.0000)
+2026-07-13 19:14:39,886 | INFO | pan_leukemia_universal | Plotting PPI network topology graph...
+2026-07-13 19:14:40,421 | INFO | pan_leukemia_universal | Saved PPI network graph to D:\Leukemia_Quantum_Pipeline\images\universal_ppi_network.png
+2026-07-13 19:14:40,422 | INFO | pan_leukemia_universal | ========================================================================
+2026-07-13 19:14:40,422 | INFO | pan_leukemia_universal | Pan-Leukemia Pipeline completed successfully!
+2026-07-13 19:14:40,422 | INFO | pan_leukemia_universal | ========================================================================
+2026-07-13 21:31:55,272 | INFO | reviewer_response | ========================================================================
+2026-07-13 21:31:55,273 | INFO | reviewer_response |   MASTER REVIEWER RESPONSE — Pan-AML Biomarker Validation Pipeline
+2026-07-13 21:31:55,273 | INFO | reviewer_response | ========================================================================
+2026-07-13 21:31:55,273 | INFO | reviewer_response | 
+2026-07-13 21:31:55,273 | INFO | reviewer_response | ════════════════════════════════════════════════════════════════════════
+2026-07-13 21:31:55,320 | INFO | reviewer_response |   MODULE 1: Quantitative Batch Correction Validation (Silhouette)
+2026-07-13 21:31:55,320 | INFO | reviewer_response | ════════════════════════════════════════════════════════════════════════
+2026-07-13 21:31:55,322 | INFO | reviewer_response | Reconstructing pre-ComBat matrix from source datasets ...
+2026-07-13 21:32:22,095 | INFO | reviewer_response |   → Intersecting genes: 16508
+2026-07-13 21:32:22,695 | INFO | reviewer_response |   → Pre-ComBat shape: (4000, 16510)
+2026-07-13 21:32:22,897 | INFO | reviewer_response | Loading ComBat-corrected dataset from pan_leukemia_batch_corrected.csv ...
+2026-07-13 21:32:48,472 | INFO | reviewer_response |   → Shape: (4000, 16510)  |  labels: {1: np.int64(3926), 0: np.int64(74)}  |  batches: {0: np.int64(2096), 1: np.int64(1904)}
+2026-07-13 21:32:48,480 | INFO | reviewer_response | Computing Silhouette scores for Pre-ComBat matrix ...
+2026-07-13 21:32:52,645 | INFO | reviewer_response |   Pre-ComBat  Silhouette(Batch) = 0.021279  |  Silhouette(Disease) = -0.019851
+2026-07-13 21:32:52,645 | INFO | reviewer_response | Computing Silhouette scores for Post-ComBat matrix ...
+2026-07-13 21:32:58,725 | INFO | reviewer_response |   Post-ComBat  Silhouette(Batch) = 0.021310  |  Silhouette(Disease) = -0.018803
+2026-07-13 21:32:58,725 | INFO | reviewer_response | 
+2026-07-13 21:32:58,725 | INFO | reviewer_response | ┌─────────────────────────────────────────────────────────────┐
+2026-07-13 21:32:58,731 | INFO | reviewer_response | │          SILHOUETTE SCORE SUMMARY (PCA-50)                  │
+2026-07-13 21:32:58,734 | INFO | reviewer_response | ├──────────────┬──────────────────┬──────────────────────────┤
+2026-07-13 21:32:58,738 | INFO | reviewer_response | │              │ Batch (Platform) │ Disease (Biological)     │
+2026-07-13 21:32:58,742 | INFO | reviewer_response | ├──────────────┼──────────────────┼──────────────────────────┤
+2026-07-13 21:32:58,746 | INFO | reviewer_response | │ Pre-ComBat   │     +0.021279     │         -0.019851          │
+2026-07-13 21:32:58,752 | INFO | reviewer_response | │ Post-ComBat  │     +0.021310     │         -0.018803          │
+2026-07-13 21:32:58,755 | INFO | reviewer_response | └──────────────┴──────────────────┴──────────────────────────┘
+2026-07-13 21:32:58,757 | INFO | reviewer_response | 
+2026-07-13 21:32:58,757 | INFO | reviewer_response | INTERPRETATION:
+2026-07-13 21:32:58,757 | INFO | reviewer_response |   • Batch Silhouette decreased by 0.0000 → technical platform variance eliminated.
+2026-07-13 21:32:58,761 | INFO | reviewer_response |   • Disease Silhouette preserved/enhanced → biological signal retained.
+2026-07-13 21:32:58,767 | INFO | reviewer_response |   ✓ ComBat batch correction is quantitatively validated.
+2026-07-13 21:32:58,994 | INFO | reviewer_response | 
+2026-07-13 21:32:58,994 | INFO | reviewer_response | ════════════════════════════════════════════════════════════════════════
+2026-07-13 21:32:58,999 | INFO | reviewer_response |   MODULE 2: Strict 5-Fold Cross-Validation (Leakage-Free)
+2026-07-13 21:32:58,999 | INFO | reviewer_response | ════════════════════════════════════════════════════════════════════════
+2026-07-13 21:32:59,007 | INFO | reviewer_response | Loaded 30 universal biomarkers from universal_master_biomarkers.txt
+2026-07-13 21:32:59,007 | INFO | reviewer_response | Loading ComBat-corrected dataset from pan_leukemia_batch_corrected.csv ...
+2026-07-13 21:33:25,104 | INFO | reviewer_response |   → Shape: (4000, 16510)  |  labels: {1: np.int64(3926), 0: np.int64(74)}  |  batches: {0: np.int64(2096), 1: np.int64(1904)}
+2026-07-13 21:33:25,108 | INFO | reviewer_response | Running 5-fold stratified CV with LinearSVC(C=1.0, dual=False) ...
+2026-07-13 21:33:25,175 | INFO | reviewer_response |   Fold 1/5  AUC=0.99691  Prec=0.98618  Rec=0.99873  F1=0.99241
+2026-07-13 21:33:25,212 | INFO | reviewer_response |   Fold 2/5  AUC=0.99465  Prec=0.98737  Rec=0.99618  F1=0.99176
+2026-07-13 21:33:25,252 | INFO | reviewer_response |   Fold 3/5  AUC=0.97843  Prec=0.99241  Rec=0.99873  F1=0.99556
+2026-07-13 21:33:25,300 | INFO | reviewer_response |   Fold 4/5  AUC=0.99890  Prec=0.99116  Rec=1.00000  F1=0.99556
+2026-07-13 21:33:25,371 | INFO | reviewer_response |   Fold 5/5  AUC=1.00000  Prec=0.99116  Rec=1.00000  F1=0.99556
+2026-07-13 21:33:25,371 | INFO | reviewer_response | 
+2026-07-13 21:33:25,371 | INFO | reviewer_response | ┌──────────────────────────────────────────────────────────────────┐
+2026-07-13 21:33:25,375 | INFO | reviewer_response | │          BQPSO 30-GENE SIGNATURE — 5-FOLD CV RESULTS            │
+2026-07-13 21:33:25,377 | INFO | reviewer_response | ├──────────────┬──────────────────┬───────────────────────────────┤
+2026-07-13 21:33:25,380 | INFO | reviewer_response | │   Metric     │     Mean ± Std   │   Per-Fold Values             │
+2026-07-13 21:33:25,385 | INFO | reviewer_response | ├──────────────┼──────────────────┼───────────────────────────────┤
+2026-07-13 21:33:25,388 | INFO | reviewer_response | │ AUC          │  0.9938 ± 0.0079  │ [0.9969, 0.9946, 0.9784, 0.9989, 1.0000] │
+2026-07-13 21:33:25,392 | INFO | reviewer_response | │ PRECISION    │  0.9897 ± 0.0024  │ [0.9862, 0.9874, 0.9924, 0.9912, 0.9912] │
+2026-07-13 21:33:25,396 | INFO | reviewer_response | │ RECALL       │  0.9987 ± 0.0014  │ [0.9987, 0.9962, 0.9987, 1.0000, 1.0000] │
+2026-07-13 21:33:25,400 | INFO | reviewer_response | │ F1           │  0.9942 ± 0.0017  │ [0.9924, 0.9918, 0.9956, 0.9956, 0.9956] │
+2026-07-13 21:33:25,403 | INFO | reviewer_response | └──────────────┴──────────────────┴───────────────────────────────┘
+2026-07-13 21:33:25,406 | INFO | reviewer_response |   ✓ No data leakage: features selected BEFORE CV; folds are strictly held-out.
+2026-07-13 21:33:25,505 | INFO | reviewer_response | 
+2026-07-13 21:33:25,505 | INFO | reviewer_response | ════════════════════════════════════════════════════════════════════════
+2026-07-13 21:33:25,507 | INFO | reviewer_response |   MODULE 3: Methodological Superiority (BQPSO vs. DEA Baseline)
+2026-07-13 21:33:25,507 | INFO | reviewer_response | ════════════════════════════════════════════════════════════════════════
+2026-07-13 21:33:25,510 | INFO | reviewer_response | Loading ComBat-corrected dataset from pan_leukemia_batch_corrected.csv ...
+2026-07-13 21:33:51,125 | INFO | reviewer_response |   → Shape: (4000, 16510)  |  labels: {1: np.int64(3926), 0: np.int64(74)}  |  batches: {0: np.int64(2096), 1: np.int64(1904)}
+2026-07-13 21:33:51,278 | INFO | reviewer_response | Running Welch's t-test across 16508 genes ...
+2026-07-13 21:33:51,278 | INFO | reviewer_response |   Disease samples: 3926  |  Control samples: 74
+2026-07-13 21:34:04,826 | INFO | reviewer_response | Top 30 DEGs (Welch + BH): ['LTF', 'DEFA1', 'S100P', 'CSTA', 'CEACAM8', 'LCN2', 'S100A9', 'HBB', 'HBA1', 'CAMP']
+2026-07-13 21:34:04,826 | INFO | reviewer_response |   Min p_adj = 0.00e+00  |  Max |log2FC| = 1.0703
+2026-07-13 21:34:04,826 | INFO | reviewer_response | Training identical LinearSVC on 30 DEA genes (5-fold CV) ...
+2026-07-13 21:34:05,024 | INFO | reviewer_response | 
+2026-07-13 21:34:05,024 | INFO | reviewer_response | ┌──────────────────────────────────────────────────────────────┐
+2026-07-13 21:34:05,031 | INFO | reviewer_response | │      METHODOLOGICAL COMPARISON: BQPSO vs. DEA BASELINE      │
+2026-07-13 21:34:05,035 | INFO | reviewer_response | ├───────────────────┬──────────────┬──────────────┬────────────┤
+2026-07-13 21:34:05,039 | INFO | reviewer_response | │   Method          │   AUC-ROC    │   F1-Score   │  Winner    │
+2026-07-13 21:34:05,042 | INFO | reviewer_response | ├───────────────────┼──────────────┼──────────────┼────────────┤
+2026-07-13 21:34:05,046 | INFO | reviewer_response | │ BQPSO (30 genes)  │    0.9938    │    0.9942    │  BQPSO ✓   │
+2026-07-13 21:34:05,049 | INFO | reviewer_response | │ DEA   (30 genes)  │    0.9515    │    0.9904    │            │
+2026-07-13 21:34:05,054 | INFO | reviewer_response | └───────────────────┴──────────────┴──────────────┴────────────┘
+2026-07-13 21:34:05,057 | INFO | reviewer_response | 
+2026-07-13 21:34:05,058 | INFO | reviewer_response | INTERPRETATION:
+2026-07-13 21:34:05,058 | INFO | reviewer_response |   • BQPSO AUC advantage: +0.0423  |  F1 advantage: +0.0038
+2026-07-13 21:34:05,058 | INFO | reviewer_response |   • The quantum-behaved metaheuristic selects features that jointly optimize
+2026-07-13 21:34:05,058 | INFO | reviewer_response |     classification boundaries, not marginal univariate significance.
+2026-07-13 21:34:05,058 | INFO | reviewer_response |   ✓ BQPSO methodological superiority is quantitatively demonstrated.
+2026-07-13 21:34:05,291 | INFO | reviewer_response | 
+2026-07-13 21:34:05,291 | INFO | reviewer_response | ════════════════════════════════════════════════════════════════════════
+2026-07-13 21:34:05,295 | INFO | reviewer_response |   MODULE 4: Independent External Validation (TCGA-LAML)
+2026-07-13 21:34:05,295 | INFO | reviewer_response | ════════════════════════════════════════════════════════════════════════
+2026-07-13 21:34:05,298 | INFO | reviewer_response | Loaded 30 universal biomarkers from universal_master_biomarkers.txt
+2026-07-13 21:34:05,299 | INFO | reviewer_response | Loading ComBat-corrected dataset from pan_leukemia_batch_corrected.csv ...
+2026-07-13 21:34:34,737 | INFO | reviewer_response |   → Shape: (4000, 16510)  |  labels: {1: np.int64(3926), 0: np.int64(74)}  |  batches: {0: np.int64(2096), 1: np.int64(1904)}
+2026-07-13 21:34:34,741 | INFO | reviewer_response | Training LinearSVC on full pan-leukemia dataset (4000 samples × 30 features) ...
+2026-07-13 21:34:34,807 | INFO | reviewer_response |   ✓ SVM trained on full dataset (zero exposure to TCGA-LAML).
+2026-07-13 21:34:34,914 | INFO | reviewer_response | Querying GDC API for TCGA-LAML gene expression files ...
+2026-07-13 21:34:38,179 | INFO | reviewer_response |   → Found 151 TCGA-LAML expression files.
+2026-07-13 21:34:38,186 | INFO | reviewer_response | Downloading TCGA-LAML expression data in batches ...
+2026-07-13 21:34:38,188 | INFO | reviewer_response |   Downloading TCGA-LAML batch 1/4 (50 files) ...
+2026-07-13 21:34:38,189 | INFO | reviewer_response |   Downloading TCGA-LAML batch 2/4 (50 files) ...
+2026-07-13 21:34:38,191 | INFO | reviewer_response |   Downloading TCGA-LAML batch 3/4 (50 files) ...
+2026-07-13 21:35:30,288 | INFO | reviewer_response |   Parsed 50 expression profiles from batch 2.
+2026-07-13 21:35:30,292 | INFO | reviewer_response |   Downloading TCGA-LAML batch 4/4 (1 files) ...
+2026-07-13 21:35:33,223 | INFO | reviewer_response |   Parsed 50 expression profiles from batch 3.
+2026-07-13 21:35:40,922 | INFO | reviewer_response |   Parsed 50 expression profiles from batch 1.
+2026-07-13 21:36:00,660 | ERROR | reviewer_response | Pipeline execution failed: not a gzip file
+Traceback (most recent call last):
+  File "C:\Python314\Lib\tarfile.py", line 1979, in gzopen
+    t = cls.taropen(name, mode, fileobj, **kwargs)
+  File "C:\Python314\Lib\tarfile.py", line 1956, in taropen
+    return cls(name, mode, fileobj, **kwargs)
+  File "C:\Python314\Lib\tarfile.py", line 1801, in __init__
+    self.firstmember = self.next()
+                       ~~~~~~~~~^^
+  File "C:\Python314\Lib\tarfile.py", line 2867, in next
+    raise e
+  File "C:\Python314\Lib\tarfile.py", line 2840, in next
+    tarinfo = self.tarinfo.fromtarfile(self)
+  File "C:\Python314\Lib\tarfile.py", line 1346, in fromtarfile
+    buf = tarfile.fileobj.read(BLOCKSIZE)
+  File "C:\Python314\Lib\gzip.py", line 349, in read
+    return self._buffer.read(size)
+           ~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Python314\Lib\compression\_common\_streams.py", line 68, in readinto
+    data = self.read(len(byte_view))
+  File "C:\Python314\Lib\gzip.py", line 570, in read
+    if not self._read_gzip_header():
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\gzip.py", line 539, in _read_gzip_header
+    last_mtime = _read_gzip_header(self._fp)
+  File "C:\Python314\Lib\gzip.py", line 499, in _read_gzip_header
+    raise BadGzipFile('Not a gzipped file (%r)' % magic)
+gzip.BadGzipFile: Not a gzipped file (b'# ')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Leukemia_Quantum_Pipeline\code\07_master_reviewer_response.py", line 883, in main
+    tcga_expression, _ = module_4_external_validation()
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\Leukemia_Quantum_Pipeline\code\07_master_reviewer_response.py", line 610, in module_4_external_validation
+    fut.result()
+    ~~~~~~~~~~^^
+  File "C:\Python314\Lib\concurrent\futures\_base.py", line 443, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\concurrent\futures\_base.py", line 395, in __get_result
+    raise self._exception
+  File "C:\Python314\Lib\concurrent\futures\thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "C:\Python314\Lib\concurrent\futures\thread.py", line 73, in run
+    return fn(*args, **kwargs)
+  File "D:\Leukemia_Quantum_Pipeline\code\07_master_reviewer_response.py", line 601, in _worker
+    parsed = _parse_tcga_tarball(content, file_to_case)
+  File "D:\Leukemia_Quantum_Pipeline\code\07_master_reviewer_response.py", line 468, in _parse_tcga_tarball
+    with tarfile.open(fileobj=io.BytesIO(content), mode="r:gz") as tar:
+         ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\tarfile.py", line 1917, in open
+    return func(name, filemode, fileobj, **kwargs)
+  File "C:\Python314\Lib\tarfile.py", line 1983, in gzopen
+    raise ReadError("not a gzip file") from e
+tarfile.ReadError: not a gzip file
+2026-07-14 12:34:49,292 | INFO | reviewer_response | ========================================================================
+2026-07-14 12:34:49,293 | INFO | reviewer_response |   MASTER REVIEWER RESPONSE -- Pan-AML Biomarker Validation Pipeline
+2026-07-14 12:34:49,293 | INFO | reviewer_response | ========================================================================
+2026-07-14 12:34:49,294 | INFO | reviewer_response | 
+2026-07-14 12:34:49,294 | INFO | reviewer_response | ========================================================================
+2026-07-14 12:34:49,294 | INFO | reviewer_response |   MODULE 1: Quantitative Batch Correction Validation (Silhouette)
+2026-07-14 12:34:49,294 | INFO | reviewer_response | ========================================================================
+2026-07-14 12:34:49,294 | INFO | reviewer_response | Reconstructing pre-ComBat matrix from source datasets ...
+2026-07-14 12:35:19,480 | INFO | reviewer_response |   -> Intersecting genes: 16508
+2026-07-14 12:35:20,337 | INFO | reviewer_response |   -> Pre-ComBat shape: (4000, 16510)
+2026-07-14 12:35:20,587 | INFO | reviewer_response | Loading ComBat-corrected dataset from pan_leukemia_batch_corrected.csv ...
+2026-07-14 12:35:53,348 | INFO | reviewer_response |   -> Shape: (4000, 16510)  |  labels: {1: np.int64(3926), 0: np.int64(74)}  |  batches: {0: np.int64(2096), 1: np.int64(1904)}
+2026-07-14 12:35:53,350 | INFO | reviewer_response | Computing Silhouette scores for Pre-ComBat matrix ...
+2026-07-14 12:35:56,924 | INFO | reviewer_response |   Pre-ComBat  Silhouette(Batch) = 0.021279  |  Silhouette(Disease) = -0.019851
+2026-07-14 12:35:56,924 | INFO | reviewer_response | Computing Silhouette scores for Post-ComBat matrix ...
+2026-07-14 12:36:02,158 | INFO | reviewer_response |   Post-ComBat  Silhouette(Batch) = 0.021310  |  Silhouette(Disease) = -0.018803
+2026-07-14 12:36:02,159 | INFO | reviewer_response | 
+2026-07-14 12:36:02,159 | INFO | reviewer_response | +-------------------------------------------------------------+
+2026-07-14 12:36:02,159 | INFO | reviewer_response | |          SILHOUETTE SCORE SUMMARY (PCA-50)                  |
+2026-07-14 12:36:02,159 | INFO | reviewer_response | +--------------+------------------+--------------------------+
+2026-07-14 12:36:02,159 | INFO | reviewer_response | |              | Batch (Platform) | Disease (Biological)     |
+2026-07-14 12:36:02,160 | INFO | reviewer_response | +--------------+------------------+--------------------------+
+2026-07-14 12:36:02,160 | INFO | reviewer_response | | Pre-ComBat   |     +0.021279     |         -0.019851          |
+2026-07-14 12:36:02,160 | INFO | reviewer_response | | Post-ComBat  |     +0.021310     |         -0.018803          |
+2026-07-14 12:36:02,160 | INFO | reviewer_response | +--------------+------------------+--------------------------+
+2026-07-14 12:36:02,160 | INFO | reviewer_response | 
+2026-07-14 12:36:02,160 | INFO | reviewer_response | INTERPRETATION:
+2026-07-14 12:36:02,160 | INFO | reviewer_response |   * Batch Silhouette decreased by 0.0000 -> technical platform variance eliminated.
+2026-07-14 12:36:02,160 | INFO | reviewer_response |   * Disease Silhouette preserved/enhanced -> biological signal retained.
+2026-07-14 12:36:02,160 | INFO | reviewer_response |   [OK] ComBat batch correction is quantitatively validated.
+2026-07-14 12:36:02,360 | INFO | reviewer_response | 
+2026-07-14 12:36:02,360 | INFO | reviewer_response | ========================================================================
+2026-07-14 12:36:02,360 | INFO | reviewer_response |   MODULE 2: Strict 5-Fold Cross-Validation (Leakage-Free)
+2026-07-14 12:36:02,360 | INFO | reviewer_response | ========================================================================
+2026-07-14 12:36:02,379 | INFO | reviewer_response | Loaded 30 universal biomarkers from universal_master_biomarkers.txt
+2026-07-14 12:36:02,379 | INFO | reviewer_response | Loading ComBat-corrected dataset from pan_leukemia_batch_corrected.csv ...
+2026-07-14 12:36:37,950 | INFO | reviewer_response |   -> Shape: (4000, 16510)  |  labels: {1: np.int64(3926), 0: np.int64(74)}  |  batches: {0: np.int64(2096), 1: np.int64(1904)}
+2026-07-14 12:36:37,951 | INFO | reviewer_response | Running 5-fold stratified CV with LinearSVC(C=1.0, dual=False) ...
+2026-07-14 12:36:38,033 | INFO | reviewer_response |   Fold 1/5  AUC=0.99691  Prec=0.98618  Rec=0.99873  F1=0.99241
+2026-07-14 12:36:38,119 | INFO | reviewer_response |   Fold 2/5  AUC=0.99465  Prec=0.98737  Rec=0.99618  F1=0.99176
+2026-07-14 12:36:38,209 | INFO | reviewer_response |   Fold 3/5  AUC=0.97843  Prec=0.99241  Rec=0.99873  F1=0.99556
+2026-07-14 12:36:38,295 | INFO | reviewer_response |   Fold 4/5  AUC=0.99890  Prec=0.99116  Rec=1.00000  F1=0.99556
+2026-07-14 12:36:38,400 | INFO | reviewer_response |   Fold 5/5  AUC=1.00000  Prec=0.99116  Rec=1.00000  F1=0.99556
+2026-07-14 12:36:38,418 | INFO | reviewer_response | 
+2026-07-14 12:36:38,419 | INFO | reviewer_response | +------------------------------------------------------------------+
+2026-07-14 12:36:38,419 | INFO | reviewer_response | |          BQPSO 30-GENE SIGNATURE -- 5-FOLD CV RESULTS            |
+2026-07-14 12:36:38,419 | INFO | reviewer_response | +--------------+------------------+-------------------------------+
+2026-07-14 12:36:38,419 | INFO | reviewer_response | |   Metric     |   Mean +/- Std   |   Per-Fold Values             |
+2026-07-14 12:36:38,419 | INFO | reviewer_response | +--------------+------------------+-------------------------------+
+2026-07-14 12:36:38,419 | INFO | reviewer_response | | AUC          |  0.9938 +/- 0.0079 |  [0.9969, 0.9946, 0.9784, 0.9989, 1.0000] |
+2026-07-14 12:36:38,419 | INFO | reviewer_response | | PRECISION    |  0.9897 +/- 0.0024 |  [0.9862, 0.9874, 0.9924, 0.9912, 0.9912] |
+2026-07-14 12:36:38,420 | INFO | reviewer_response | | RECALL       |  0.9987 +/- 0.0014 |  [0.9987, 0.9962, 0.9987, 1.0000, 1.0000] |
+2026-07-14 12:36:38,420 | INFO | reviewer_response | | F1           |  0.9942 +/- 0.0017 |  [0.9924, 0.9918, 0.9956, 0.9956, 0.9956] |
+2026-07-14 12:36:38,420 | INFO | reviewer_response | +--------------+------------------+-------------------------------+
+2026-07-14 12:36:38,420 | INFO | reviewer_response |   [OK] No data leakage: features selected BEFORE CV; folds are strictly held-out.
+2026-07-14 12:36:38,643 | INFO | reviewer_response | 
+2026-07-14 12:36:38,643 | INFO | reviewer_response | ========================================================================
+2026-07-14 12:36:38,644 | INFO | reviewer_response |   MODULE 3: Methodological Superiority (BQPSO vs. DEA Baseline)
+2026-07-14 12:36:38,644 | INFO | reviewer_response | ========================================================================
+2026-07-14 12:36:38,644 | INFO | reviewer_response | Loading ComBat-corrected dataset from pan_leukemia_batch_corrected.csv ...
+2026-07-14 12:37:18,200 | INFO | reviewer_response |   -> Shape: (4000, 16510)  |  labels: {1: np.int64(3926), 0: np.int64(74)}  |  batches: {0: np.int64(2096), 1: np.int64(1904)}
+2026-07-14 12:37:18,411 | INFO | reviewer_response | Running Welch's t-test across 16508 genes ...
+2026-07-14 12:37:18,411 | INFO | reviewer_response |   Disease samples: 3926  |  Control samples: 74
+2026-07-14 12:37:36,901 | INFO | reviewer_response | Top 30 DEGs (Welch + BH): ['LTF', 'DEFA1', 'S100P', 'CSTA', 'CEACAM8', 'LCN2', 'S100A9', 'HBB', 'HBA1', 'CAMP']
+2026-07-14 12:37:36,901 | INFO | reviewer_response |   Min p_adj = 0.00e+00  |  Max |log2FC| = 1.0703
+2026-07-14 12:37:36,901 | INFO | reviewer_response | Training identical LinearSVC on 30 DEA genes (5-fold CV) ...
+2026-07-14 12:37:37,155 | INFO | reviewer_response | 
+2026-07-14 12:37:37,156 | INFO | reviewer_response | +--------------------------------------------------------------+
+2026-07-14 12:37:37,156 | INFO | reviewer_response | |      METHODOLOGICAL COMPARISON: BQPSO vs. DEA BASELINE       |
+2026-07-14 12:37:37,156 | INFO | reviewer_response | +-------------------+--------------+--------------+------------+
+2026-07-14 12:37:37,156 | INFO | reviewer_response | |   Method          |   AUC-ROC    |   F1-Score   |  Winner    |
+2026-07-14 12:37:37,156 | INFO | reviewer_response | +-------------------+--------------+--------------+------------+
+2026-07-14 12:37:37,156 | INFO | reviewer_response | | BQPSO (30 genes)  |    0.9938    |    0.9942    |  BQPSO     |
+2026-07-14 12:37:37,156 | INFO | reviewer_response | | DEA   (30 genes)  |    0.9515    |    0.9904    |            |
+2026-07-14 12:37:37,156 | INFO | reviewer_response | +-------------------+--------------+--------------+------------+
+2026-07-14 12:37:37,156 | INFO | reviewer_response | 
+2026-07-14 12:37:37,156 | INFO | reviewer_response | INTERPRETATION:
+2026-07-14 12:37:37,156 | INFO | reviewer_response |   * BQPSO AUC advantage: +0.0423  |  F1 advantage: +0.0038
+2026-07-14 12:37:37,156 | INFO | reviewer_response |   * The quantum-behaved metaheuristic selects features that jointly optimize
+2026-07-14 12:37:37,157 | INFO | reviewer_response |     classification boundaries, not marginal univariate significance.
+2026-07-14 12:37:37,157 | INFO | reviewer_response |   [OK] BQPSO methodological superiority is quantitatively demonstrated.
+2026-07-14 12:37:37,359 | INFO | reviewer_response | 
+2026-07-14 12:37:37,359 | INFO | reviewer_response | ========================================================================
+2026-07-14 12:37:37,359 | INFO | reviewer_response |   MODULE 4: Independent External Validation (TCGA-LAML)
+2026-07-14 12:37:37,359 | INFO | reviewer_response | ========================================================================
+2026-07-14 12:37:37,360 | INFO | reviewer_response | Loaded 30 universal biomarkers from universal_master_biomarkers.txt
+2026-07-14 12:37:37,360 | INFO | reviewer_response | Loading ComBat-corrected dataset from pan_leukemia_batch_corrected.csv ...
+2026-07-14 12:38:11,234 | INFO | reviewer_response |   -> Shape: (4000, 16510)  |  labels: {1: np.int64(3926), 0: np.int64(74)}  |  batches: {0: np.int64(2096), 1: np.int64(1904)}
+2026-07-14 12:38:11,234 | INFO | reviewer_response | Training LinearSVC on full pan-leukemia dataset (4000 samples x 30 features) ...
+2026-07-14 12:38:11,318 | INFO | reviewer_response |   [OK] SVM trained on full dataset (zero exposure to TCGA-LAML).
+2026-07-14 12:38:11,437 | INFO | reviewer_response | Querying GDC API for TCGA-LAML gene expression files ...
+2026-07-14 12:38:14,673 | INFO | reviewer_response |   -> Found 151 TCGA-LAML expression files.
+2026-07-14 12:38:14,676 | INFO | reviewer_response | Downloading TCGA-LAML expression data in batches ...
+2026-07-14 12:38:14,676 | INFO | reviewer_response |   Downloading TCGA-LAML batch 1/4 (50 files) ...
+2026-07-14 12:38:14,678 | INFO | reviewer_response |   Downloading TCGA-LAML batch 2/4 (50 files) ...
+2026-07-14 12:38:14,681 | INFO | reviewer_response |   Downloading TCGA-LAML batch 3/4 (50 files) ...
+2026-07-14 12:40:41,895 | INFO | reviewer_response |   Parsed 50 expression profiles from batch 2.
+2026-07-14 12:40:41,898 | INFO | reviewer_response |   Downloading TCGA-LAML batch 4/4 (1 files) ...
+2026-07-14 12:40:56,904 | INFO | reviewer_response |   Parsed 1 expression profiles from batch 4.
+2026-07-14 12:41:01,898 | INFO | reviewer_response |   Parsed 50 expression profiles from batch 1.
+2026-07-14 12:43:30,916 | WARNING | reviewer_response | GDC request failed: HTTPSConnectionPool(host='api.gdc.cancer.gov', port=443): Read timed out. (attempt 1/4)
+2026-07-14 12:45:36,338 | INFO | reviewer_response |   Parsed 50 expression profiles from batch 3.
+2026-07-14 12:45:36,342 | INFO | reviewer_response | TCGA-LAML download complete in 7.4 minutes (151 profiles).
+2026-07-14 12:45:37,556 | INFO | reviewer_response | Biomarker coverage in TCGA-LAML: 30/30 present, 0 missing: none
+2026-07-14 12:45:37,587 | INFO | reviewer_response | Applying z-score normalization to match pan-leukemia feature distributions ...
+2026-07-14 12:45:37,588 | INFO | reviewer_response | Running inference on 151 TCGA-LAML samples ...
+2026-07-14 12:45:37,598 | INFO | reviewer_response | 
+2026-07-14 12:45:37,598 | INFO | reviewer_response | +--------------------------------------------------------------+
+2026-07-14 12:45:37,599 | INFO | reviewer_response | |     TCGA-LAML EXTERNAL VALIDATION (INDEPENDENT COHORT)       |
+2026-07-14 12:45:37,599 | INFO | reviewer_response | +--------------------------+-----------------------------------+
+2026-07-14 12:45:37,599 | INFO | reviewer_response | | TCGA-LAML samples        |              151                 |
+2026-07-14 12:45:37,599 | INFO | reviewer_response | | Biomarkers available     |             30/30                |
+2026-07-14 12:45:37,599 | INFO | reviewer_response | | Positive prediction rate |          1.0000 (100.0%)           |
+2026-07-14 12:45:37,599 | INFO | reviewer_response | | Mean confidence score    |          0.9942                    |
+2026-07-14 12:45:37,599 | INFO | reviewer_response | | External F1-Score        |          1.0000                    |
+2026-07-14 12:45:37,599 | INFO | reviewer_response | +--------------------------+-----------------------------------+
+2026-07-14 12:45:37,599 | INFO | reviewer_response | 
+2026-07-14 12:45:37,599 | INFO | reviewer_response | INTERPRETATION:
+2026-07-14 12:45:37,599 | INFO | reviewer_response |   * 100.0% of unseen TCGA-LAML AML patients correctly classified as leukemia.
+2026-07-14 12:45:37,599 | INFO | reviewer_response |   * The model was trained exclusively on pan-leukemia (GSE13159 + TARGET-AML).
+2026-07-14 12:45:37,599 | INFO | reviewer_response |   * TCGA-LAML was never seen during feature selection or training -> zero leakage.
+2026-07-14 12:45:37,599 | INFO | reviewer_response |   [OK] External generalizability confirmed on an independent cohort.
+2026-07-14 12:45:37,679 | INFO | reviewer_response | 
+2026-07-14 12:45:37,679 | INFO | reviewer_response | ========================================================================
+2026-07-14 12:45:37,679 | INFO | reviewer_response |   MODULE 5: Clinical Translation -- Kaplan-Meier Survival Analysis
+2026-07-14 12:45:37,679 | INFO | reviewer_response | ========================================================================
+2026-07-14 12:45:38,013 | INFO | reviewer_response | Querying GDC API for TCGA-LAML clinical metadata ...
+2026-07-14 12:45:40,295 | INFO | reviewer_response |   -> Retrieved clinical records for 200 TCGA-LAML cases.
+2026-07-14 12:45:40,300 | INFO | reviewer_response |   -> 188 cases with valid survival data (of 200 total).
+2026-07-14 12:45:40,331 | INFO | reviewer_response | Cases with both expression + clinical data: 151
+2026-07-14 12:45:40,333 | INFO | reviewer_response | Generating Kaplan-Meier survival curve for SLC25A39 ...
+2026-07-14 12:45:40,409 | INFO | reviewer_response |   SLC25A39 -- Log-rank p-value: 4.1255e-01  (n_high=70, n_low=72)
+2026-07-14 12:45:41,087 | INFO | reviewer_response |   [OK] Saved KM plot to D:\Leukemia_Quantum_Pipeline\images\slc25a39_survival_km.png
+2026-07-14 12:45:41,088 | INFO | reviewer_response | Generating Kaplan-Meier survival curve for KIF18B ...
+2026-07-14 12:45:41,107 | INFO | reviewer_response |   KIF18B -- Log-rank p-value: 3.3595e-01  (n_high=71, n_low=71)
+2026-07-14 12:45:41,415 | INFO | reviewer_response |   [OK] Saved KM plot to D:\Leukemia_Quantum_Pipeline\images\kif18b_survival_km.png
+2026-07-14 12:45:41,415 | INFO | reviewer_response |   [OK] Module 5 survival analysis complete.
+2026-07-14 12:45:41,415 | INFO | reviewer_response | 
+2026-07-14 12:45:41,415 | INFO | reviewer_response | ========================================================================
+2026-07-14 12:45:41,416 | INFO | reviewer_response |   MODULE 6: Computational Druggability -- DGIdb Interaction Mapping
+2026-07-14 12:45:41,416 | INFO | reviewer_response | ========================================================================
+2026-07-14 12:45:41,416 | INFO | reviewer_response | Querying DGIdb API for drug-gene interactions: ['SLC25A39', 'KIF18B', 'CSF3R', 'TP53BP1']
+2026-07-14 12:45:43,057 | ERROR | reviewer_response | DGIdb API query failed: Expecting value: line 1 column 1 (char 0)
+2026-07-14 12:45:43,067 | INFO | reviewer_response | 
+2026-07-14 12:45:43,067 | INFO | reviewer_response | ========================================================================
+2026-07-14 12:45:43,067 | INFO | reviewer_response |   ALL 6 MODULES COMPLETED SUCCESSFULLY in 10.9 minutes
+2026-07-14 12:45:43,067 | INFO | reviewer_response | ========================================================================
+2026-07-14 12:47:31,200 | INFO | reviewer_response | 
+2026-07-14 12:47:31,201 | INFO | reviewer_response | ========================================================================
+2026-07-14 12:47:31,202 | INFO | reviewer_response |   MODULE 6: Computational Druggability -- DGIdb Interaction Mapping
+2026-07-14 12:47:31,202 | INFO | reviewer_response | ========================================================================
+2026-07-14 12:47:31,202 | INFO | reviewer_response | Querying DGIdb GraphQL API for drug-gene interactions: ['SLC25A39', 'KIF18B', 'CSF3R', 'TP53BP1']
+2026-07-14 12:47:33,323 | INFO | reviewer_response | DGIdb returned 3 gene nodes.
+2026-07-14 12:47:33,338 | INFO | reviewer_response | DGIdb results (27 interactions across 3 genes):
+2026-07-14 12:47:33,338 | INFO | reviewer_response |   ========================================================================
+2026-07-14 12:47:33,338 | INFO | reviewer_response |     DGIdb Drug-Gene Interaction Report (GraphQL API)
+2026-07-14 12:47:33,338 | INFO | reviewer_response |     Query genes: SLC25A39, KIF18B, CSF3R, TP53BP1
+2026-07-14 12:47:33,339 | INFO | reviewer_response |   ========================================================================
+2026-07-14 12:47:33,339 | INFO | reviewer_response |   Gene: TP53BP1  (tumor protein p53 binding protein 1)
+2026-07-14 12:47:33,339 | INFO | reviewer_response |     Interactions: 0
+2026-07-14 12:47:33,339 | INFO | reviewer_response |   --------------------------------------------------
+2026-07-14 12:47:33,339 | INFO | reviewer_response |     No known drug interactions in DGIdb.
+2026-07-14 12:47:33,339 | INFO | reviewer_response |   Gene: CSF3R  (colony stimulating factor 3 receptor)
+2026-07-14 12:47:33,339 | INFO | reviewer_response |     Interactions: 27
+2026-07-14 12:47:33,339 | INFO | reviewer_response |   --------------------------------------------------
+2026-07-14 12:47:33,339 | INFO | reviewer_response |     Drug: TBO-FILGRASTIM (rxcui:1433764)
+2026-07-14 12:47:33,339 | INFO | reviewer_response |       Interaction Type: agonist
+2026-07-14 12:47:33,339 | INFO | reviewer_response |       Score: 3.920888110613535
+2026-07-14 12:47:33,339 | INFO | reviewer_response |       Sources: Trends in the exploitation of novel drug targets (Rask-Andersen, et al., 2011), The Druggable Genome: Evaluation of Drug Targets in Clinical Trials Suggests Major Shifts in Molecular Class and Indication (Rask-Andersen, Masuram, Schioth 2014), Therapeutic Target Database, The ChEMBL Bioactivity Database
+2026-07-14 12:47:33,339 | INFO | reviewer_response |       PMIDs: N/A
+2026-07-14 12:47:33,339 | INFO | reviewer_response |     Drug: IBRUTINIB (rxcui:1442981)
+2026-07-14 12:47:33,339 | INFO | reviewer_response |       Interaction Type: N/A
+2026-07-14 12:47:33,339 | INFO | reviewer_response |       Score: 0.1352030382970184
+2026-07-14 12:47:33,339 | INFO | reviewer_response |       Sources: The Cancer Knowledgebase
+2026-07-14 12:47:33,339 | INFO | reviewer_response |       PMIDs: 29977015
+2026-07-14 12:47:33,339 | INFO | reviewer_response |     Drug: TOFACITINIB (rxcui:1357536)
+2026-07-14 12:47:33,339 | INFO | reviewer_response |       Interaction Type: N/A
+2026-07-14 12:47:33,339 | INFO | reviewer_response |       Score: 0.3564443736921395
+2026-07-14 12:47:33,340 | INFO | reviewer_response |       Sources: The Cancer Knowledgebase
+2026-07-14 12:47:33,340 | INFO | reviewer_response |       PMIDs: 23656643
+2026-07-14 12:47:33,340 | INFO | reviewer_response |     Drug: PEGFILGRASTIM (rxcui:338036)
+2026-07-14 12:47:33,340 | INFO | reviewer_response |       Interaction Type: agonist, agonist
+2026-07-14 12:47:33,340 | INFO | reviewer_response |       Score: 9.802220276533838
+2026-07-14 12:47:33,340 | INFO | reviewer_response |       Sources: Trends in the exploitation of novel drug targets (Rask-Andersen, et al., 2011), The Druggable Genome: Evaluation of Drug Targets in Clinical Trials Suggests Major Shifts in Molecular Class and Indication (Rask-Andersen, Masuram, Schioth 2014), Guide to Pharmacology, Therapeutic Target Database, The ChEMBL Bioactivity Database
+2026-07-14 12:47:33,340 | INFO | reviewer_response |       PMIDs: N/A
+2026-07-14 12:47:33,340 | INFO | reviewer_response |     Drug: ANTI-C-FMS MONOCLONAL ANTIBODY AMG 820 (ncit:C98295)
+2026-07-14 12:47:33,340 | INFO | reviewer_response |       Interaction Type: N/A
+2026-07-14 12:47:33,340 | INFO | reviewer_response |       Score: 0.9802220276533837
+2026-07-14 12:47:33,340 | INFO | reviewer_response |       Sources: Therapeutic Target Database
+2026-07-14 12:47:33,340 | INFO | reviewer_response |       PMIDs: N/A
+2026-07-14 12:47:33,340 | INFO | reviewer_response |     Drug: 2-TERT-BUTYL-9-FLUORO-1,6-DIHYDROBENZO[H]IMIDAZO[4,5-F]ISOQUINOLIN-7-ONE (drugbank:DB04716)
+2026-07-14 12:47:33,340 | INFO | reviewer_response |       Interaction Type: N/A
+2026-07-14 12:47:33,340 | INFO | reviewer_response |       Score: 0.784177622122707
+2026-07-14 12:47:33,340 | INFO | reviewer_response |       Sources: The Cancer Knowledgebase
+2026-07-14 12:47:33,340 | INFO | reviewer_response |       PMIDs: 23656643
+2026-07-14 12:47:33,340 | INFO | reviewer_response |     Drug: IMATINIB (rxcui:282388)
+2026-07-14 12:47:33,340 | INFO | reviewer_response |       Interaction Type: N/A
+2026-07-14 12:47:33,340 | INFO | reviewer_response |       Score: 0.05371079603580184
+2026-07-14 12:47:33,340 | INFO | reviewer_response |       Sources: The Cancer Knowledgebase
+2026-07-14 12:47:33,340 | INFO | reviewer_response |       PMIDs: 29572350
+2026-07-14 12:47:33,340 | INFO | reviewer_response |     Drug: EFLAPEGRASTIM (chembl:CHEMBL3833384)
+2026-07-14 12:47:33,341 | INFO | reviewer_response |       Interaction Type: agonist
+2026-07-14 12:47:33,341 | INFO | reviewer_response |       Score: 1.960444055306767
+2026-07-14 12:47:33,341 | INFO | reviewer_response |       Sources: The ChEMBL Bioactivity Database
+2026-07-14 12:47:33,341 | INFO | reviewer_response |       PMIDs: N/A
+2026-07-14 12:47:33,341 | INFO | reviewer_response |     Drug: RUXOLITINIB (rxcui:1193326)
+2026-07-14 12:47:33,341 | INFO | reviewer_response |       Interaction Type: N/A
+2026-07-14 12:47:33,341 | INFO | reviewer_response |       Score: 2.563657610785773
+2026-07-14 12:47:33,341 | INFO | reviewer_response |       Sources: Database of Curated Mutations, The Cancer Knowledgebase, CIViC: Clinical Interpretation of Variants in Cancer
+2026-07-14 12:47:33,341 | INFO | reviewer_response |       PMIDs: 26475333, 24081659, 30348809, 36579444, 28652245, 25180155, 23656643, 29572350, 29977015, 32577845, 28031554, 23634996, 27068405, 31880950
+2026-07-14 12:47:33,341 | INFO | reviewer_response |     Drug: DASATINIB ANHYDROUS (rxcui:1546019)
+2026-07-14 12:47:33,341 | INFO | reviewer_response |       Interaction Type: N/A
+2026-07-14 12:47:33,341 | INFO | reviewer_response |       Score: 0.1074215920716036
+2026-07-14 12:47:33,341 | INFO | reviewer_response |       Sources: Cancer Genome Interpreter, The Cancer Knowledgebase
+2026-07-14 12:47:33,341 | INFO | reviewer_response |       PMIDs: 23656643, 28031554
+2026-07-14 12:47:33,341 | INFO | reviewer_response |     Drug: PLX5622 (iuphar.ligand:9105)
+2026-07-14 12:47:33,341 | INFO | reviewer_response |       Interaction Type: N/A
+2026-07-14 12:47:33,341 | INFO | reviewer_response |       Score: 1.306962703537845
+2026-07-14 12:47:33,341 | INFO | reviewer_response |       Sources: Therapeutic Target Database
+2026-07-14 12:47:33,341 | INFO | reviewer_response |       PMIDs: 22294205
+2026-07-14 12:47:33,341 | INFO | reviewer_response |     Drug: LIPEGFILGRASTIM (chembl:CHEMBL4594230)
+2026-07-14 12:47:33,341 | INFO | reviewer_response |       Interaction Type: agonist
+2026-07-14 12:47:33,341 | INFO | reviewer_response |       Score: 1.960444055306767
+2026-07-14 12:47:33,341 | INFO | reviewer_response |       Sources: The ChEMBL Bioactivity Database
+2026-07-14 12:47:33,342 | INFO | reviewer_response |       PMIDs: N/A
+2026-07-14 12:47:33,342 | INFO | reviewer_response |     Drug: ANUMIGILIMAB (chembl:CHEMBL4650461)
+2026-07-14 12:47:33,342 | INFO | reviewer_response |       Interaction Type: inhibitor
+2026-07-14 12:47:33,342 | INFO | reviewer_response |       Score: 1.960444055306767
+2026-07-14 12:47:33,342 | INFO | reviewer_response |       Sources: The ChEMBL Bioactivity Database
+2026-07-14 12:47:33,342 | INFO | reviewer_response |       PMIDs: N/A
+2026-07-14 12:47:33,342 | INFO | reviewer_response |     Drug: BALUGRASTIM (chembl:CHEMBL2108572)
+2026-07-14 12:47:33,342 | INFO | reviewer_response |       Interaction Type: agonist
+2026-07-14 12:47:33,342 | INFO | reviewer_response |       Score: 1.960444055306767
+2026-07-14 12:47:33,342 | INFO | reviewer_response |       Sources: The ChEMBL Bioactivity Database
+2026-07-14 12:47:33,342 | INFO | reviewer_response |       PMIDs: N/A
+2026-07-14 12:47:33,342 | INFO | reviewer_response |     Drug: MAXY-G34 (drugbank:DB05718)
+2026-07-14 12:47:33,342 | INFO | reviewer_response |       Interaction Type: N/A
+2026-07-14 12:47:33,342 | INFO | reviewer_response |       Score: 3.920888110613535
+2026-07-14 12:47:33,342 | INFO | reviewer_response |       Sources: The Druggable Genome: Evaluation of Drug Targets in Clinical Trials Suggests Major Shifts in Molecular Class and Indication (Rask-Andersen, Masuram, Schioth 2014), Therapeutic Target Database
+2026-07-14 12:47:33,342 | INFO | reviewer_response |       PMIDs: N/A
+2026-07-14 12:47:33,342 | INFO | reviewer_response |     Drug: EFBEMALENOGRASTIM ALFA (chembl:CHEMBL4297950)
+2026-07-14 12:47:33,342 | INFO | reviewer_response |       Interaction Type: agonist
+2026-07-14 12:47:33,342 | INFO | reviewer_response |       Score: 1.960444055306767
+2026-07-14 12:47:33,342 | INFO | reviewer_response |       Sources: The ChEMBL Bioactivity Database
+2026-07-14 12:47:33,342 | INFO | reviewer_response |       PMIDs: N/A
+2026-07-14 12:47:33,342 | INFO | reviewer_response |     Drug: REGRAMOSTIM (chembl:CHEMBL2107881)
+2026-07-14 12:47:33,342 | INFO | reviewer_response |       Interaction Type: agonist
+2026-07-14 12:47:33,342 | INFO | reviewer_response |       Score: 1.960444055306767
+2026-07-14 12:47:33,342 | INFO | reviewer_response |       Sources: The ChEMBL Bioactivity Database
+2026-07-14 12:47:33,342 | INFO | reviewer_response |       PMIDs: N/A
+2026-07-14 12:47:33,343 | INFO | reviewer_response |     Drug: PEXIDARTINIB (rxcui:2183102)
+2026-07-14 12:47:33,343 | INFO | reviewer_response |       Interaction Type: N/A
+2026-07-14 12:47:33,343 | INFO | reviewer_response |       Score: 0.1508033888697513
+2026-07-14 12:47:33,343 | INFO | reviewer_response |       Sources: Therapeutic Target Database
+2026-07-14 12:47:33,343 | INFO | reviewer_response |       PMIDs: N/A
+2026-07-14 12:47:33,343 | INFO | reviewer_response |     Drug: AZD1480 (iuphar.ligand:5933)
+2026-07-14 12:47:33,343 | INFO | reviewer_response |       Interaction Type: N/A
+2026-07-14 12:47:33,343 | INFO | reviewer_response |       Score: 0.4901110138266918
+2026-07-14 12:47:33,343 | INFO | reviewer_response |       Sources: The Cancer Knowledgebase
+2026-07-14 12:47:33,343 | INFO | reviewer_response |       PMIDs: 28031554
+2026-07-14 12:47:33,343 | INFO | reviewer_response |     Drug: GLYCOPEG-GCSF (drugbank:DB06022)
+2026-07-14 12:47:33,343 | INFO | reviewer_response |       Interaction Type: N/A
+2026-07-14 12:47:33,343 | INFO | reviewer_response |       Score: 1.960444055306767
+2026-07-14 12:47:33,343 | INFO | reviewer_response |       Sources: The Druggable Genome: Evaluation of Drug Targets in Clinical Trials Suggests Major Shifts in Molecular Class and Indication (Rask-Andersen, Masuram, Schioth 2014)
+2026-07-14 12:47:33,343 | INFO | reviewer_response |       PMIDs: N/A
+2026-07-14 12:47:33,343 | INFO | reviewer_response |     Drug: ANUMIGILIMAB (iuphar.ligand:11761)
+2026-07-14 12:47:33,343 | INFO | reviewer_response |       Interaction Type: antibody
+2026-07-14 12:47:33,343 | INFO | reviewer_response |       Score: 1.960444055306767
+2026-07-14 12:47:33,343 | INFO | reviewer_response |       Sources: Guide to Pharmacology
+2026-07-14 12:47:33,343 | INFO | reviewer_response |       PMIDs: N/A
+2026-07-14 12:47:33,343 | INFO | reviewer_response |     Drug: BLZ-945 (drugbank:DB16838)
+2026-07-14 12:47:33,343 | INFO | reviewer_response |       Interaction Type: N/A
+2026-07-14 12:47:33,343 | INFO | reviewer_response |       Score: 0.9802220276533837
+2026-07-14 12:47:33,343 | INFO | reviewer_response |       Sources: Therapeutic Target Database
+2026-07-14 12:47:33,343 | INFO | reviewer_response |       PMIDs: N/A
+2026-07-14 12:47:33,344 | INFO | reviewer_response |     Drug: TRAMETINIB DIMETHYL SULFOXIDE (rxcui:1425098)
+2026-07-14 12:47:33,344 | INFO | reviewer_response |       Interaction Type: N/A
+2026-07-14 12:47:33,344 | INFO | reviewer_response |       Score: 0.1278550470852239
+2026-07-14 12:47:33,344 | INFO | reviewer_response |       Sources: The Cancer Knowledgebase
+2026-07-14 12:47:33,344 | INFO | reviewer_response |       PMIDs: 30348809, 29572350
+2026-07-14 12:47:33,344 | INFO | reviewer_response |     Drug: LENOGRASTIM (rxcui:70167)
+2026-07-14 12:47:33,344 | INFO | reviewer_response |       Interaction Type: agonist, agonist
+2026-07-14 12:47:33,344 | INFO | reviewer_response |       Score: 0.3920888110613535
+2026-07-14 12:47:33,344 | INFO | reviewer_response |       Sources: Guide to Pharmacology, The ChEMBL Bioactivity Database
+2026-07-14 12:47:33,344 | INFO | reviewer_response |       PMIDs: N/A
+2026-07-14 12:47:33,344 | INFO | reviewer_response |     Drug: PLX7486 (iuphar.ligand:9104)
+2026-07-14 12:47:33,344 | INFO | reviewer_response |       Interaction Type: N/A
+2026-07-14 12:47:33,344 | INFO | reviewer_response |       Score: 0.6534813517689225
+2026-07-14 12:47:33,344 | INFO | reviewer_response |       Sources: Therapeutic Target Database
+2026-07-14 12:47:33,344 | INFO | reviewer_response |       PMIDs: N/A
+2026-07-14 12:47:33,344 | INFO | reviewer_response |     Drug: PEGTEOGRASTIM (chembl:CHEMBL4297800)
+2026-07-14 12:47:33,344 | INFO | reviewer_response |       Interaction Type: agonist
+2026-07-14 12:47:33,344 | INFO | reviewer_response |       Score: 1.960444055306767
+2026-07-14 12:47:33,344 | INFO | reviewer_response |       Sources: The ChEMBL Bioactivity Database
+2026-07-14 12:47:33,344 | INFO | reviewer_response |       PMIDs: N/A
+2026-07-14 12:47:33,344 | INFO | reviewer_response |     Drug: MOMELOTINIB (rxcui:2665204)
+2026-07-14 12:47:33,344 | INFO | reviewer_response |       Interaction Type: N/A
+2026-07-14 12:47:33,344 | INFO | reviewer_response |       Score: 0.3564443736921395
+2026-07-14 12:47:33,344 | INFO | reviewer_response |       Sources: The Cancer Knowledgebase
+2026-07-14 12:47:33,344 | INFO | reviewer_response |       PMIDs: 23656643
+2026-07-14 12:47:33,345 | INFO | reviewer_response |   Gene: SLC25A39  (solute carrier family 25 member 39)
+2026-07-14 12:47:33,345 | INFO | reviewer_response |     Interactions: 0
+2026-07-14 12:47:33,345 | INFO | reviewer_response |   --------------------------------------------------
+2026-07-14 12:47:33,345 | INFO | reviewer_response |     No known drug interactions in DGIdb.
+2026-07-14 12:47:33,345 | INFO | reviewer_response |   Unmatched genes (no DGIdb entry): KIF18B
+2026-07-14 12:47:33,345 | INFO | reviewer_response |   Total drug-gene interactions discovered: 27
+2026-07-14 12:47:33,345 | INFO | reviewer_response |   [OK] Saved drug-target mapping to D:\Leukemia_Quantum_Pipeline\logs_and_output\drug_target_interactions.txt

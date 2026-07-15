@@ -1,0 +1,27 @@
+========================================================================
+  Class Balance Rescue: Pan-AML across demographics Rebuttal
+========================================================================
+
+Remediated 30-Gene Signature (TNFSF12-TNFSF13 blacklisted)
+External validation cohort: 151 TCGA-LAML AML cases vs. 50 GSE116256 healthy controls
+Methods: Robust Scaling, Class-Weighted SVM, Youden's J Calibration
+
+Performance Metrics:
+--------------------
+AUC-ROC:             0.8270
+Precision:           0.8824
+Sensitivity:         0.9934
+Specificity:         0.6000
+F1-Score:            0.9346
+
+Classification Count:
+---------------------
+AML Correct:         150 / 151
+Healthy Correct:     30 / 50
+False Positives:     20
+False Negatives:     1
+
+Calibration Parameters:
+-----------------------
+Optimal Threshold:   -0.260708
+SVM Intercept (b):   5.5551

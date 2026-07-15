@@ -1,0 +1,3 @@
+best_fitness=0.99081250
+selected_gene_count=30
+fitness=0.9*five_fold_linear_SVM_accuracy + 0.1*(1-selected/available_candidates)

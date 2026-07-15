@@ -1,0 +1,22 @@
+========================================================================
+  Baseline and CI Metrics: Pan-AML across demographics Rebuttal
+========================================================================
+
+Remediated 30-Gene Signature (TNFSF12-TNFSF13 blacklisted)
+External validation cohort: 151 TCGA-LAML AML cases vs. 50 GSE116256 healthy controls
+
+1. Donor-Level Bootstrap Specificity Confidence Interval:
+----------------------------------------------------------
+Bootstrap iterations:   10,000
+Resampled unit:         Donor level (BM1-BM5)
+Observed Specificity:   0.6000
+95% Confidence Interval: [0.3000, 0.9000]
+
+2. Random Baseline Comparison & Contribution Margin:
+----------------------------------------------------
+Calibrated Threshold:   -0.260708
+Random Baseline Spec:   0.0307
+Our Specificity:        0.6000
+Contribution Margin:    0.5693
+
+Status:                 COMPLETED

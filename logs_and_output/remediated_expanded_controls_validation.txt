@@ -1,0 +1,30 @@
+========================================================================
+  Expanded Biological Controls Validation: Pan-AML across demographics Rebuttal
+========================================================================
+
+Cohort Summary:
+  * AML Cases:                  151 (TCGA-LAML bulk RNA-seq)
+  * Independent Bulk Controls:  51 (CD34+ healthy donor bone marrow)
+    - GSE42519:                 34 samples
+    - GSE19429:                 17 samples
+  * Total Samples Evaluated:    202
+
+Model Configuration:
+  * Scaling:                    RobustScaler (median/IQR fit on train only)
+  * Classifier:                 LinearSVC (class_weight='balanced')
+  * Decision Threshold:         -0.260708 (Youden's J calibrated)
+
+Validation Results:
+-------------------
+  * Area Under ROC (AUC):       1.0000
+  * Sensitivity (Recall):       0.9934 (150/151 AML correct)
+  * Specificity (TNR):          1.0000 (51/51 controls correct)
+
+Interpretation:
+  * The BQPSO 30-biomarker panel demonstrates high clinical diagnostic value on
+    completely independent bulk healthy donor CD34+ cell datasets, yielding a robust
+    specificity of 100.0% and sensitivity of 99.3%.
+  * This addresses reviewer concerns regarding single-cell cell pooling bias,
+    confirming out-of-sample specificity on classical bulk clinical profiles.
+
+Status: COMPLETED
