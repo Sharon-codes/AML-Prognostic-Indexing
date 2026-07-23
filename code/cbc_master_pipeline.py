@@ -417,6 +417,7 @@ def _single_bqpso_run(seed: int, n_particles: int = 50, n_epochs: int = 50) -> L
                     gbest_pos = positions[i].copy()
 
     # Final best mask
+    final_mask = _get_repaired_mask(gbest_pos)
     final_indices = np.where(final_mask)[0].tolist()
     LOGGER.info("BQPSO Run completed | Seed: %3d/200 | Selected %2d features | Best Fitness: %.4f", seed, len(final_indices), gbest_fit)
     return final_indices
