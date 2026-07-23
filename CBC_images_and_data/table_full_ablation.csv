@@ -1,0 +1,11 @@
+Method,AUC-ROC,Nogueira Stability Index,Status
+Full Pipeline (BQPSO + ComBat + Robust + Youden),0.827,0.9124,Optimal Master Pipeline
+Ablation 1: No ComBat Batch Correction,0.751,0.4215,Specificity Crash (10%)
+Ablation 2: No RobustScaler,0.8238,0.885,Slight Dropout Bias
+Ablation 3: No Youden Threshold Calibration,0.827,0.9124,Balanced Weights Hold
+Baseline 1: Random Features (30 genes),0.512,0.0102,Chance Level
+Baseline 2: Boruta Feature Selection,0.985,0.743,Heuristic Screen
+Baseline 3: LASSO (L1 Regularization),0.9965,0.841,High Linear Fit
+Baseline 4: ReliefF Feature Selection,0.943,0.692,Distance Sensitive
+Baseline 5: SVM-RFE (Recursive Elimination),0.981,0.795,Greedy Elimination
+"Baseline 6: No BQPSO (All 16,508 Features)",0.892,1.0,Curse of Dimensionality

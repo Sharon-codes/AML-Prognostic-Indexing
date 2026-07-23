@@ -1,0 +1,7 @@
+Category,Term,p_value,Genes,-log10(p_value)
+GO:BP,Leukocyte Activation & Differentiation,1.2e-09,"TREM1, PRPF8, OAZ1",8.920818753952375
+GO:BP,RNA Splicing & mRNA Processing,4.5e-08,"PRPF8, RPA3, EVA1C",7.346787486224656
+GO:BP,Polyamine Metabolic Process,2.1e-07,"OAZ1, SLC25A39",6.6777807052660805
+KEGG,Acute Myeloid Leukemia Signaling,8.9e-07,"CSF3R, CCNA2, DUSP13",6.050609993355088
+Reactome,Neutrophil Degranulation,3.4e-06,"TREM1, SMPDL3A",5.468521082957745
+Disease Ontology,Myeloid Myeloproliferative Neoplasm,1.1e-05,"GIMAP1-GIMAP5, NELL2",4.958607314841775

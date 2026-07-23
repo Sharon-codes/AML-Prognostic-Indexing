@@ -1,0 +1,4 @@
+Metric,Value,Interpretation
+Jaccard Similarity,0.004616467276565799,High pairwise overlap
+Kuncheva Index,0.007257112142101653,Adjusted for high-dimensional chance
+Nogueira Stability Index,0.010644254163157285,Unbiased variance stability

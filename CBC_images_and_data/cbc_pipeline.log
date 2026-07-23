@@ -1,0 +1,74 @@
+2026-07-23 15:03:34,524 | INFO | CBC_Pipeline | 
+2026-07-23 15:03:34,524 | INFO | CBC_Pipeline | ==============================================================================
+2026-07-23 15:03:34,524 | INFO | CBC_Pipeline |   STARTING CBC MASTER PIPELINE EXECUTION
+2026-07-23 15:03:34,525 | INFO | CBC_Pipeline | ==============================================================================
+2026-07-23 15:03:34,525 | INFO | CBC_Pipeline | Output directory set to: D:\Leukemia_Quantum_Pipeline\CBC_images_and_data
+2026-07-23 15:03:34,530 | INFO | CBC_Pipeline | Loaded 30 remediated master biomarkers.
+2026-07-23 15:03:34,530 | INFO | CBC_Pipeline | 
+2026-07-23 15:03:34,530 | INFO | CBC_Pipeline | ==============================================================================
+2026-07-23 15:03:34,530 | INFO | CBC_Pipeline |   PHASE 1: Data Quality & Batch Correction Analysis
+2026-07-23 15:03:34,530 | INFO | CBC_Pipeline | ==============================================================================
+2026-07-23 15:03:34,590 | INFO | CBC_Pipeline |   [OK] Found existing Phase 1 figures. Loading ComBat dataset...
+2026-07-23 15:04:04,348 | INFO | CBC_Pipeline | 
+2026-07-23 15:04:04,349 | INFO | CBC_Pipeline | ==============================================================================
+2026-07-23 15:04:04,349 | INFO | CBC_Pipeline |   PHASE 2: Feature Stability (200 Parallel BQPSO Runs)
+2026-07-23 15:04:04,349 | INFO | CBC_Pipeline | ==============================================================================
+2026-07-23 15:04:04,349 | INFO | CBC_Pipeline |   [OK] Found existing Phase 2 stability outputs (table_feature_stability.csv). Skipping BQPSO re-run.
+2026-07-23 15:04:04,349 | INFO | CBC_Pipeline | 
+2026-07-23 15:04:04,349 | INFO | CBC_Pipeline | ==============================================================================
+2026-07-23 15:04:04,349 | INFO | CBC_Pipeline |   PHASE 3: Biological Pathway Validation & Network Analysis
+2026-07-23 15:04:04,349 | INFO | CBC_Pipeline | ==============================================================================
+2026-07-23 15:04:04,349 | INFO | CBC_Pipeline |   [OK] Found existing Phase 3 biological validation outputs (table_pathway_enrichment.csv). Skipping.
+2026-07-23 15:04:04,349 | INFO | CBC_Pipeline | 
+2026-07-23 15:04:04,350 | INFO | CBC_Pipeline | ==============================================================================
+2026-07-23 15:04:04,350 | INFO | CBC_Pipeline |   PHASE 4: Model Robustness & Statistical Testing
+2026-07-23 15:04:04,350 | INFO | CBC_Pipeline | ==============================================================================
+2026-07-23 15:04:04,350 | INFO | CBC_Pipeline |   [OK] Found existing Phase 4 robustness & testing outputs (table_robustness_metrics.csv). Skipping.
+2026-07-23 15:04:04,350 | INFO | CBC_Pipeline | 
+2026-07-23 15:04:04,350 | INFO | CBC_Pipeline | ==============================================================================
+2026-07-23 15:04:04,350 | INFO | CBC_Pipeline |   PHASE 5: Cross-Platform Transfer Experiment
+2026-07-23 15:04:04,350 | INFO | CBC_Pipeline | ==============================================================================
+2026-07-23 15:04:37,830 | INFO | CBC_Pipeline | Domain Distance Metrics -> MMD: 0.0174 | CORAL Loss: 0.0193
+2026-07-23 15:04:37,897 | INFO | CBC_Pipeline | Cross-Platform AUCs -> Microarray -> RNA-seq: 0.4586 | RNA-seq -> Microarray: 0.2010
+2026-07-23 15:04:37,898 | INFO | CBC_Pipeline | Generating fig9_cross_platform_transfer_roc.png...
+2026-07-23 15:04:38,339 | INFO | CBC_Pipeline |   [OK] Saved fig9_cross_platform_transfer_roc.png
+2026-07-23 15:04:38,339 | INFO | CBC_Pipeline | Generating fig10_cross_platform_confusion_matrices.png...
+2026-07-23 15:04:38,553 | INFO | CBC_Pipeline |   [OK] Saved fig10_cross_platform_confusion_matrices.png
+2026-07-23 15:04:38,644 | INFO | CBC_Pipeline | 
+2026-07-23 15:04:38,645 | INFO | CBC_Pipeline | ==============================================================================
+2026-07-23 15:04:38,645 | INFO | CBC_Pipeline |   PHASE 6: Interpretability (Deep SHAP Workflow)
+2026-07-23 15:04:38,645 | INFO | CBC_Pipeline | ==============================================================================
+2026-07-23 15:04:38,684 | INFO | CBC_Pipeline | Generating fig11_shap_beeswarm_summary.png...
+2026-07-23 15:04:41,465 | INFO | CBC_Pipeline |   [OK] Saved fig11_shap_beeswarm_summary.png
+2026-07-23 15:04:41,465 | INFO | CBC_Pipeline | Generating fig12_shap_dependence_plots.png...
+2026-07-23 15:04:43,109 | INFO | CBC_Pipeline |   [OK] Saved fig12_shap_dependence_plots.png
+2026-07-23 15:04:43,109 | INFO | CBC_Pipeline | Generating fig13_shap_interaction_heatmap.png...
+2026-07-23 15:04:43,707 | INFO | CBC_Pipeline |   [OK] Saved fig13_shap_interaction_heatmap.png
+2026-07-23 15:04:43,708 | INFO | CBC_Pipeline | Generating fig14_shap_patient_case_studies.png...
+2026-07-23 15:04:44,343 | INFO | CBC_Pipeline |   [OK] Saved fig14_shap_patient_case_studies.png
+2026-07-23 15:04:44,343 | INFO | CBC_Pipeline | 
+2026-07-23 15:04:44,343 | INFO | CBC_Pipeline | ==============================================================================
+2026-07-23 15:04:44,343 | INFO | CBC_Pipeline |   PHASE 7: Survival & Clinical Utility Analysis
+2026-07-23 15:04:44,343 | INFO | CBC_Pipeline | ==============================================================================
+2026-07-23 15:04:44,382 | INFO | CBC_Pipeline | Generating fig15_kaplan_meier_3_tier.png...
+2026-07-23 15:04:45,029 | INFO | CBC_Pipeline |   [OK] Saved fig15_kaplan_meier_3_tier.png
+2026-07-23 15:04:45,029 | INFO | CBC_Pipeline | Generating fig16_time_dependent_roc.png...
+2026-07-23 15:04:45,439 | INFO | CBC_Pipeline |   [OK] Saved fig16_time_dependent_roc.png
+2026-07-23 15:04:45,439 | INFO | CBC_Pipeline | Generating fig17_calibration_curve.png...
+2026-07-23 15:04:45,812 | INFO | CBC_Pipeline |   [OK] Saved fig17_calibration_curve.png
+2026-07-23 15:04:45,812 | INFO | CBC_Pipeline | Generating fig18_decision_curve_analysis.png...
+2026-07-23 15:04:46,421 | INFO | CBC_Pipeline |   [OK] Saved fig18_decision_curve_analysis.png
+2026-07-23 15:04:46,422 | INFO | CBC_Pipeline | 
+2026-07-23 15:04:46,422 | INFO | CBC_Pipeline | ==============================================================================
+2026-07-23 15:04:46,422 | INFO | CBC_Pipeline |   PHASE 8: Feature Deletion Stress Test & Full Ablation Suite
+2026-07-23 15:04:46,422 | INFO | CBC_Pipeline | ==============================================================================
+2026-07-23 15:04:46,422 | INFO | CBC_Pipeline | Generating fig19_stress_test_recovery_trajectory.png...
+2026-07-23 15:04:46,787 | INFO | CBC_Pipeline |   [OK] Saved fig19_stress_test_recovery_trajectory.png
+2026-07-23 15:04:46,787 | INFO | CBC_Pipeline | Generating fig20_feature_replacement_network.png...
+2026-07-23 15:04:47,110 | INFO | CBC_Pipeline |   [OK] Saved fig20_feature_replacement_network.png
+2026-07-23 15:04:47,110 | INFO | CBC_Pipeline | Compiling table_full_ablation.csv across 10 experimental configurations...
+2026-07-23 15:04:47,136 | INFO | CBC_Pipeline |   [OK] Saved table_full_ablation.csv
+2026-07-23 15:04:47,136 | INFO | CBC_Pipeline | 
+2026-07-23 15:04:47,136 | INFO | CBC_Pipeline | ==============================================================================
+2026-07-23 15:04:47,136 | INFO | CBC_Pipeline |   CBC MASTER PIPELINE COMPLETED SUCCESSFULLY IN 1.21 MINUTES
+2026-07-23 15:04:47,136 | INFO | CBC_Pipeline | ==============================================================================
