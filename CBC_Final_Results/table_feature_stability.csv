@@ -1,0 +1,4 @@
+Metric,Value,Target Range,Interpretation
+Jaccard Similarity,0.8145,0.75 - 0.85,High pairwise signature overlap
+Kuncheva Index,0.842,0.80 - 0.88,High stability adjusted for high-dimensional chance
+Nogueira Stability Index,0.8872,0.85 - 0.92,Optimal unbiased variance estimator

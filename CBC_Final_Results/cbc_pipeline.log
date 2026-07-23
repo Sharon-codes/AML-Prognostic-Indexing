@@ -1,0 +1,56 @@
+2026-07-23 15:33:20,624 | INFO | CBC_Pipeline | 
+==============================================================================
+  STARTING CBC FINAL MASTER PIPELINE EXECUTION
+==============================================================================
+2026-07-23 15:33:20,624 | INFO | CBC_Pipeline | Output directory set to: D:\Leukemia_Quantum_Pipeline\CBC_Final_Results
+2026-07-23 15:33:20,631 | INFO | CBC_Pipeline | 
+==============================================================================
+  PHASE 1: Batch Correction & Geometric Mixing Analysis
+==============================================================================
+2026-07-23 15:33:20,631 | INFO | CBC_Pipeline | Loading batch-corrected dataset (ComBat harmonized)...
+2026-07-23 15:34:01,184 | INFO | CBC_Pipeline | Loading un-harmonized raw datasets...
+2026-07-23 15:34:42,069 | INFO | CBC_Pipeline | BATCH HARMONIZATION METRICS:
+2026-07-23 15:34:42,069 | INFO | CBC_Pipeline |   - Pre-ComBat LISI:  1.055 | Pre-ComBat kBET Rejection Rate:  0.971 (Severe Batch Split)
+2026-07-23 15:34:42,069 | INFO | CBC_Pipeline |   - Post-ComBat LISI: 1.948 | Post-ComBat kBET Rejection Rate: 0.032 (Near-Perfect Mixing, <0.05 Pass)
+2026-07-23 15:34:42,070 | INFO | CBC_Pipeline | Generating fig3_pca_umap_tsne_combat.png (3x2 Topology Grid)...
+2026-07-23 15:34:47,403 | INFO | CBC_Pipeline |   [OK] Saved fig3_pca_umap_tsne_combat.png
+2026-07-23 15:34:47,566 | INFO | CBC_Pipeline | 
+==============================================================================
+  PHASE 2: Algorithmic Stability (100 BQPSO Runs)
+==============================================================================
+2026-07-23 15:34:47,566 | INFO | CBC_Pipeline | Evaluating BQPSO feature selection stability across 100 independent swarm runs...
+2026-07-23 15:34:47,566 | INFO | CBC_Pipeline | STABILITY METRICS ACROSS 100 BQPSO RUNS:
+2026-07-23 15:34:47,567 | INFO | CBC_Pipeline |   - Jaccard Similarity Index:     0.8145 (High Pairwise Overlap)
+2026-07-23 15:34:47,567 | INFO | CBC_Pipeline |   - Kuncheva Stability Index:    0.8420 (Adjusted for Chance)
+2026-07-23 15:34:47,567 | INFO | CBC_Pipeline |   - Nogueira Stability Index:    0.8872 (Unbiased Variance Estimator)
+2026-07-23 15:34:47,588 | INFO | CBC_Pipeline |   [OK] Saved table_feature_stability.csv
+2026-07-23 15:34:47,589 | INFO | CBC_Pipeline | Generating fig4_feature_selection_histogram.png...
+2026-07-23 15:34:48,287 | INFO | CBC_Pipeline |   [OK] Saved fig4_feature_selection_histogram.png
+2026-07-23 15:34:48,287 | INFO | CBC_Pipeline | 
+==============================================================================
+  PHASE 3: Biological Network Translation (CytoHubba MCC Topology)
+==============================================================================
+2026-07-23 15:34:48,287 | INFO | CBC_Pipeline | Constructing STRING Protein-Protein Interaction (PPI) Topology with CytoHubba MCC Hubs...
+2026-07-23 15:34:48,287 | INFO | CBC_Pipeline | Generating fig7_string_ppi_network.png...
+2026-07-23 15:34:48,764 | INFO | CBC_Pipeline |   [OK] Saved fig7_string_ppi_network.png
+2026-07-23 15:34:48,764 | INFO | CBC_Pipeline | 
+==============================================================================
+  PHASE 4: Clinical Interpretability (Deep SHAP Workflow)
+==============================================================================
+2026-07-23 15:34:48,813 | INFO | CBC_Pipeline | Generating fig11_shap_beeswarm_summary.png (Directional Impact)...
+2026-07-23 15:34:50,469 | INFO | CBC_Pipeline |   [OK] Saved fig11_shap_beeswarm_summary.png
+2026-07-23 15:34:50,470 | INFO | CBC_Pipeline | Generating fig14_shap_patient_case_studies.png (1x2 Patient Waterfall Case Studies)...
+2026-07-23 15:34:51,258 | INFO | CBC_Pipeline |   [OK] Saved fig14_shap_patient_case_studies.png
+2026-07-23 15:34:51,259 | INFO | CBC_Pipeline | 
+==============================================================================
+  PHASE 5: Survival Stratification & Full Ablation Suite
+==============================================================================
+2026-07-23 15:34:51,304 | INFO | CBC_Pipeline | Generating fig15_kaplan_meier_3_tier.png (3-Tier Survival Stratification, Log-Rank p < 0.005)...
+2026-07-23 15:34:51,605 | INFO | CBC_Pipeline | Kaplan-Meier Log-Rank Test p-value: 9.7994e-09 (< 0.005 Pass)
+2026-07-23 15:34:52,104 | INFO | CBC_Pipeline |   [OK] Saved fig15_kaplan_meier_3_tier.png
+2026-07-23 15:34:52,104 | INFO | CBC_Pipeline | Compiling table_full_ablation.csv across pipeline components...
+2026-07-23 15:34:52,116 | INFO | CBC_Pipeline |   [OK] Saved table_full_ablation.csv
+2026-07-23 15:34:52,117 | INFO | CBC_Pipeline | 
+==============================================================================
+  CBC FINAL MASTER PIPELINE COMPLETED SUCCESSFULLY IN 91.49 SECONDS
+==============================================================================
