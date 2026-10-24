@@ -1,0 +1,22 @@
+{
+  "seed": 20261024,
+  "folds": 5,
+  "repeats": 3,
+  "candidates": 80,
+  "panel_size": 15,
+  "particles": 10,
+  "iterations": 10,
+  "stability_weight": 0.15,
+  "methods": [
+    "ANOVA",
+    "L1",
+    "ElasticNet",
+    "RandomForest",
+    "BPSO",
+    "BQPSO",
+    "Stability-BQPSO",
+    "Random15"
+  ],
+  "evaluation": "fully outer-held-out patient folds, within-dataset; no independent external test",
+  "source": "original study treated separately"
+}

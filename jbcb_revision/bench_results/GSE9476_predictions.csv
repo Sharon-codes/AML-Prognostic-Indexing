@@ -1,0 +1,1537 @@
+dataset,method,repeat,fold,sample,truth,decision,predict,comparator_group
+GSE9476,ANOVA,0,0,1,0,-1.0784268435935545,0,Bone Marrow Mononuclear Cells
+GSE9476,ANOVA,0,0,5,0,-1.8406857255928546,0,Bone Marrow Mononuclear Cells
+GSE9476,ANOVA,0,0,7,0,-1.5484173510665074,0,Bone Marrow Mononuclear Cells
+GSE9476,ANOVA,0,0,14,0,-0.9687811580648487,0,Bone Marrow CD34+ selected cells
+GSE9476,ANOVA,0,0,18,1,0.0724482592713116,1,AML clinical blast
+GSE9476,ANOVA,0,0,32,1,1.6957650204169792,1,AML clinical blast
+GSE9476,ANOVA,0,0,36,1,2.3085816069981018,1,AML clinical blast
+GSE9476,ANOVA,0,0,40,1,-1.2508276245648933,0,AML clinical blast
+GSE9476,ANOVA,0,0,41,1,1.5132771956804263,1,AML clinical blast
+GSE9476,ANOVA,0,0,48,0,-1.4316110911945605,0,Peripheral Blood Mononuclear Cells
+GSE9476,ANOVA,0,0,49,0,-1.6076701331965533,0,Peripheral Blood Mononuclear Cells
+GSE9476,ANOVA,0,0,50,0,-1.340655205210874,0,Peripheral Blood Mononuclear Cells
+GSE9476,ANOVA,0,0,52,0,-0.9437327777730723,0,Peripheral Blood Mononuclear Cells
+GSE9476,L1,0,0,1,0,-1.1042725619012037,0,Bone Marrow Mononuclear Cells
+GSE9476,L1,0,0,5,0,-1.3354498210919972,0,Bone Marrow Mononuclear Cells
+GSE9476,L1,0,0,7,0,-1.2983000146527466,0,Bone Marrow Mononuclear Cells
+GSE9476,L1,0,0,14,0,-0.8321511276243255,0,Bone Marrow CD34+ selected cells
+GSE9476,L1,0,0,18,1,0.08076045913637053,1,AML clinical blast
+GSE9476,L1,0,0,32,1,1.471295484592525,1,AML clinical blast
+GSE9476,L1,0,0,36,1,1.7192691511986264,1,AML clinical blast
+GSE9476,L1,0,0,40,1,-0.8485814049956555,0,AML clinical blast
+GSE9476,L1,0,0,41,1,0.8952200986009018,1,AML clinical blast
+GSE9476,L1,0,0,48,0,-1.2142972258128673,0,Peripheral Blood Mononuclear Cells
+GSE9476,L1,0,0,49,0,-1.3424906383472859,0,Peripheral Blood Mononuclear Cells
+GSE9476,L1,0,0,50,0,-1.1583247325360662,0,Peripheral Blood Mononuclear Cells
+GSE9476,L1,0,0,52,0,-0.8639324076229938,0,Peripheral Blood Mononuclear Cells
+GSE9476,ElasticNet,0,0,1,0,-1.0012978557544105,0,Bone Marrow Mononuclear Cells
+GSE9476,ElasticNet,0,0,5,0,-1.4142549054482154,0,Bone Marrow Mononuclear Cells
+GSE9476,ElasticNet,0,0,7,0,-1.3234152731381401,0,Bone Marrow Mononuclear Cells
+GSE9476,ElasticNet,0,0,14,0,-0.779350869231147,0,Bone Marrow CD34+ selected cells
+GSE9476,ElasticNet,0,0,18,1,0.02819869902999124,1,AML clinical blast
+GSE9476,ElasticNet,0,0,32,1,1.3464329123284708,1,AML clinical blast
+GSE9476,ElasticNet,0,0,36,1,1.766716750931041,1,AML clinical blast
+GSE9476,ElasticNet,0,0,40,1,-0.6692920084685399,0,AML clinical blast
+GSE9476,ElasticNet,0,0,41,1,0.39479261930268755,1,AML clinical blast
+GSE9476,ElasticNet,0,0,48,0,-1.4813023680482567,0,Peripheral Blood Mononuclear Cells
+GSE9476,ElasticNet,0,0,49,0,-1.2092755669394732,0,Peripheral Blood Mononuclear Cells
+GSE9476,ElasticNet,0,0,50,0,-1.0454734954445377,0,Peripheral Blood Mononuclear Cells
+GSE9476,ElasticNet,0,0,52,0,-0.9973264006284448,0,Peripheral Blood Mononuclear Cells
+GSE9476,RandomForest,0,0,1,0,-0.9672700740357121,0,Bone Marrow Mononuclear Cells
+GSE9476,RandomForest,0,0,5,0,-1.0094358986064316,0,Bone Marrow Mononuclear Cells
+GSE9476,RandomForest,0,0,7,0,-1.3259313040664056,0,Bone Marrow Mononuclear Cells
+GSE9476,RandomForest,0,0,14,0,-1.192647517257667,0,Bone Marrow CD34+ selected cells
+GSE9476,RandomForest,0,0,18,1,0.4876146883577188,1,AML clinical blast
+GSE9476,RandomForest,0,0,32,1,1.386690547814309,1,AML clinical blast
+GSE9476,RandomForest,0,0,36,1,2.222912468426581,1,AML clinical blast
+GSE9476,RandomForest,0,0,40,1,-1.05587665636855,0,AML clinical blast
+GSE9476,RandomForest,0,0,41,1,0.9825848416022107,1,AML clinical blast
+GSE9476,RandomForest,0,0,48,0,-1.7505620788853822,0,Peripheral Blood Mononuclear Cells
+GSE9476,RandomForest,0,0,49,0,-1.6797034332263883,0,Peripheral Blood Mononuclear Cells
+GSE9476,RandomForest,0,0,50,0,-1.839376108457796,0,Peripheral Blood Mononuclear Cells
+GSE9476,RandomForest,0,0,52,0,-0.9919124264522331,0,Peripheral Blood Mononuclear Cells
+GSE9476,BPSO,0,0,1,0,-1.107527241724576,0,Bone Marrow Mononuclear Cells
+GSE9476,BPSO,0,0,5,0,-1.0959961045332356,0,Bone Marrow Mononuclear Cells
+GSE9476,BPSO,0,0,7,0,-1.1172335143976808,0,Bone Marrow Mononuclear Cells
+GSE9476,BPSO,0,0,14,0,-1.4624930747692857,0,Bone Marrow CD34+ selected cells
+GSE9476,BPSO,0,0,18,1,-0.31712835029382636,0,AML clinical blast
+GSE9476,BPSO,0,0,32,1,2.2913861439284404,1,AML clinical blast
+GSE9476,BPSO,0,0,36,1,1.4777128063392395,1,AML clinical blast
+GSE9476,BPSO,0,0,40,1,-0.9420159035857182,0,AML clinical blast
+GSE9476,BPSO,0,0,41,1,0.8238254154084946,1,AML clinical blast
+GSE9476,BPSO,0,0,48,0,-1.3099431581827103,0,Peripheral Blood Mononuclear Cells
+GSE9476,BPSO,0,0,49,0,-1.0880105078161189,0,Peripheral Blood Mononuclear Cells
+GSE9476,BPSO,0,0,50,0,-1.170183335385571,0,Peripheral Blood Mononuclear Cells
+GSE9476,BPSO,0,0,52,0,-0.7107046475833196,0,Peripheral Blood Mononuclear Cells
+GSE9476,BQPSO,0,0,1,0,-1.107527241724576,0,Bone Marrow Mononuclear Cells
+GSE9476,BQPSO,0,0,5,0,-1.0959961045332356,0,Bone Marrow Mononuclear Cells
+GSE9476,BQPSO,0,0,7,0,-1.1172335143976808,0,Bone Marrow Mononuclear Cells
+GSE9476,BQPSO,0,0,14,0,-1.4624930747692857,0,Bone Marrow CD34+ selected cells
+GSE9476,BQPSO,0,0,18,1,-0.31712835029382636,0,AML clinical blast
+GSE9476,BQPSO,0,0,32,1,2.2913861439284404,1,AML clinical blast
+GSE9476,BQPSO,0,0,36,1,1.4777128063392395,1,AML clinical blast
+GSE9476,BQPSO,0,0,40,1,-0.9420159035857182,0,AML clinical blast
+GSE9476,BQPSO,0,0,41,1,0.8238254154084946,1,AML clinical blast
+GSE9476,BQPSO,0,0,48,0,-1.3099431581827103,0,Peripheral Blood Mononuclear Cells
+GSE9476,BQPSO,0,0,49,0,-1.0880105078161189,0,Peripheral Blood Mononuclear Cells
+GSE9476,BQPSO,0,0,50,0,-1.170183335385571,0,Peripheral Blood Mononuclear Cells
+GSE9476,BQPSO,0,0,52,0,-0.7107046475833196,0,Peripheral Blood Mononuclear Cells
+GSE9476,Stability-BQPSO,0,0,1,0,-0.8843666119946868,0,Bone Marrow Mononuclear Cells
+GSE9476,Stability-BQPSO,0,0,5,0,-1.8940090268846128,0,Bone Marrow Mononuclear Cells
+GSE9476,Stability-BQPSO,0,0,7,0,-1.1833513494175418,0,Bone Marrow Mononuclear Cells
+GSE9476,Stability-BQPSO,0,0,14,0,-0.7836509341707553,0,Bone Marrow CD34+ selected cells
+GSE9476,Stability-BQPSO,0,0,18,1,-0.2969851083955363,0,AML clinical blast
+GSE9476,Stability-BQPSO,0,0,32,1,2.1926309270302817,1,AML clinical blast
+GSE9476,Stability-BQPSO,0,0,36,1,2.653238292410884,1,AML clinical blast
+GSE9476,Stability-BQPSO,0,0,40,1,-0.5702121563095609,0,AML clinical blast
+GSE9476,Stability-BQPSO,0,0,41,1,0.9627204661614344,1,AML clinical blast
+GSE9476,Stability-BQPSO,0,0,48,0,-1.400925887032263,0,Peripheral Blood Mononuclear Cells
+GSE9476,Stability-BQPSO,0,0,49,0,-1.314302274402477,0,Peripheral Blood Mononuclear Cells
+GSE9476,Stability-BQPSO,0,0,50,0,-1.144723534626998,0,Peripheral Blood Mononuclear Cells
+GSE9476,Stability-BQPSO,0,0,52,0,-1.2827885792720695,0,Peripheral Blood Mononuclear Cells
+GSE9476,Random15,0,0,1,0,0.35309220705613437,1,Bone Marrow Mononuclear Cells
+GSE9476,Random15,0,0,5,0,0.013981062156096014,1,Bone Marrow Mononuclear Cells
+GSE9476,Random15,0,0,7,0,-0.46481309920175173,0,Bone Marrow Mononuclear Cells
+GSE9476,Random15,0,0,14,0,-1.2178124440385414,0,Bone Marrow CD34+ selected cells
+GSE9476,Random15,0,0,18,1,-1.3056822212791954,0,AML clinical blast
+GSE9476,Random15,0,0,32,1,0.8440196448311124,1,AML clinical blast
+GSE9476,Random15,0,0,36,1,1.7811643365063987,1,AML clinical blast
+GSE9476,Random15,0,0,40,1,-0.8931214205173297,0,AML clinical blast
+GSE9476,Random15,0,0,41,1,-1.2637586817510074,0,AML clinical blast
+GSE9476,Random15,0,0,48,0,5.366610681365854,1,Peripheral Blood Mononuclear Cells
+GSE9476,Random15,0,0,49,0,-0.5083787450482753,0,Peripheral Blood Mononuclear Cells
+GSE9476,Random15,0,0,50,0,-0.16402223716795417,0,Peripheral Blood Mononuclear Cells
+GSE9476,Random15,0,0,52,0,-0.769076631589714,0,Peripheral Blood Mononuclear Cells
+GSE9476,ANOVA,0,1,2,0,-0.8686495701680587,0,Bone Marrow Mononuclear Cells
+GSE9476,ANOVA,0,1,4,0,-0.9343363137413043,0,Bone Marrow Mononuclear Cells
+GSE9476,ANOVA,0,1,6,0,-0.8273491693202218,0,Bone Marrow Mononuclear Cells
+GSE9476,ANOVA,0,1,10,0,-1.0663067373405988,0,Bone Marrow Mononuclear Cells
+GSE9476,ANOVA,0,1,11,0,-1.1068482819569991,0,Bone Marrow CD34+ selected cells
+GSE9476,ANOVA,0,1,13,0,-1.833302098820953,0,Bone Marrow CD34+ selected cells
+GSE9476,ANOVA,0,1,25,1,2.227036077722641,1,AML clinical blast
+GSE9476,ANOVA,0,1,28,1,0.7522985756195526,1,AML clinical blast
+GSE9476,ANOVA,0,1,34,1,1.426154321406321,1,AML clinical blast
+GSE9476,ANOVA,0,1,37,1,1.4405474614515468,1,AML clinical blast
+GSE9476,ANOVA,0,1,42,1,1.1615071253365605,1,AML clinical blast
+GSE9476,ANOVA,0,1,54,0,-1.3598620462483584,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ANOVA,0,1,63,0,-1.005166798411183,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,L1,0,1,2,0,-1.0262762255945983,0,Bone Marrow Mononuclear Cells
+GSE9476,L1,0,1,4,0,-0.999995678692062,0,Bone Marrow Mononuclear Cells
+GSE9476,L1,0,1,6,0,-0.9096774151886381,0,Bone Marrow Mononuclear Cells
+GSE9476,L1,0,1,10,0,-1.210826485651607,0,Bone Marrow Mononuclear Cells
+GSE9476,L1,0,1,11,0,-1.253502913152772,0,Bone Marrow CD34+ selected cells
+GSE9476,L1,0,1,13,0,-1.6654471338328056,0,Bone Marrow CD34+ selected cells
+GSE9476,L1,0,1,25,1,1.914271484342286,1,AML clinical blast
+GSE9476,L1,0,1,28,1,0.7035826195894566,1,AML clinical blast
+GSE9476,L1,0,1,34,1,0.9841090318292183,1,AML clinical blast
+GSE9476,L1,0,1,37,1,0.833442068711051,1,AML clinical blast
+GSE9476,L1,0,1,42,1,0.8616899727924641,1,AML clinical blast
+GSE9476,L1,0,1,54,0,-1.0996155204660973,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,L1,0,1,63,0,-0.7759160753659053,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ElasticNet,0,1,2,0,-1.5222829444622525,0,Bone Marrow Mononuclear Cells
+GSE9476,ElasticNet,0,1,4,0,-1.259361142132959,0,Bone Marrow Mononuclear Cells
+GSE9476,ElasticNet,0,1,6,0,-1.2435522134058203,0,Bone Marrow Mononuclear Cells
+GSE9476,ElasticNet,0,1,10,0,-1.3669973977312544,0,Bone Marrow Mononuclear Cells
+GSE9476,ElasticNet,0,1,11,0,-1.330298740549325,0,Bone Marrow CD34+ selected cells
+GSE9476,ElasticNet,0,1,13,0,-1.4623063202837794,0,Bone Marrow CD34+ selected cells
+GSE9476,ElasticNet,0,1,25,1,1.8118279233404564,1,AML clinical blast
+GSE9476,ElasticNet,0,1,28,1,0.5161530392288046,1,AML clinical blast
+GSE9476,ElasticNet,0,1,34,1,0.9121309232052696,1,AML clinical blast
+GSE9476,ElasticNet,0,1,37,1,0.43526235329363216,1,AML clinical blast
+GSE9476,ElasticNet,0,1,42,1,1.3385965317301138,1,AML clinical blast
+GSE9476,ElasticNet,0,1,54,0,-0.8618446550427562,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ElasticNet,0,1,63,0,-0.7809111744900885,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,RandomForest,0,1,2,0,-1.5318788144769386,0,Bone Marrow Mononuclear Cells
+GSE9476,RandomForest,0,1,4,0,-1.3883700846948726,0,Bone Marrow Mononuclear Cells
+GSE9476,RandomForest,0,1,6,0,-1.0346681311665433,0,Bone Marrow Mononuclear Cells
+GSE9476,RandomForest,0,1,10,0,-1.9585519199838717,0,Bone Marrow Mononuclear Cells
+GSE9476,RandomForest,0,1,11,0,-1.0452281830398369,0,Bone Marrow CD34+ selected cells
+GSE9476,RandomForest,0,1,13,0,-1.7932838340596762,0,Bone Marrow CD34+ selected cells
+GSE9476,RandomForest,0,1,25,1,3.1811880968783166,1,AML clinical blast
+GSE9476,RandomForest,0,1,28,1,1.1145017939785742,1,AML clinical blast
+GSE9476,RandomForest,0,1,34,1,1.8580580788961711,1,AML clinical blast
+GSE9476,RandomForest,0,1,37,1,2.1235500649070786,1,AML clinical blast
+GSE9476,RandomForest,0,1,42,1,1.6342892213682516,1,AML clinical blast
+GSE9476,RandomForest,0,1,54,0,-1.0544823677793302,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,RandomForest,0,1,63,0,-0.679102621197825,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BPSO,0,1,2,0,-1.3823730822900426,0,Bone Marrow Mononuclear Cells
+GSE9476,BPSO,0,1,4,0,-1.3090757837143239,0,Bone Marrow Mononuclear Cells
+GSE9476,BPSO,0,1,6,0,-1.2403529830033442,0,Bone Marrow Mononuclear Cells
+GSE9476,BPSO,0,1,10,0,-1.5029906226769247,0,Bone Marrow Mononuclear Cells
+GSE9476,BPSO,0,1,11,0,-1.5487816965966352,0,Bone Marrow CD34+ selected cells
+GSE9476,BPSO,0,1,13,0,-1.7018508117692988,0,Bone Marrow CD34+ selected cells
+GSE9476,BPSO,0,1,25,1,1.93528706655574,1,AML clinical blast
+GSE9476,BPSO,0,1,28,1,1.9849194932093337,1,AML clinical blast
+GSE9476,BPSO,0,1,34,1,1.1579992165353545,1,AML clinical blast
+GSE9476,BPSO,0,1,37,1,0.6879549984529698,1,AML clinical blast
+GSE9476,BPSO,0,1,42,1,2.0771441320412665,1,AML clinical blast
+GSE9476,BPSO,0,1,54,0,-1.7867442649619956,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BPSO,0,1,63,0,-1.5084927905544196,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BQPSO,0,1,2,0,-1.3823730822900426,0,Bone Marrow Mononuclear Cells
+GSE9476,BQPSO,0,1,4,0,-1.3090757837143239,0,Bone Marrow Mononuclear Cells
+GSE9476,BQPSO,0,1,6,0,-1.2403529830033442,0,Bone Marrow Mononuclear Cells
+GSE9476,BQPSO,0,1,10,0,-1.5029906226769247,0,Bone Marrow Mononuclear Cells
+GSE9476,BQPSO,0,1,11,0,-1.5487816965966352,0,Bone Marrow CD34+ selected cells
+GSE9476,BQPSO,0,1,13,0,-1.7018508117692988,0,Bone Marrow CD34+ selected cells
+GSE9476,BQPSO,0,1,25,1,1.93528706655574,1,AML clinical blast
+GSE9476,BQPSO,0,1,28,1,1.9849194932093337,1,AML clinical blast
+GSE9476,BQPSO,0,1,34,1,1.1579992165353545,1,AML clinical blast
+GSE9476,BQPSO,0,1,37,1,0.6879549984529698,1,AML clinical blast
+GSE9476,BQPSO,0,1,42,1,2.0771441320412665,1,AML clinical blast
+GSE9476,BQPSO,0,1,54,0,-1.7867442649619956,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BQPSO,0,1,63,0,-1.5084927905544196,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Stability-BQPSO,0,1,2,0,-1.6117287512341085,0,Bone Marrow Mononuclear Cells
+GSE9476,Stability-BQPSO,0,1,4,0,-1.5133761905747105,0,Bone Marrow Mononuclear Cells
+GSE9476,Stability-BQPSO,0,1,6,0,-0.7578495503532812,0,Bone Marrow Mononuclear Cells
+GSE9476,Stability-BQPSO,0,1,10,0,-1.4600474003465833,0,Bone Marrow Mononuclear Cells
+GSE9476,Stability-BQPSO,0,1,11,0,-0.4845816918532709,0,Bone Marrow CD34+ selected cells
+GSE9476,Stability-BQPSO,0,1,13,0,-0.7827687107127517,0,Bone Marrow CD34+ selected cells
+GSE9476,Stability-BQPSO,0,1,25,1,2.0674896740512634,1,AML clinical blast
+GSE9476,Stability-BQPSO,0,1,28,1,1.2900619978750896,1,AML clinical blast
+GSE9476,Stability-BQPSO,0,1,34,1,0.17931053984269302,1,AML clinical blast
+GSE9476,Stability-BQPSO,0,1,37,1,0.24086202643657278,1,AML clinical blast
+GSE9476,Stability-BQPSO,0,1,42,1,1.6825752699875511,1,AML clinical blast
+GSE9476,Stability-BQPSO,0,1,54,0,-1.456008106233794,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Stability-BQPSO,0,1,63,0,-1.2473931238769842,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Random15,0,1,2,0,1.1665145928820855,1,Bone Marrow Mononuclear Cells
+GSE9476,Random15,0,1,4,0,-1.2114641200966059,0,Bone Marrow Mononuclear Cells
+GSE9476,Random15,0,1,6,0,-3.070140120766555,0,Bone Marrow Mononuclear Cells
+GSE9476,Random15,0,1,10,0,-0.852861356715452,0,Bone Marrow Mononuclear Cells
+GSE9476,Random15,0,1,11,0,-2.4056379761395403,0,Bone Marrow CD34+ selected cells
+GSE9476,Random15,0,1,13,0,0.0754589919555957,1,Bone Marrow CD34+ selected cells
+GSE9476,Random15,0,1,25,1,2.876111998963341,1,AML clinical blast
+GSE9476,Random15,0,1,28,1,-0.49148891998523725,0,AML clinical blast
+GSE9476,Random15,0,1,34,1,1.7016117455686555,1,AML clinical blast
+GSE9476,Random15,0,1,37,1,1.696585415862972,1,AML clinical blast
+GSE9476,Random15,0,1,42,1,1.8142455396711097,1,AML clinical blast
+GSE9476,Random15,0,1,54,0,-0.09276095023702614,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Random15,0,1,63,0,-1.0371350264868244,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ANOVA,0,2,0,0,-0.3491472159400088,0,Bone Marrow CD34+ selected cells
+GSE9476,ANOVA,0,2,8,0,-0.8856135018103543,0,Bone Marrow Mononuclear Cells
+GSE9476,ANOVA,0,2,16,0,-0.036097694207397196,0,Bone Marrow CD34+ selected cells
+GSE9476,ANOVA,0,2,27,1,2.998695349426764,1,AML clinical blast
+GSE9476,ANOVA,0,2,29,1,1.3411802404011897,1,AML clinical blast
+GSE9476,ANOVA,0,2,33,1,2.149976091336054,1,AML clinical blast
+GSE9476,ANOVA,0,2,39,1,0.2791201885806861,1,AML clinical blast
+GSE9476,ANOVA,0,2,43,1,-0.41992077553441143,0,AML clinical blast
+GSE9476,ANOVA,0,2,45,0,-1.8804780158876244,0,Peripheral Blood Mononuclear Cells
+GSE9476,ANOVA,0,2,47,0,-1.4443512734063082,0,Peripheral Blood Mononuclear Cells
+GSE9476,ANOVA,0,2,51,0,-2.263862760043628,0,Peripheral Blood Mononuclear Cells
+GSE9476,ANOVA,0,2,55,0,-1.6643276464201204,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ANOVA,0,2,59,0,-1.9879120270753654,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,L1,0,2,0,0,-0.5224128094785365,0,Bone Marrow CD34+ selected cells
+GSE9476,L1,0,2,8,0,-0.8823890657604813,0,Bone Marrow Mononuclear Cells
+GSE9476,L1,0,2,16,0,-0.5961761522394429,0,Bone Marrow CD34+ selected cells
+GSE9476,L1,0,2,27,1,2.0871555338679175,1,AML clinical blast
+GSE9476,L1,0,2,29,1,1.0117428381818374,1,AML clinical blast
+GSE9476,L1,0,2,33,1,1.6154173372157101,1,AML clinical blast
+GSE9476,L1,0,2,39,1,1.4837271798791303,1,AML clinical blast
+GSE9476,L1,0,2,43,1,-0.3989636019799488,0,AML clinical blast
+GSE9476,L1,0,2,45,0,-1.0132065578937153,0,Peripheral Blood Mononuclear Cells
+GSE9476,L1,0,2,47,0,-0.705348052588149,0,Peripheral Blood Mononuclear Cells
+GSE9476,L1,0,2,51,0,-1.1236369038748064,0,Peripheral Blood Mononuclear Cells
+GSE9476,L1,0,2,55,0,-1.3762170315999476,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,L1,0,2,59,0,-1.654136795240499,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ElasticNet,0,2,0,0,-0.5460985168706175,0,Bone Marrow CD34+ selected cells
+GSE9476,ElasticNet,0,2,8,0,-1.162990798035474,0,Bone Marrow Mononuclear Cells
+GSE9476,ElasticNet,0,2,16,0,-0.4127467697364354,0,Bone Marrow CD34+ selected cells
+GSE9476,ElasticNet,0,2,27,1,1.9746267743658656,1,AML clinical blast
+GSE9476,ElasticNet,0,2,29,1,0.13933771031242276,1,AML clinical blast
+GSE9476,ElasticNet,0,2,33,1,1.629258649290543,1,AML clinical blast
+GSE9476,ElasticNet,0,2,39,1,1.2076803637764177,1,AML clinical blast
+GSE9476,ElasticNet,0,2,43,1,-1.07461296316807,0,AML clinical blast
+GSE9476,ElasticNet,0,2,45,0,-1.0340437922842574,0,Peripheral Blood Mononuclear Cells
+GSE9476,ElasticNet,0,2,47,0,-0.47569236938953946,0,Peripheral Blood Mononuclear Cells
+GSE9476,ElasticNet,0,2,51,0,-1.1978924259681152,0,Peripheral Blood Mononuclear Cells
+GSE9476,ElasticNet,0,2,55,0,-1.2096735593293713,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ElasticNet,0,2,59,0,-1.5145311354573276,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,RandomForest,0,2,0,0,-0.17312727199417569,0,Bone Marrow CD34+ selected cells
+GSE9476,RandomForest,0,2,8,0,-0.8313883675608593,0,Bone Marrow Mononuclear Cells
+GSE9476,RandomForest,0,2,16,0,-0.6358716831608268,0,Bone Marrow CD34+ selected cells
+GSE9476,RandomForest,0,2,27,1,2.384197993322835,1,AML clinical blast
+GSE9476,RandomForest,0,2,29,1,1.4584861128356985,1,AML clinical blast
+GSE9476,RandomForest,0,2,33,1,2.1273268776442467,1,AML clinical blast
+GSE9476,RandomForest,0,2,39,1,0.9259957119438316,1,AML clinical blast
+GSE9476,RandomForest,0,2,43,1,-0.5390853357172629,0,AML clinical blast
+GSE9476,RandomForest,0,2,45,0,-1.8377562579096027,0,Peripheral Blood Mononuclear Cells
+GSE9476,RandomForest,0,2,47,0,-0.5791025004585618,0,Peripheral Blood Mononuclear Cells
+GSE9476,RandomForest,0,2,51,0,-1.1879772719903916,0,Peripheral Blood Mononuclear Cells
+GSE9476,RandomForest,0,2,55,0,-1.63933249317579,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,RandomForest,0,2,59,0,-1.4862195720844387,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BPSO,0,2,0,0,-0.9660022980396783,0,Bone Marrow CD34+ selected cells
+GSE9476,BPSO,0,2,8,0,-1.2104864054765083,0,Bone Marrow Mononuclear Cells
+GSE9476,BPSO,0,2,16,0,-1.2690868989252606,0,Bone Marrow CD34+ selected cells
+GSE9476,BPSO,0,2,27,1,2.2975243894341912,1,AML clinical blast
+GSE9476,BPSO,0,2,29,1,0.49802010218806264,1,AML clinical blast
+GSE9476,BPSO,0,2,33,1,2.6961244507340534,1,AML clinical blast
+GSE9476,BPSO,0,2,39,1,1.4234468834316987,1,AML clinical blast
+GSE9476,BPSO,0,2,43,1,-0.20413714607339117,0,AML clinical blast
+GSE9476,BPSO,0,2,45,0,-1.0507685956798252,0,Peripheral Blood Mononuclear Cells
+GSE9476,BPSO,0,2,47,0,-0.8541709985550118,0,Peripheral Blood Mononuclear Cells
+GSE9476,BPSO,0,2,51,0,-1.94176759082284,0,Peripheral Blood Mononuclear Cells
+GSE9476,BPSO,0,2,55,0,-1.797904168863401,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BPSO,0,2,59,0,-1.4789424232230528,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BQPSO,0,2,0,0,-0.9660022980396783,0,Bone Marrow CD34+ selected cells
+GSE9476,BQPSO,0,2,8,0,-1.2104864054765083,0,Bone Marrow Mononuclear Cells
+GSE9476,BQPSO,0,2,16,0,-1.2690868989252606,0,Bone Marrow CD34+ selected cells
+GSE9476,BQPSO,0,2,27,1,2.2975243894341912,1,AML clinical blast
+GSE9476,BQPSO,0,2,29,1,0.49802010218806264,1,AML clinical blast
+GSE9476,BQPSO,0,2,33,1,2.6961244507340534,1,AML clinical blast
+GSE9476,BQPSO,0,2,39,1,1.4234468834316987,1,AML clinical blast
+GSE9476,BQPSO,0,2,43,1,-0.20413714607339117,0,AML clinical blast
+GSE9476,BQPSO,0,2,45,0,-1.0507685956798252,0,Peripheral Blood Mononuclear Cells
+GSE9476,BQPSO,0,2,47,0,-0.8541709985550118,0,Peripheral Blood Mononuclear Cells
+GSE9476,BQPSO,0,2,51,0,-1.94176759082284,0,Peripheral Blood Mononuclear Cells
+GSE9476,BQPSO,0,2,55,0,-1.797904168863401,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BQPSO,0,2,59,0,-1.4789424232230528,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Stability-BQPSO,0,2,0,0,-0.7275100587616805,0,Bone Marrow CD34+ selected cells
+GSE9476,Stability-BQPSO,0,2,8,0,-0.5546477017538675,0,Bone Marrow Mononuclear Cells
+GSE9476,Stability-BQPSO,0,2,16,0,-0.5278347320519,0,Bone Marrow CD34+ selected cells
+GSE9476,Stability-BQPSO,0,2,27,1,2.7396977471595005,1,AML clinical blast
+GSE9476,Stability-BQPSO,0,2,29,1,1.2944355172508257,1,AML clinical blast
+GSE9476,Stability-BQPSO,0,2,33,1,2.3964428498201817,1,AML clinical blast
+GSE9476,Stability-BQPSO,0,2,39,1,0.7132411757387429,1,AML clinical blast
+GSE9476,Stability-BQPSO,0,2,43,1,-0.07385117789564573,0,AML clinical blast
+GSE9476,Stability-BQPSO,0,2,45,0,-1.560236856678109,0,Peripheral Blood Mononuclear Cells
+GSE9476,Stability-BQPSO,0,2,47,0,-0.5454453957059099,0,Peripheral Blood Mononuclear Cells
+GSE9476,Stability-BQPSO,0,2,51,0,-1.254123198585017,0,Peripheral Blood Mononuclear Cells
+GSE9476,Stability-BQPSO,0,2,55,0,-1.6094976286577474,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Stability-BQPSO,0,2,59,0,-1.6484245705945795,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Random15,0,2,0,0,1.432459859724577,1,Bone Marrow CD34+ selected cells
+GSE9476,Random15,0,2,8,0,-1.6853280471650838,0,Bone Marrow Mononuclear Cells
+GSE9476,Random15,0,2,16,0,2.3759329909622395,1,Bone Marrow CD34+ selected cells
+GSE9476,Random15,0,2,27,1,1.8361762039507235,1,AML clinical blast
+GSE9476,Random15,0,2,29,1,3.54410504816018,1,AML clinical blast
+GSE9476,Random15,0,2,33,1,2.717591776593571,1,AML clinical blast
+GSE9476,Random15,0,2,39,1,1.3412417811647888,1,AML clinical blast
+GSE9476,Random15,0,2,43,1,-0.4602909269236195,0,AML clinical blast
+GSE9476,Random15,0,2,45,0,-2.010904442372447,0,Peripheral Blood Mononuclear Cells
+GSE9476,Random15,0,2,47,0,-0.9451492381595897,0,Peripheral Blood Mononuclear Cells
+GSE9476,Random15,0,2,51,0,1.4791176645088797,1,Peripheral Blood Mononuclear Cells
+GSE9476,Random15,0,2,55,0,-2.4861607291106957,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Random15,0,2,59,0,-2.5074964333380416,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ANOVA,0,3,3,0,-1.6980755096775106,0,Bone Marrow Mononuclear Cells
+GSE9476,ANOVA,0,3,12,0,-1.8198448485764511,0,Bone Marrow CD34+ selected cells
+GSE9476,ANOVA,0,3,21,1,2.0244287788323536,1,AML clinical blast
+GSE9476,ANOVA,0,3,23,1,2.638445668336914,1,AML clinical blast
+GSE9476,ANOVA,0,3,24,1,1.367546134750136,1,AML clinical blast
+GSE9476,ANOVA,0,3,30,1,2.805772400487162,1,AML clinical blast
+GSE9476,ANOVA,0,3,31,1,2.9341219205923603,1,AML clinical blast
+GSE9476,ANOVA,0,3,38,1,1.584853978109485,1,AML clinical blast
+GSE9476,ANOVA,0,3,46,0,-1.559395038566057,0,Peripheral Blood Mononuclear Cells
+GSE9476,ANOVA,0,3,53,0,-1.6517552740412043,0,Peripheral Blood Mononuclear Cells
+GSE9476,ANOVA,0,3,56,0,-1.4217326799316756,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ANOVA,0,3,60,0,-1.593312786274849,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ANOVA,0,3,62,0,-1.723658388404123,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,L1,0,3,3,0,-1.3598801004832415,0,Bone Marrow Mononuclear Cells
+GSE9476,L1,0,3,12,0,-1.6187240387969768,0,Bone Marrow CD34+ selected cells
+GSE9476,L1,0,3,21,1,1.5266701610489917,1,AML clinical blast
+GSE9476,L1,0,3,23,1,1.9590789030284241,1,AML clinical blast
+GSE9476,L1,0,3,24,1,0.8817698013500415,1,AML clinical blast
+GSE9476,L1,0,3,30,1,1.8696955310743633,1,AML clinical blast
+GSE9476,L1,0,3,31,1,2.0508535061095547,1,AML clinical blast
+GSE9476,L1,0,3,38,1,1.3473267329168335,1,AML clinical blast
+GSE9476,L1,0,3,46,0,-0.8845405933016283,0,Peripheral Blood Mononuclear Cells
+GSE9476,L1,0,3,53,0,-0.9775981409069677,0,Peripheral Blood Mononuclear Cells
+GSE9476,L1,0,3,56,0,-1.3461063290167874,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,L1,0,3,60,0,-1.5572692333543972,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,L1,0,3,62,0,-1.6207745044394084,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ElasticNet,0,3,3,0,-1.6149436302106686,0,Bone Marrow Mononuclear Cells
+GSE9476,ElasticNet,0,3,12,0,-1.1845612482003023,0,Bone Marrow CD34+ selected cells
+GSE9476,ElasticNet,0,3,21,1,1.2108411529244998,1,AML clinical blast
+GSE9476,ElasticNet,0,3,23,1,0.9848666497908329,1,AML clinical blast
+GSE9476,ElasticNet,0,3,24,1,0.12729036610149144,1,AML clinical blast
+GSE9476,ElasticNet,0,3,30,1,1.5439439856899446,1,AML clinical blast
+GSE9476,ElasticNet,0,3,31,1,1.1370458023552639,1,AML clinical blast
+GSE9476,ElasticNet,0,3,38,1,1.5068332433822944,1,AML clinical blast
+GSE9476,ElasticNet,0,3,46,0,-0.9531252078603569,0,Peripheral Blood Mononuclear Cells
+GSE9476,ElasticNet,0,3,53,0,-0.981134689448183,0,Peripheral Blood Mononuclear Cells
+GSE9476,ElasticNet,0,3,56,0,-1.1561837068219527,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ElasticNet,0,3,60,0,-1.2694412389751522,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ElasticNet,0,3,62,0,-1.1627239032565597,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,RandomForest,0,3,3,0,-1.205113084208413,0,Bone Marrow Mononuclear Cells
+GSE9476,RandomForest,0,3,12,0,-1.8869267943094312,0,Bone Marrow CD34+ selected cells
+GSE9476,RandomForest,0,3,21,1,1.9812782177131054,1,AML clinical blast
+GSE9476,RandomForest,0,3,23,1,2.8509076521582846,1,AML clinical blast
+GSE9476,RandomForest,0,3,24,1,1.3343677569340726,1,AML clinical blast
+GSE9476,RandomForest,0,3,30,1,0.5685788311786919,1,AML clinical blast
+GSE9476,RandomForest,0,3,31,1,2.8786918376388955,1,AML clinical blast
+GSE9476,RandomForest,0,3,38,1,2.667965484206274,1,AML clinical blast
+GSE9476,RandomForest,0,3,46,0,-1.4725197466130677,0,Peripheral Blood Mononuclear Cells
+GSE9476,RandomForest,0,3,53,0,-1.662674466967185,0,Peripheral Blood Mononuclear Cells
+GSE9476,RandomForest,0,3,56,0,-2.171155587123253,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,RandomForest,0,3,60,0,-1.220562850293193,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,RandomForest,0,3,62,0,-1.75977763986693,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BPSO,0,3,3,0,-2.3849122709982726,0,Bone Marrow Mononuclear Cells
+GSE9476,BPSO,0,3,12,0,-0.9744080999666626,0,Bone Marrow CD34+ selected cells
+GSE9476,BPSO,0,3,21,1,1.704740837933966,1,AML clinical blast
+GSE9476,BPSO,0,3,23,1,1.306845448124892,1,AML clinical blast
+GSE9476,BPSO,0,3,24,1,0.40374318700056167,1,AML clinical blast
+GSE9476,BPSO,0,3,30,1,1.5323442354407601,1,AML clinical blast
+GSE9476,BPSO,0,3,31,1,1.7344572545679815,1,AML clinical blast
+GSE9476,BPSO,0,3,38,1,1.8665438278939346,1,AML clinical blast
+GSE9476,BPSO,0,3,46,0,-1.750518948146058,0,Peripheral Blood Mononuclear Cells
+GSE9476,BPSO,0,3,53,0,-1.5296627730222394,0,Peripheral Blood Mononuclear Cells
+GSE9476,BPSO,0,3,56,0,-1.2783356431768484,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BPSO,0,3,60,0,-1.238554672930566,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BPSO,0,3,62,0,-1.524957168456521,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BQPSO,0,3,3,0,-2.3849122709982726,0,Bone Marrow Mononuclear Cells
+GSE9476,BQPSO,0,3,12,0,-0.9744080999666626,0,Bone Marrow CD34+ selected cells
+GSE9476,BQPSO,0,3,21,1,1.704740837933966,1,AML clinical blast
+GSE9476,BQPSO,0,3,23,1,1.306845448124892,1,AML clinical blast
+GSE9476,BQPSO,0,3,24,1,0.40374318700056167,1,AML clinical blast
+GSE9476,BQPSO,0,3,30,1,1.5323442354407601,1,AML clinical blast
+GSE9476,BQPSO,0,3,31,1,1.7344572545679815,1,AML clinical blast
+GSE9476,BQPSO,0,3,38,1,1.8665438278939346,1,AML clinical blast
+GSE9476,BQPSO,0,3,46,0,-1.750518948146058,0,Peripheral Blood Mononuclear Cells
+GSE9476,BQPSO,0,3,53,0,-1.5296627730222394,0,Peripheral Blood Mononuclear Cells
+GSE9476,BQPSO,0,3,56,0,-1.2783356431768484,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BQPSO,0,3,60,0,-1.238554672930566,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BQPSO,0,3,62,0,-1.524957168456521,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Stability-BQPSO,0,3,3,0,-3.176621886248641,0,Bone Marrow Mononuclear Cells
+GSE9476,Stability-BQPSO,0,3,12,0,-0.9742677467496653,0,Bone Marrow CD34+ selected cells
+GSE9476,Stability-BQPSO,0,3,21,1,3.352328934439458,1,AML clinical blast
+GSE9476,Stability-BQPSO,0,3,23,1,2.6462548273650097,1,AML clinical blast
+GSE9476,Stability-BQPSO,0,3,24,1,2.036166480808678,1,AML clinical blast
+GSE9476,Stability-BQPSO,0,3,30,1,2.0722489804335678,1,AML clinical blast
+GSE9476,Stability-BQPSO,0,3,31,1,3.5259693844649265,1,AML clinical blast
+GSE9476,Stability-BQPSO,0,3,38,1,3.8104484233619766,1,AML clinical blast
+GSE9476,Stability-BQPSO,0,3,46,0,-2.925610261478632,0,Peripheral Blood Mononuclear Cells
+GSE9476,Stability-BQPSO,0,3,53,0,-1.8079540584704135,0,Peripheral Blood Mononuclear Cells
+GSE9476,Stability-BQPSO,0,3,56,0,-1.3705085008987643,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Stability-BQPSO,0,3,60,0,-1.5713808053855811,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Stability-BQPSO,0,3,62,0,-0.7688537446916911,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Random15,0,3,3,0,-0.6370420290749284,0,Bone Marrow Mononuclear Cells
+GSE9476,Random15,0,3,12,0,0.4234846778119574,1,Bone Marrow CD34+ selected cells
+GSE9476,Random15,0,3,21,1,0.33237144824949977,1,AML clinical blast
+GSE9476,Random15,0,3,23,1,1.223298499377862,1,AML clinical blast
+GSE9476,Random15,0,3,24,1,-1.1200490018496243,0,AML clinical blast
+GSE9476,Random15,0,3,30,1,-0.49381651896709394,0,AML clinical blast
+GSE9476,Random15,0,3,31,1,1.1431341393870347,1,AML clinical blast
+GSE9476,Random15,0,3,38,1,-0.023510358827471815,0,AML clinical blast
+GSE9476,Random15,0,3,46,0,0.03562954041940815,1,Peripheral Blood Mononuclear Cells
+GSE9476,Random15,0,3,53,0,-0.45895632824600674,0,Peripheral Blood Mononuclear Cells
+GSE9476,Random15,0,3,56,0,0.12390473119409483,1,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Random15,0,3,60,0,-0.9306587057900658,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Random15,0,3,62,0,0.2937536409776426,1,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ANOVA,0,4,9,0,-1.1530364855209316,0,Bone Marrow Mononuclear Cells
+GSE9476,ANOVA,0,4,15,0,-1.6461990395642194,0,Bone Marrow CD34+ selected cells
+GSE9476,ANOVA,0,4,17,0,-1.8709301316848321,0,Bone Marrow CD34+ selected cells
+GSE9476,ANOVA,0,4,19,1,0.599907113659921,1,AML clinical blast
+GSE9476,ANOVA,0,4,20,1,4.087535168318862,1,AML clinical blast
+GSE9476,ANOVA,0,4,22,1,3.0788544673754807,1,AML clinical blast
+GSE9476,ANOVA,0,4,26,1,1.9808390302009904,1,AML clinical blast
+GSE9476,ANOVA,0,4,35,1,1.1882616349021262,1,AML clinical blast
+GSE9476,ANOVA,0,4,44,0,-1.492355782819716,0,Peripheral Blood Mononuclear Cells
+GSE9476,ANOVA,0,4,57,0,-1.3830082669825798,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ANOVA,0,4,58,0,-1.0389604591316064,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ANOVA,0,4,61,0,-1.4351333414098277,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,L1,0,4,9,0,-1.3343684285236739,0,Bone Marrow Mononuclear Cells
+GSE9476,L1,0,4,15,0,-1.4306121641056475,0,Bone Marrow CD34+ selected cells
+GSE9476,L1,0,4,17,0,-1.767558652933978,0,Bone Marrow CD34+ selected cells
+GSE9476,L1,0,4,19,1,0.6652163950320422,1,AML clinical blast
+GSE9476,L1,0,4,20,1,3.4012483741202715,1,AML clinical blast
+GSE9476,L1,0,4,22,1,2.2373069075148173,1,AML clinical blast
+GSE9476,L1,0,4,26,1,1.8127570291699207,1,AML clinical blast
+GSE9476,L1,0,4,35,1,0.7798902292769264,1,AML clinical blast
+GSE9476,L1,0,4,44,0,-1.5025517072050063,0,Peripheral Blood Mononuclear Cells
+GSE9476,L1,0,4,57,0,-1.0567554643675365,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,L1,0,4,58,0,-0.8731987620003662,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,L1,0,4,61,0,-1.201157585878269,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ElasticNet,0,4,9,0,-1.0984285802315115,0,Bone Marrow Mononuclear Cells
+GSE9476,ElasticNet,0,4,15,0,-1.6425129885529386,0,Bone Marrow CD34+ selected cells
+GSE9476,ElasticNet,0,4,17,0,-2.0246039907891804,0,Bone Marrow CD34+ selected cells
+GSE9476,ElasticNet,0,4,19,1,0.11885943120969356,1,AML clinical blast
+GSE9476,ElasticNet,0,4,20,1,2.746375015803176,1,AML clinical blast
+GSE9476,ElasticNet,0,4,22,1,2.0990539688781493,1,AML clinical blast
+GSE9476,ElasticNet,0,4,26,1,1.7181735325179908,1,AML clinical blast
+GSE9476,ElasticNet,0,4,35,1,0.20849813291868946,1,AML clinical blast
+GSE9476,ElasticNet,0,4,44,0,-1.3358468965922619,0,Peripheral Blood Mononuclear Cells
+GSE9476,ElasticNet,0,4,57,0,-1.0068138672037779,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ElasticNet,0,4,58,0,-1.1551396711787092,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ElasticNet,0,4,61,0,-1.484499595162506,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,RandomForest,0,4,9,0,-1.4671040680267406,0,Bone Marrow Mononuclear Cells
+GSE9476,RandomForest,0,4,15,0,-2.153222543479773,0,Bone Marrow CD34+ selected cells
+GSE9476,RandomForest,0,4,17,0,-2.880770403479493,0,Bone Marrow CD34+ selected cells
+GSE9476,RandomForest,0,4,19,1,-0.2505488222201189,0,AML clinical blast
+GSE9476,RandomForest,0,4,20,1,5.743261277859619,1,AML clinical blast
+GSE9476,RandomForest,0,4,22,1,4.001594077026995,1,AML clinical blast
+GSE9476,RandomForest,0,4,26,1,2.4286315645417034,1,AML clinical blast
+GSE9476,RandomForest,0,4,35,1,2.306059742009382,1,AML clinical blast
+GSE9476,RandomForest,0,4,44,0,-2.514549507426829,0,Peripheral Blood Mononuclear Cells
+GSE9476,RandomForest,0,4,57,0,-1.26699211775207,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,RandomForest,0,4,58,0,-1.2280733289979524,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,RandomForest,0,4,61,0,-1.5496853468821272,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BPSO,0,4,9,0,-1.3496457640257198,0,Bone Marrow Mononuclear Cells
+GSE9476,BPSO,0,4,15,0,-2.022445393277291,0,Bone Marrow CD34+ selected cells
+GSE9476,BPSO,0,4,17,0,-1.923671469041395,0,Bone Marrow CD34+ selected cells
+GSE9476,BPSO,0,4,19,1,1.0817651537401538,1,AML clinical blast
+GSE9476,BPSO,0,4,20,1,4.272400612642304,1,AML clinical blast
+GSE9476,BPSO,0,4,22,1,4.019467020737174,1,AML clinical blast
+GSE9476,BPSO,0,4,26,1,4.069212880478142,1,AML clinical blast
+GSE9476,BPSO,0,4,35,1,3.060223805377199,1,AML clinical blast
+GSE9476,BPSO,0,4,44,0,-1.449955845523412,0,Peripheral Blood Mononuclear Cells
+GSE9476,BPSO,0,4,57,0,-1.6698258122508858,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BPSO,0,4,58,0,-1.552222655396073,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BPSO,0,4,61,0,-1.6535908875037453,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BQPSO,0,4,9,0,-1.3496457640257198,0,Bone Marrow Mononuclear Cells
+GSE9476,BQPSO,0,4,15,0,-2.022445393277291,0,Bone Marrow CD34+ selected cells
+GSE9476,BQPSO,0,4,17,0,-1.923671469041395,0,Bone Marrow CD34+ selected cells
+GSE9476,BQPSO,0,4,19,1,1.0817651537401538,1,AML clinical blast
+GSE9476,BQPSO,0,4,20,1,4.272400612642304,1,AML clinical blast
+GSE9476,BQPSO,0,4,22,1,4.019467020737174,1,AML clinical blast
+GSE9476,BQPSO,0,4,26,1,4.069212880478142,1,AML clinical blast
+GSE9476,BQPSO,0,4,35,1,3.060223805377199,1,AML clinical blast
+GSE9476,BQPSO,0,4,44,0,-1.449955845523412,0,Peripheral Blood Mononuclear Cells
+GSE9476,BQPSO,0,4,57,0,-1.6698258122508858,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BQPSO,0,4,58,0,-1.552222655396073,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BQPSO,0,4,61,0,-1.6535908875037453,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Stability-BQPSO,0,4,9,0,-1.3492954381424889,0,Bone Marrow Mononuclear Cells
+GSE9476,Stability-BQPSO,0,4,15,0,-1.6594435721230711,0,Bone Marrow CD34+ selected cells
+GSE9476,Stability-BQPSO,0,4,17,0,-2.2405066225101784,0,Bone Marrow CD34+ selected cells
+GSE9476,Stability-BQPSO,0,4,19,1,1.0448229346861038,1,AML clinical blast
+GSE9476,Stability-BQPSO,0,4,20,1,3.3219804076188515,1,AML clinical blast
+GSE9476,Stability-BQPSO,0,4,22,1,3.369278832554375,1,AML clinical blast
+GSE9476,Stability-BQPSO,0,4,26,1,1.3129079463588764,1,AML clinical blast
+GSE9476,Stability-BQPSO,0,4,35,1,0.9876023755120482,1,AML clinical blast
+GSE9476,Stability-BQPSO,0,4,44,0,-1.4994017433171294,0,Peripheral Blood Mononuclear Cells
+GSE9476,Stability-BQPSO,0,4,57,0,-1.2121886530859087,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Stability-BQPSO,0,4,58,0,-1.4898635211626758,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Stability-BQPSO,0,4,61,0,-1.6663657768356879,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Random15,0,4,9,0,-0.23646961159004626,0,Bone Marrow Mononuclear Cells
+GSE9476,Random15,0,4,15,0,-1.1413682059560446,0,Bone Marrow CD34+ selected cells
+GSE9476,Random15,0,4,17,0,-0.0068755375530459295,0,Bone Marrow CD34+ selected cells
+GSE9476,Random15,0,4,19,1,-0.17409564788333076,0,AML clinical blast
+GSE9476,Random15,0,4,20,1,0.4160398638026661,1,AML clinical blast
+GSE9476,Random15,0,4,22,1,-0.03896472428788811,0,AML clinical blast
+GSE9476,Random15,0,4,26,1,4.3291385686478145,1,AML clinical blast
+GSE9476,Random15,0,4,35,1,0.5705135613845779,1,AML clinical blast
+GSE9476,Random15,0,4,44,0,-0.36461882793192807,0,Peripheral Blood Mononuclear Cells
+GSE9476,Random15,0,4,57,0,-0.3459413043172124,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Random15,0,4,58,0,-0.4981263368142723,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Random15,0,4,61,0,0.7438717294168458,1,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ANOVA,1,0,3,0,-1.7882453980912822,0,Bone Marrow Mononuclear Cells
+GSE9476,ANOVA,1,0,8,0,-0.8971413152623252,0,Bone Marrow Mononuclear Cells
+GSE9476,ANOVA,1,0,13,0,-1.7573091407376265,0,Bone Marrow CD34+ selected cells
+GSE9476,ANOVA,1,0,17,0,-1.8763510794349618,0,Bone Marrow CD34+ selected cells
+GSE9476,ANOVA,1,0,18,1,0.5008410284174695,1,AML clinical blast
+GSE9476,ANOVA,1,0,21,1,2.1269306869655304,1,AML clinical blast
+GSE9476,ANOVA,1,0,27,1,3.1811184875980945,1,AML clinical blast
+GSE9476,ANOVA,1,0,29,1,0.3545411829236452,1,AML clinical blast
+GSE9476,ANOVA,1,0,35,1,1.9604432179598337,1,AML clinical blast
+GSE9476,ANOVA,1,0,49,0,-1.9644434581591972,0,Peripheral Blood Mononuclear Cells
+GSE9476,ANOVA,1,0,55,0,-1.0440514028898686,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ANOVA,1,0,57,0,-1.8283179096382416,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ANOVA,1,0,61,0,-1.5541057878161448,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,L1,1,0,3,0,-1.9121540924453317,0,Bone Marrow Mononuclear Cells
+GSE9476,L1,1,0,8,0,-0.8529575253768558,0,Bone Marrow Mononuclear Cells
+GSE9476,L1,1,0,13,0,-1.0348811350231577,0,Bone Marrow CD34+ selected cells
+GSE9476,L1,1,0,17,0,-1.8802562511563312,0,Bone Marrow CD34+ selected cells
+GSE9476,L1,1,0,18,1,0.6251435531537157,1,AML clinical blast
+GSE9476,L1,1,0,21,1,1.1920657871319729,1,AML clinical blast
+GSE9476,L1,1,0,27,1,1.7788086085265744,1,AML clinical blast
+GSE9476,L1,1,0,29,1,0.4649566985077053,1,AML clinical blast
+GSE9476,L1,1,0,35,1,0.9393540080468494,1,AML clinical blast
+GSE9476,L1,1,0,49,0,-1.1907768376432852,0,Peripheral Blood Mononuclear Cells
+GSE9476,L1,1,0,55,0,-1.3418897203910645,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,L1,1,0,57,0,-0.8481112452208521,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,L1,1,0,61,0,-1.4087361524298403,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ElasticNet,1,0,3,0,-1.3185032260542804,0,Bone Marrow Mononuclear Cells
+GSE9476,ElasticNet,1,0,8,0,-0.9164778351428038,0,Bone Marrow Mononuclear Cells
+GSE9476,ElasticNet,1,0,13,0,-1.600404307291659,0,Bone Marrow CD34+ selected cells
+GSE9476,ElasticNet,1,0,17,0,-1.5909251820662484,0,Bone Marrow CD34+ selected cells
+GSE9476,ElasticNet,1,0,18,1,0.35337670189219855,1,AML clinical blast
+GSE9476,ElasticNet,1,0,21,1,1.0872823702069287,1,AML clinical blast
+GSE9476,ElasticNet,1,0,27,1,1.798256311181162,1,AML clinical blast
+GSE9476,ElasticNet,1,0,29,1,0.021165126716290394,1,AML clinical blast
+GSE9476,ElasticNet,1,0,35,1,0.6469080159867584,1,AML clinical blast
+GSE9476,ElasticNet,1,0,49,0,-1.3541793320821172,0,Peripheral Blood Mononuclear Cells
+GSE9476,ElasticNet,1,0,55,0,-1.4559566965291655,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ElasticNet,1,0,57,0,-1.2099914918694568,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ElasticNet,1,0,61,0,-1.483167257341656,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,RandomForest,1,0,3,0,-1.9464648816102978,0,Bone Marrow Mononuclear Cells
+GSE9476,RandomForest,1,0,8,0,-0.7846723588785203,0,Bone Marrow Mononuclear Cells
+GSE9476,RandomForest,1,0,13,0,-1.2077765273821472,0,Bone Marrow CD34+ selected cells
+GSE9476,RandomForest,1,0,17,0,-1.558162183786796,0,Bone Marrow CD34+ selected cells
+GSE9476,RandomForest,1,0,18,1,0.11973642628068772,1,AML clinical blast
+GSE9476,RandomForest,1,0,21,1,2.7774383345142084,1,AML clinical blast
+GSE9476,RandomForest,1,0,27,1,3.198746592529563,1,AML clinical blast
+GSE9476,RandomForest,1,0,29,1,0.20275216676804875,1,AML clinical blast
+GSE9476,RandomForest,1,0,35,1,3.347427053175148,1,AML clinical blast
+GSE9476,RandomForest,1,0,49,0,-2.709700508436165,0,Peripheral Blood Mononuclear Cells
+GSE9476,RandomForest,1,0,55,0,-1.6654687067984095,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,RandomForest,1,0,57,0,-1.705072346980148,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,RandomForest,1,0,61,0,-1.8890240256920656,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BPSO,1,0,3,0,-1.2508437053654016,0,Bone Marrow Mononuclear Cells
+GSE9476,BPSO,1,0,8,0,-1.009219785787593,0,Bone Marrow Mononuclear Cells
+GSE9476,BPSO,1,0,13,0,-1.4903478771499346,0,Bone Marrow CD34+ selected cells
+GSE9476,BPSO,1,0,17,0,-1.3223868539931332,0,Bone Marrow CD34+ selected cells
+GSE9476,BPSO,1,0,18,1,0.0797092290348229,1,AML clinical blast
+GSE9476,BPSO,1,0,21,1,1.674585962868291,1,AML clinical blast
+GSE9476,BPSO,1,0,27,1,2.6739758688437694,1,AML clinical blast
+GSE9476,BPSO,1,0,29,1,0.4722634445552117,1,AML clinical blast
+GSE9476,BPSO,1,0,35,1,1.6119733678418542,1,AML clinical blast
+GSE9476,BPSO,1,0,49,0,-1.4556071480624413,0,Peripheral Blood Mononuclear Cells
+GSE9476,BPSO,1,0,55,0,-1.581120699829968,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BPSO,1,0,57,0,-1.7692996637680947,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BPSO,1,0,61,0,-1.6811260204934533,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BQPSO,1,0,3,0,-1.2508437053654016,0,Bone Marrow Mononuclear Cells
+GSE9476,BQPSO,1,0,8,0,-1.009219785787593,0,Bone Marrow Mononuclear Cells
+GSE9476,BQPSO,1,0,13,0,-1.4903478771499346,0,Bone Marrow CD34+ selected cells
+GSE9476,BQPSO,1,0,17,0,-1.3223868539931332,0,Bone Marrow CD34+ selected cells
+GSE9476,BQPSO,1,0,18,1,0.0797092290348229,1,AML clinical blast
+GSE9476,BQPSO,1,0,21,1,1.674585962868291,1,AML clinical blast
+GSE9476,BQPSO,1,0,27,1,2.6739758688437694,1,AML clinical blast
+GSE9476,BQPSO,1,0,29,1,0.4722634445552117,1,AML clinical blast
+GSE9476,BQPSO,1,0,35,1,1.6119733678418542,1,AML clinical blast
+GSE9476,BQPSO,1,0,49,0,-1.4556071480624413,0,Peripheral Blood Mononuclear Cells
+GSE9476,BQPSO,1,0,55,0,-1.581120699829968,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BQPSO,1,0,57,0,-1.7692996637680947,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BQPSO,1,0,61,0,-1.6811260204934533,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Stability-BQPSO,1,0,3,0,-1.3332448546617015,0,Bone Marrow Mononuclear Cells
+GSE9476,Stability-BQPSO,1,0,8,0,-0.8717029733237749,0,Bone Marrow Mononuclear Cells
+GSE9476,Stability-BQPSO,1,0,13,0,-1.3791778243051604,0,Bone Marrow CD34+ selected cells
+GSE9476,Stability-BQPSO,1,0,17,0,-1.4674185767399544,0,Bone Marrow CD34+ selected cells
+GSE9476,Stability-BQPSO,1,0,18,1,0.5832535641645724,1,AML clinical blast
+GSE9476,Stability-BQPSO,1,0,21,1,2.560730961261515,1,AML clinical blast
+GSE9476,Stability-BQPSO,1,0,27,1,2.5717013200923,1,AML clinical blast
+GSE9476,Stability-BQPSO,1,0,29,1,-0.0011857004273423816,0,AML clinical blast
+GSE9476,Stability-BQPSO,1,0,35,1,2.1808516857688733,1,AML clinical blast
+GSE9476,Stability-BQPSO,1,0,49,0,-1.1649380065245913,0,Peripheral Blood Mononuclear Cells
+GSE9476,Stability-BQPSO,1,0,55,0,-1.117402494698911,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Stability-BQPSO,1,0,57,0,-1.3798931333946103,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Stability-BQPSO,1,0,61,0,-1.1299039113571188,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Random15,1,0,3,0,-1.0949973189846538,0,Bone Marrow Mononuclear Cells
+GSE9476,Random15,1,0,8,0,-0.9175279777104649,0,Bone Marrow Mononuclear Cells
+GSE9476,Random15,1,0,13,0,-0.18548076865679927,0,Bone Marrow CD34+ selected cells
+GSE9476,Random15,1,0,17,0,0.06122386033422223,1,Bone Marrow CD34+ selected cells
+GSE9476,Random15,1,0,18,1,0.6371734055471984,1,AML clinical blast
+GSE9476,Random15,1,0,21,1,0.012457604156803921,1,AML clinical blast
+GSE9476,Random15,1,0,27,1,0.1967670840612023,1,AML clinical blast
+GSE9476,Random15,1,0,29,1,0.6525772234968888,1,AML clinical blast
+GSE9476,Random15,1,0,35,1,0.5519427526702942,1,AML clinical blast
+GSE9476,Random15,1,0,49,0,-0.9074391815381344,0,Peripheral Blood Mononuclear Cells
+GSE9476,Random15,1,0,55,0,0.010743125157768776,1,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Random15,1,0,57,0,-1.811818693987252,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Random15,1,0,61,0,0.020476662489639655,1,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ANOVA,1,1,0,0,-0.5652995600924972,0,Bone Marrow CD34+ selected cells
+GSE9476,ANOVA,1,1,10,0,-1.6669780260241238,0,Bone Marrow Mononuclear Cells
+GSE9476,ANOVA,1,1,16,0,-0.2362638140638908,0,Bone Marrow CD34+ selected cells
+GSE9476,ANOVA,1,1,25,1,2.457202237341952,1,AML clinical blast
+GSE9476,ANOVA,1,1,26,1,2.512277426482661,1,AML clinical blast
+GSE9476,ANOVA,1,1,30,1,2.220684780037482,1,AML clinical blast
+GSE9476,ANOVA,1,1,32,1,2.574606137492749,1,AML clinical blast
+GSE9476,ANOVA,1,1,42,1,0.9905822587681481,1,AML clinical blast
+GSE9476,ANOVA,1,1,51,0,-1.9156780121444863,0,Peripheral Blood Mononuclear Cells
+GSE9476,ANOVA,1,1,53,0,-2.048734294008832,0,Peripheral Blood Mononuclear Cells
+GSE9476,ANOVA,1,1,54,0,-1.39997553544189,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ANOVA,1,1,59,0,-1.5386225527967725,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ANOVA,1,1,63,0,-0.6641743855649583,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,L1,1,1,0,0,-0.5371540681841396,0,Bone Marrow CD34+ selected cells
+GSE9476,L1,1,1,10,0,-1.7920758653046625,0,Bone Marrow Mononuclear Cells
+GSE9476,L1,1,1,16,0,-0.3881650086661927,0,Bone Marrow CD34+ selected cells
+GSE9476,L1,1,1,25,1,1.919759517371497,1,AML clinical blast
+GSE9476,L1,1,1,26,1,2.43893441256565,1,AML clinical blast
+GSE9476,L1,1,1,30,1,2.5034704138090618,1,AML clinical blast
+GSE9476,L1,1,1,32,1,2.5700979489533853,1,AML clinical blast
+GSE9476,L1,1,1,42,1,1.195138041934969,1,AML clinical blast
+GSE9476,L1,1,1,51,0,-1.4368551089991746,0,Peripheral Blood Mononuclear Cells
+GSE9476,L1,1,1,53,0,-1.3485487588602292,0,Peripheral Blood Mononuclear Cells
+GSE9476,L1,1,1,54,0,-1.4376307963896455,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,L1,1,1,59,0,-1.6331856644110854,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,L1,1,1,63,0,-0.9497127941075273,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ElasticNet,1,1,0,0,-0.5772534108484715,0,Bone Marrow CD34+ selected cells
+GSE9476,ElasticNet,1,1,10,0,-1.2673752947552326,0,Bone Marrow Mononuclear Cells
+GSE9476,ElasticNet,1,1,16,0,-1.0385946117946037,0,Bone Marrow CD34+ selected cells
+GSE9476,ElasticNet,1,1,25,1,1.7035689590946765,1,AML clinical blast
+GSE9476,ElasticNet,1,1,26,1,1.590116547283417,1,AML clinical blast
+GSE9476,ElasticNet,1,1,30,1,2.327612470305962,1,AML clinical blast
+GSE9476,ElasticNet,1,1,32,1,1.8784279992177373,1,AML clinical blast
+GSE9476,ElasticNet,1,1,42,1,0.8850969531512236,1,AML clinical blast
+GSE9476,ElasticNet,1,1,51,0,-0.903081344422292,0,Peripheral Blood Mononuclear Cells
+GSE9476,ElasticNet,1,1,53,0,-1.0152670861200097,0,Peripheral Blood Mononuclear Cells
+GSE9476,ElasticNet,1,1,54,0,-1.0693359596920142,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ElasticNet,1,1,59,0,-1.503974232302034,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ElasticNet,1,1,63,0,-0.6451724276824015,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,RandomForest,1,1,0,0,-0.6126241162531929,0,Bone Marrow CD34+ selected cells
+GSE9476,RandomForest,1,1,10,0,-2.2482974836484777,0,Bone Marrow Mononuclear Cells
+GSE9476,RandomForest,1,1,16,0,-0.05403394412034676,0,Bone Marrow CD34+ selected cells
+GSE9476,RandomForest,1,1,25,1,2.3930049565231393,1,AML clinical blast
+GSE9476,RandomForest,1,1,26,1,2.1907267248566265,1,AML clinical blast
+GSE9476,RandomForest,1,1,30,1,0.6455177009724378,1,AML clinical blast
+GSE9476,RandomForest,1,1,32,1,1.3148456613217991,1,AML clinical blast
+GSE9476,RandomForest,1,1,42,1,1.608357580655231,1,AML clinical blast
+GSE9476,RandomForest,1,1,51,0,-2.065374815995275,0,Peripheral Blood Mononuclear Cells
+GSE9476,RandomForest,1,1,53,0,-1.5795825238620844,0,Peripheral Blood Mononuclear Cells
+GSE9476,RandomForest,1,1,54,0,-1.723422851605508,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,RandomForest,1,1,59,0,-1.6912054177856481,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,RandomForest,1,1,63,0,-0.7772916689150575,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BPSO,1,1,0,0,-0.7055779308962276,0,Bone Marrow CD34+ selected cells
+GSE9476,BPSO,1,1,10,0,-1.9851024252862937,0,Bone Marrow Mononuclear Cells
+GSE9476,BPSO,1,1,16,0,-0.8254562872293421,0,Bone Marrow CD34+ selected cells
+GSE9476,BPSO,1,1,25,1,2.7570420467848087,1,AML clinical blast
+GSE9476,BPSO,1,1,26,1,2.2094652149905927,1,AML clinical blast
+GSE9476,BPSO,1,1,30,1,2.4193087996933724,1,AML clinical blast
+GSE9476,BPSO,1,1,32,1,3.071561993279215,1,AML clinical blast
+GSE9476,BPSO,1,1,42,1,2.7056012038264234,1,AML clinical blast
+GSE9476,BPSO,1,1,51,0,-1.4351414758022383,0,Peripheral Blood Mononuclear Cells
+GSE9476,BPSO,1,1,53,0,-1.3488848151209072,0,Peripheral Blood Mononuclear Cells
+GSE9476,BPSO,1,1,54,0,-1.1105382791593015,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BPSO,1,1,59,0,-0.8772890933710373,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BPSO,1,1,63,0,-1.1176393702753775,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BQPSO,1,1,0,0,-0.7055779308962276,0,Bone Marrow CD34+ selected cells
+GSE9476,BQPSO,1,1,10,0,-1.9851024252862937,0,Bone Marrow Mononuclear Cells
+GSE9476,BQPSO,1,1,16,0,-0.8254562872293421,0,Bone Marrow CD34+ selected cells
+GSE9476,BQPSO,1,1,25,1,2.7570420467848087,1,AML clinical blast
+GSE9476,BQPSO,1,1,26,1,2.2094652149905927,1,AML clinical blast
+GSE9476,BQPSO,1,1,30,1,2.4193087996933724,1,AML clinical blast
+GSE9476,BQPSO,1,1,32,1,3.071561993279215,1,AML clinical blast
+GSE9476,BQPSO,1,1,42,1,2.7056012038264234,1,AML clinical blast
+GSE9476,BQPSO,1,1,51,0,-1.4351414758022383,0,Peripheral Blood Mononuclear Cells
+GSE9476,BQPSO,1,1,53,0,-1.3488848151209072,0,Peripheral Blood Mononuclear Cells
+GSE9476,BQPSO,1,1,54,0,-1.1105382791593015,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BQPSO,1,1,59,0,-0.8772890933710373,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BQPSO,1,1,63,0,-1.1176393702753775,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Stability-BQPSO,1,1,0,0,-0.5427476742184345,0,Bone Marrow CD34+ selected cells
+GSE9476,Stability-BQPSO,1,1,10,0,-1.8375268100245576,0,Bone Marrow Mononuclear Cells
+GSE9476,Stability-BQPSO,1,1,16,0,-0.5831799262070018,0,Bone Marrow CD34+ selected cells
+GSE9476,Stability-BQPSO,1,1,25,1,1.8205448249597718,1,AML clinical blast
+GSE9476,Stability-BQPSO,1,1,26,1,2.5644629099255805,1,AML clinical blast
+GSE9476,Stability-BQPSO,1,1,30,1,1.925906322326101,1,AML clinical blast
+GSE9476,Stability-BQPSO,1,1,32,1,3.1168104280555005,1,AML clinical blast
+GSE9476,Stability-BQPSO,1,1,42,1,2.1448787483964655,1,AML clinical blast
+GSE9476,Stability-BQPSO,1,1,51,0,-1.7035984860774243,0,Peripheral Blood Mononuclear Cells
+GSE9476,Stability-BQPSO,1,1,53,0,-1.5932577215175152,0,Peripheral Blood Mononuclear Cells
+GSE9476,Stability-BQPSO,1,1,54,0,-1.3507046026708267,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Stability-BQPSO,1,1,59,0,-1.8422842609287835,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Stability-BQPSO,1,1,63,0,-1.275083575336766,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Random15,1,1,0,0,-0.9396959592009425,0,Bone Marrow CD34+ selected cells
+GSE9476,Random15,1,1,10,0,-0.3765781316858823,0,Bone Marrow Mononuclear Cells
+GSE9476,Random15,1,1,16,0,-1.1696912476385215,0,Bone Marrow CD34+ selected cells
+GSE9476,Random15,1,1,25,1,-4.337841817947585,0,AML clinical blast
+GSE9476,Random15,1,1,26,1,1.0134893319093048,1,AML clinical blast
+GSE9476,Random15,1,1,30,1,-0.5948764386438652,0,AML clinical blast
+GSE9476,Random15,1,1,32,1,2.043801120443382,1,AML clinical blast
+GSE9476,Random15,1,1,42,1,-0.2629127188446376,0,AML clinical blast
+GSE9476,Random15,1,1,51,0,0.023771141510470162,1,Peripheral Blood Mononuclear Cells
+GSE9476,Random15,1,1,53,0,-1.035739798339607,0,Peripheral Blood Mononuclear Cells
+GSE9476,Random15,1,1,54,0,-0.023972411758267503,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Random15,1,1,59,0,-0.6730021362776831,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Random15,1,1,63,0,-1.4951605897770275,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ANOVA,1,2,2,0,-1.2600595403798889,0,Bone Marrow Mononuclear Cells
+GSE9476,ANOVA,1,2,7,0,-1.288650589384006,0,Bone Marrow Mononuclear Cells
+GSE9476,ANOVA,1,2,9,0,-1.41589602766602,0,Bone Marrow Mononuclear Cells
+GSE9476,ANOVA,1,2,11,0,-0.9283247131669794,0,Bone Marrow CD34+ selected cells
+GSE9476,ANOVA,1,2,12,0,-1.6785421708408337,0,Bone Marrow CD34+ selected cells
+GSE9476,ANOVA,1,2,19,1,0.5907579163105606,1,AML clinical blast
+GSE9476,ANOVA,1,2,28,1,0.7511178637015473,1,AML clinical blast
+GSE9476,ANOVA,1,2,36,1,2.310030631490346,1,AML clinical blast
+GSE9476,ANOVA,1,2,38,1,1.7813152595482078,1,AML clinical blast
+GSE9476,ANOVA,1,2,41,1,2.349519335087755,1,AML clinical blast
+GSE9476,ANOVA,1,2,46,0,-1.8542939189453977,0,Peripheral Blood Mononuclear Cells
+GSE9476,ANOVA,1,2,47,0,-1.443706638123011,0,Peripheral Blood Mononuclear Cells
+GSE9476,ANOVA,1,2,48,0,-1.91326343719167,0,Peripheral Blood Mononuclear Cells
+GSE9476,L1,1,2,2,0,-1.2428600580557303,0,Bone Marrow Mononuclear Cells
+GSE9476,L1,1,2,7,0,-1.2680064117808947,0,Bone Marrow Mononuclear Cells
+GSE9476,L1,1,2,9,0,-1.5148567912703719,0,Bone Marrow Mononuclear Cells
+GSE9476,L1,1,2,11,0,-0.6577773672156896,0,Bone Marrow CD34+ selected cells
+GSE9476,L1,1,2,12,0,-0.8904197824021973,0,Bone Marrow CD34+ selected cells
+GSE9476,L1,1,2,19,1,0.4522806578399714,1,AML clinical blast
+GSE9476,L1,1,2,28,1,-0.30829716263305734,0,AML clinical blast
+GSE9476,L1,1,2,36,1,2.102551443892258,1,AML clinical blast
+GSE9476,L1,1,2,38,1,1.1774656227597826,1,AML clinical blast
+GSE9476,L1,1,2,41,1,1.956066773121083,1,AML clinical blast
+GSE9476,L1,1,2,46,0,-1.1325734247823414,0,Peripheral Blood Mononuclear Cells
+GSE9476,L1,1,2,47,0,-0.4704267842154792,0,Peripheral Blood Mononuclear Cells
+GSE9476,L1,1,2,48,0,-0.9856841265926216,0,Peripheral Blood Mononuclear Cells
+GSE9476,ElasticNet,1,2,2,0,-1.2719867480480336,0,Bone Marrow Mononuclear Cells
+GSE9476,ElasticNet,1,2,7,0,-1.2107067061455299,0,Bone Marrow Mononuclear Cells
+GSE9476,ElasticNet,1,2,9,0,-1.369520935377033,0,Bone Marrow Mononuclear Cells
+GSE9476,ElasticNet,1,2,11,0,-0.8619091953798248,0,Bone Marrow CD34+ selected cells
+GSE9476,ElasticNet,1,2,12,0,-1.1633729323980488,0,Bone Marrow CD34+ selected cells
+GSE9476,ElasticNet,1,2,19,1,0.6848208862240941,1,AML clinical blast
+GSE9476,ElasticNet,1,2,28,1,-0.3664166457950494,0,AML clinical blast
+GSE9476,ElasticNet,1,2,36,1,1.7726254897964397,1,AML clinical blast
+GSE9476,ElasticNet,1,2,38,1,1.0378080816685569,1,AML clinical blast
+GSE9476,ElasticNet,1,2,41,1,1.664306917786151,1,AML clinical blast
+GSE9476,ElasticNet,1,2,46,0,-0.9700445676224982,0,Peripheral Blood Mononuclear Cells
+GSE9476,ElasticNet,1,2,47,0,-0.5922985536485661,0,Peripheral Blood Mononuclear Cells
+GSE9476,ElasticNet,1,2,48,0,-1.2713817222231867,0,Peripheral Blood Mononuclear Cells
+GSE9476,RandomForest,1,2,2,0,-1.000621609769067,0,Bone Marrow Mononuclear Cells
+GSE9476,RandomForest,1,2,7,0,-1.5078299972252038,0,Bone Marrow Mononuclear Cells
+GSE9476,RandomForest,1,2,9,0,-1.416822906594082,0,Bone Marrow Mononuclear Cells
+GSE9476,RandomForest,1,2,11,0,-0.6739857474061738,0,Bone Marrow CD34+ selected cells
+GSE9476,RandomForest,1,2,12,0,-1.3917493809673704,0,Bone Marrow CD34+ selected cells
+GSE9476,RandomForest,1,2,19,1,-0.2956416967219199,0,AML clinical blast
+GSE9476,RandomForest,1,2,28,1,-0.01345693492638797,0,AML clinical blast
+GSE9476,RandomForest,1,2,36,1,1.6929164193437891,1,AML clinical blast
+GSE9476,RandomForest,1,2,38,1,1.7084260371088926,1,AML clinical blast
+GSE9476,RandomForest,1,2,41,1,1.950415107526207,1,AML clinical blast
+GSE9476,RandomForest,1,2,46,0,-1.6045206828112322,0,Peripheral Blood Mononuclear Cells
+GSE9476,RandomForest,1,2,47,0,-0.7914272228646845,0,Peripheral Blood Mononuclear Cells
+GSE9476,RandomForest,1,2,48,0,-2.0863670547005775,0,Peripheral Blood Mononuclear Cells
+GSE9476,BPSO,1,2,2,0,-0.885620439306804,0,Bone Marrow Mononuclear Cells
+GSE9476,BPSO,1,2,7,0,-0.8934192678199115,0,Bone Marrow Mononuclear Cells
+GSE9476,BPSO,1,2,9,0,-1.4006656819205148,0,Bone Marrow Mononuclear Cells
+GSE9476,BPSO,1,2,11,0,-1.3276169399265079,0,Bone Marrow CD34+ selected cells
+GSE9476,BPSO,1,2,12,0,-1.0193021438952854,0,Bone Marrow CD34+ selected cells
+GSE9476,BPSO,1,2,19,1,0.7670933411399733,1,AML clinical blast
+GSE9476,BPSO,1,2,28,1,0.021065118807605768,1,AML clinical blast
+GSE9476,BPSO,1,2,36,1,2.243288418180051,1,AML clinical blast
+GSE9476,BPSO,1,2,38,1,1.5639084464626962,1,AML clinical blast
+GSE9476,BPSO,1,2,41,1,2.0065255330082787,1,AML clinical blast
+GSE9476,BPSO,1,2,46,0,-1.6631541762915283,0,Peripheral Blood Mononuclear Cells
+GSE9476,BPSO,1,2,47,0,-2.386761484724636,0,Peripheral Blood Mononuclear Cells
+GSE9476,BPSO,1,2,48,0,-2.3720328583748826,0,Peripheral Blood Mononuclear Cells
+GSE9476,BQPSO,1,2,2,0,-0.885620439306804,0,Bone Marrow Mononuclear Cells
+GSE9476,BQPSO,1,2,7,0,-0.8934192678199115,0,Bone Marrow Mononuclear Cells
+GSE9476,BQPSO,1,2,9,0,-1.4006656819205148,0,Bone Marrow Mononuclear Cells
+GSE9476,BQPSO,1,2,11,0,-1.3276169399265079,0,Bone Marrow CD34+ selected cells
+GSE9476,BQPSO,1,2,12,0,-1.0193021438952854,0,Bone Marrow CD34+ selected cells
+GSE9476,BQPSO,1,2,19,1,0.7670933411399733,1,AML clinical blast
+GSE9476,BQPSO,1,2,28,1,0.021065118807605768,1,AML clinical blast
+GSE9476,BQPSO,1,2,36,1,2.243288418180051,1,AML clinical blast
+GSE9476,BQPSO,1,2,38,1,1.5639084464626962,1,AML clinical blast
+GSE9476,BQPSO,1,2,41,1,2.0065255330082787,1,AML clinical blast
+GSE9476,BQPSO,1,2,46,0,-1.6631541762915283,0,Peripheral Blood Mononuclear Cells
+GSE9476,BQPSO,1,2,47,0,-2.386761484724636,0,Peripheral Blood Mononuclear Cells
+GSE9476,BQPSO,1,2,48,0,-2.3720328583748826,0,Peripheral Blood Mononuclear Cells
+GSE9476,Stability-BQPSO,1,2,2,0,-1.3457506184216457,0,Bone Marrow Mononuclear Cells
+GSE9476,Stability-BQPSO,1,2,7,0,-1.2693840505420602,0,Bone Marrow Mononuclear Cells
+GSE9476,Stability-BQPSO,1,2,9,0,-1.338572378431346,0,Bone Marrow Mononuclear Cells
+GSE9476,Stability-BQPSO,1,2,11,0,-1.2075143612475396,0,Bone Marrow CD34+ selected cells
+GSE9476,Stability-BQPSO,1,2,12,0,-0.857342107645368,0,Bone Marrow CD34+ selected cells
+GSE9476,Stability-BQPSO,1,2,19,1,0.21392981082049742,1,AML clinical blast
+GSE9476,Stability-BQPSO,1,2,28,1,0.9484601217346387,1,AML clinical blast
+GSE9476,Stability-BQPSO,1,2,36,1,2.863889827604577,1,AML clinical blast
+GSE9476,Stability-BQPSO,1,2,38,1,1.6212974595238419,1,AML clinical blast
+GSE9476,Stability-BQPSO,1,2,41,1,1.6294683667099747,1,AML clinical blast
+GSE9476,Stability-BQPSO,1,2,46,0,-0.854672560266768,0,Peripheral Blood Mononuclear Cells
+GSE9476,Stability-BQPSO,1,2,47,0,-1.0650935101200918,0,Peripheral Blood Mononuclear Cells
+GSE9476,Stability-BQPSO,1,2,48,0,-1.2737568551844007,0,Peripheral Blood Mononuclear Cells
+GSE9476,Random15,1,2,2,0,-0.5564809577183901,0,Bone Marrow Mononuclear Cells
+GSE9476,Random15,1,2,7,0,-0.9562538334344312,0,Bone Marrow Mononuclear Cells
+GSE9476,Random15,1,2,9,0,-0.25777585471834985,0,Bone Marrow Mononuclear Cells
+GSE9476,Random15,1,2,11,0,0.6699166434554057,1,Bone Marrow CD34+ selected cells
+GSE9476,Random15,1,2,12,0,-0.4728273984872315,0,Bone Marrow CD34+ selected cells
+GSE9476,Random15,1,2,19,1,1.2393229159779444,1,AML clinical blast
+GSE9476,Random15,1,2,28,1,-0.4433749814534493,0,AML clinical blast
+GSE9476,Random15,1,2,36,1,2.1575995256212837,1,AML clinical blast
+GSE9476,Random15,1,2,38,1,-0.1691631268520602,0,AML clinical blast
+GSE9476,Random15,1,2,41,1,0.03214633554385108,1,AML clinical blast
+GSE9476,Random15,1,2,46,0,-1.6252151764569902,0,Peripheral Blood Mononuclear Cells
+GSE9476,Random15,1,2,47,0,0.6016172442451101,1,Peripheral Blood Mononuclear Cells
+GSE9476,Random15,1,2,48,0,-1.308702789043368,0,Peripheral Blood Mononuclear Cells
+GSE9476,ANOVA,1,3,1,0,-0.8280400265164014,0,Bone Marrow Mononuclear Cells
+GSE9476,ANOVA,1,3,5,0,-1.2428139461916672,0,Bone Marrow Mononuclear Cells
+GSE9476,ANOVA,1,3,6,0,-1.0316849398584307,0,Bone Marrow Mononuclear Cells
+GSE9476,ANOVA,1,3,14,0,-0.8881585453737241,0,Bone Marrow CD34+ selected cells
+GSE9476,ANOVA,1,3,20,1,3.6706815760975067,1,AML clinical blast
+GSE9476,ANOVA,1,3,22,1,2.4090994455033874,1,AML clinical blast
+GSE9476,ANOVA,1,3,23,1,3.172152347625837,1,AML clinical blast
+GSE9476,ANOVA,1,3,24,1,1.1590559172117756,1,AML clinical blast
+GSE9476,ANOVA,1,3,31,1,2.3824892614758832,1,AML clinical blast
+GSE9476,ANOVA,1,3,33,1,1.544766292488562,1,AML clinical blast
+GSE9476,ANOVA,1,3,45,0,-1.2304827355835024,0,Peripheral Blood Mononuclear Cells
+GSE9476,ANOVA,1,3,58,0,-0.8810184281533753,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ANOVA,1,3,62,0,-1.52323940482384,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,L1,1,3,1,0,-0.7462267581927579,0,Bone Marrow Mononuclear Cells
+GSE9476,L1,1,3,5,0,-1.216425285927473,0,Bone Marrow Mononuclear Cells
+GSE9476,L1,1,3,6,0,-1.0541974419551847,0,Bone Marrow Mononuclear Cells
+GSE9476,L1,1,3,14,0,-0.8694449566146311,0,Bone Marrow CD34+ selected cells
+GSE9476,L1,1,3,20,1,2.848118594889958,1,AML clinical blast
+GSE9476,L1,1,3,22,1,1.8845800483922313,1,AML clinical blast
+GSE9476,L1,1,3,23,1,2.235919996227079,1,AML clinical blast
+GSE9476,L1,1,3,24,1,0.5356667629287127,1,AML clinical blast
+GSE9476,L1,1,3,31,1,1.775177001298462,1,AML clinical blast
+GSE9476,L1,1,3,33,1,1.8463797292403812,1,AML clinical blast
+GSE9476,L1,1,3,45,0,-1.1167168820144795,0,Peripheral Blood Mononuclear Cells
+GSE9476,L1,1,3,58,0,-1.0979302484825275,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,L1,1,3,62,0,-1.525227071195146,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ElasticNet,1,3,1,0,-0.9137118884476787,0,Bone Marrow Mononuclear Cells
+GSE9476,ElasticNet,1,3,5,0,-1.0032423698133632,0,Bone Marrow Mononuclear Cells
+GSE9476,ElasticNet,1,3,6,0,-0.7672213286889198,0,Bone Marrow Mononuclear Cells
+GSE9476,ElasticNet,1,3,14,0,-0.6919169631760573,0,Bone Marrow CD34+ selected cells
+GSE9476,ElasticNet,1,3,20,1,3.0607064042399217,1,AML clinical blast
+GSE9476,ElasticNet,1,3,22,1,1.8451784161243636,1,AML clinical blast
+GSE9476,ElasticNet,1,3,23,1,1.2834785589477968,1,AML clinical blast
+GSE9476,ElasticNet,1,3,24,1,0.6766405475544945,1,AML clinical blast
+GSE9476,ElasticNet,1,3,31,1,1.8805171458080188,1,AML clinical blast
+GSE9476,ElasticNet,1,3,33,1,1.381607433315088,1,AML clinical blast
+GSE9476,ElasticNet,1,3,45,0,-1.4293784041426605,0,Peripheral Blood Mononuclear Cells
+GSE9476,ElasticNet,1,3,58,0,-1.0884378604918923,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ElasticNet,1,3,62,0,-0.8809036652928199,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,RandomForest,1,3,1,0,-0.894833568278175,0,Bone Marrow Mononuclear Cells
+GSE9476,RandomForest,1,3,5,0,-1.1228079734276415,0,Bone Marrow Mononuclear Cells
+GSE9476,RandomForest,1,3,6,0,-1.1470861097770815,0,Bone Marrow Mononuclear Cells
+GSE9476,RandomForest,1,3,14,0,-0.9130345909171593,0,Bone Marrow CD34+ selected cells
+GSE9476,RandomForest,1,3,20,1,2.631901038184548,1,AML clinical blast
+GSE9476,RandomForest,1,3,22,1,2.8144683499417606,1,AML clinical blast
+GSE9476,RandomForest,1,3,23,1,3.4032952418744613,1,AML clinical blast
+GSE9476,RandomForest,1,3,24,1,0.5327521961752174,1,AML clinical blast
+GSE9476,RandomForest,1,3,31,1,2.7927985032237927,1,AML clinical blast
+GSE9476,RandomForest,1,3,33,1,2.5086594531813415,1,AML clinical blast
+GSE9476,RandomForest,1,3,45,0,-1.9808336750030753,0,Peripheral Blood Mononuclear Cells
+GSE9476,RandomForest,1,3,58,0,-1.1201159062963628,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,RandomForest,1,3,62,0,-1.2632132962807998,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BPSO,1,3,1,0,-1.0252781916474412,0,Bone Marrow Mononuclear Cells
+GSE9476,BPSO,1,3,5,0,-1.703379281823754,0,Bone Marrow Mononuclear Cells
+GSE9476,BPSO,1,3,6,0,-1.4321693219085267,0,Bone Marrow Mononuclear Cells
+GSE9476,BPSO,1,3,14,0,-0.542237955744014,0,Bone Marrow CD34+ selected cells
+GSE9476,BPSO,1,3,20,1,3.5422419138074543,1,AML clinical blast
+GSE9476,BPSO,1,3,22,1,2.3782259165800417,1,AML clinical blast
+GSE9476,BPSO,1,3,23,1,3.809291864365533,1,AML clinical blast
+GSE9476,BPSO,1,3,24,1,1.002225919362452,1,AML clinical blast
+GSE9476,BPSO,1,3,31,1,2.401189344881433,1,AML clinical blast
+GSE9476,BPSO,1,3,33,1,2.6737653039426714,1,AML clinical blast
+GSE9476,BPSO,1,3,45,0,-2.276373679829662,0,Peripheral Blood Mononuclear Cells
+GSE9476,BPSO,1,3,58,0,-1.3381511597149074,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BPSO,1,3,62,0,-0.772051611343682,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BQPSO,1,3,1,0,-1.0252781916474412,0,Bone Marrow Mononuclear Cells
+GSE9476,BQPSO,1,3,5,0,-1.703379281823754,0,Bone Marrow Mononuclear Cells
+GSE9476,BQPSO,1,3,6,0,-1.4321693219085267,0,Bone Marrow Mononuclear Cells
+GSE9476,BQPSO,1,3,14,0,-0.542237955744014,0,Bone Marrow CD34+ selected cells
+GSE9476,BQPSO,1,3,20,1,3.5422419138074543,1,AML clinical blast
+GSE9476,BQPSO,1,3,22,1,2.3782259165800417,1,AML clinical blast
+GSE9476,BQPSO,1,3,23,1,3.809291864365533,1,AML clinical blast
+GSE9476,BQPSO,1,3,24,1,1.002225919362452,1,AML clinical blast
+GSE9476,BQPSO,1,3,31,1,2.401189344881433,1,AML clinical blast
+GSE9476,BQPSO,1,3,33,1,2.6737653039426714,1,AML clinical blast
+GSE9476,BQPSO,1,3,45,0,-2.276373679829662,0,Peripheral Blood Mononuclear Cells
+GSE9476,BQPSO,1,3,58,0,-1.3381511597149074,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BQPSO,1,3,62,0,-0.772051611343682,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Stability-BQPSO,1,3,1,0,-1.0252781916474412,0,Bone Marrow Mononuclear Cells
+GSE9476,Stability-BQPSO,1,3,5,0,-1.703379281823754,0,Bone Marrow Mononuclear Cells
+GSE9476,Stability-BQPSO,1,3,6,0,-1.4321693219085267,0,Bone Marrow Mononuclear Cells
+GSE9476,Stability-BQPSO,1,3,14,0,-0.542237955744014,0,Bone Marrow CD34+ selected cells
+GSE9476,Stability-BQPSO,1,3,20,1,3.5422419138074543,1,AML clinical blast
+GSE9476,Stability-BQPSO,1,3,22,1,2.3782259165800417,1,AML clinical blast
+GSE9476,Stability-BQPSO,1,3,23,1,3.809291864365533,1,AML clinical blast
+GSE9476,Stability-BQPSO,1,3,24,1,1.002225919362452,1,AML clinical blast
+GSE9476,Stability-BQPSO,1,3,31,1,2.401189344881433,1,AML clinical blast
+GSE9476,Stability-BQPSO,1,3,33,1,2.6737653039426714,1,AML clinical blast
+GSE9476,Stability-BQPSO,1,3,45,0,-2.276373679829662,0,Peripheral Blood Mononuclear Cells
+GSE9476,Stability-BQPSO,1,3,58,0,-1.3381511597149074,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Stability-BQPSO,1,3,62,0,-0.772051611343682,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Random15,1,3,1,0,2.288179890436888,1,Bone Marrow Mononuclear Cells
+GSE9476,Random15,1,3,5,0,-0.10750296794717536,0,Bone Marrow Mononuclear Cells
+GSE9476,Random15,1,3,6,0,-0.41828094372340874,0,Bone Marrow Mononuclear Cells
+GSE9476,Random15,1,3,14,0,0.2584299460236024,1,Bone Marrow CD34+ selected cells
+GSE9476,Random15,1,3,20,1,2.1572465347721783,1,AML clinical blast
+GSE9476,Random15,1,3,22,1,1.2354856939683279,1,AML clinical blast
+GSE9476,Random15,1,3,23,1,3.1289459080948108,1,AML clinical blast
+GSE9476,Random15,1,3,24,1,1.6249273547709813,1,AML clinical blast
+GSE9476,Random15,1,3,31,1,-0.9732064938675458,0,AML clinical blast
+GSE9476,Random15,1,3,33,1,1.1535956212455933,1,AML clinical blast
+GSE9476,Random15,1,3,45,0,0.7161578646434064,1,Peripheral Blood Mononuclear Cells
+GSE9476,Random15,1,3,58,0,-1.302476374392859,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Random15,1,3,62,0,-0.3046677113804629,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ANOVA,1,4,4,0,-1.3775342483006334,0,Bone Marrow Mononuclear Cells
+GSE9476,ANOVA,1,4,15,0,-1.81198465944331,0,Bone Marrow CD34+ selected cells
+GSE9476,ANOVA,1,4,34,1,0.5597532370667679,1,AML clinical blast
+GSE9476,ANOVA,1,4,37,1,0.9241753145469036,1,AML clinical blast
+GSE9476,ANOVA,1,4,39,1,1.2306529069673255,1,AML clinical blast
+GSE9476,ANOVA,1,4,40,1,-0.13764675893971057,0,AML clinical blast
+GSE9476,ANOVA,1,4,43,1,-0.5874558183412757,0,AML clinical blast
+GSE9476,ANOVA,1,4,44,0,-1.3021644752385584,0,Peripheral Blood Mononuclear Cells
+GSE9476,ANOVA,1,4,50,0,-1.77083288340632,0,Peripheral Blood Mononuclear Cells
+GSE9476,ANOVA,1,4,52,0,-1.194641971919213,0,Peripheral Blood Mononuclear Cells
+GSE9476,ANOVA,1,4,56,0,-1.0689525970231182,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ANOVA,1,4,60,0,-1.198658429236098,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,L1,1,4,4,0,-1.5633300838333932,0,Bone Marrow Mononuclear Cells
+GSE9476,L1,1,4,15,0,-1.45749765568344,0,Bone Marrow CD34+ selected cells
+GSE9476,L1,1,4,34,1,0.7293459089116106,1,AML clinical blast
+GSE9476,L1,1,4,37,1,0.41722893639933606,1,AML clinical blast
+GSE9476,L1,1,4,39,1,1.0153167862933898,1,AML clinical blast
+GSE9476,L1,1,4,40,1,-0.4179177851666673,0,AML clinical blast
+GSE9476,L1,1,4,43,1,-0.5542877365036785,0,AML clinical blast
+GSE9476,L1,1,4,44,0,-1.0645497606965422,0,Peripheral Blood Mononuclear Cells
+GSE9476,L1,1,4,50,0,-1.3822388334624964,0,Peripheral Blood Mononuclear Cells
+GSE9476,L1,1,4,52,0,-0.9620297532649482,0,Peripheral Blood Mononuclear Cells
+GSE9476,L1,1,4,56,0,-0.6883291790799697,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,L1,1,4,60,0,-1.0995896076564153,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ElasticNet,1,4,4,0,-1.3988159039099797,0,Bone Marrow Mononuclear Cells
+GSE9476,ElasticNet,1,4,15,0,-1.5709201124840764,0,Bone Marrow CD34+ selected cells
+GSE9476,ElasticNet,1,4,34,1,0.5795621766042449,1,AML clinical blast
+GSE9476,ElasticNet,1,4,37,1,0.6259386835171947,1,AML clinical blast
+GSE9476,ElasticNet,1,4,39,1,0.9492624733030189,1,AML clinical blast
+GSE9476,ElasticNet,1,4,40,1,-0.6162785705606943,0,AML clinical blast
+GSE9476,ElasticNet,1,4,43,1,-0.3137360682781517,0,AML clinical blast
+GSE9476,ElasticNet,1,4,44,0,-1.066105662646498,0,Peripheral Blood Mononuclear Cells
+GSE9476,ElasticNet,1,4,50,0,-1.4893121108439136,0,Peripheral Blood Mononuclear Cells
+GSE9476,ElasticNet,1,4,52,0,-1.2162096146337675,0,Peripheral Blood Mononuclear Cells
+GSE9476,ElasticNet,1,4,56,0,-0.9087708109792838,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ElasticNet,1,4,60,0,-1.1426033660257593,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,RandomForest,1,4,4,0,-1.513648709919608,0,Bone Marrow Mononuclear Cells
+GSE9476,RandomForest,1,4,15,0,-1.88594671983751,0,Bone Marrow CD34+ selected cells
+GSE9476,RandomForest,1,4,34,1,1.2431611880329583,1,AML clinical blast
+GSE9476,RandomForest,1,4,37,1,0.8382370698999089,1,AML clinical blast
+GSE9476,RandomForest,1,4,39,1,0.4887078752864315,1,AML clinical blast
+GSE9476,RandomForest,1,4,40,1,-0.4858472209306877,0,AML clinical blast
+GSE9476,RandomForest,1,4,43,1,-0.965599641630025,0,AML clinical blast
+GSE9476,RandomForest,1,4,44,0,-1.5563179742444437,0,Peripheral Blood Mononuclear Cells
+GSE9476,RandomForest,1,4,50,0,-1.7354801229700023,0,Peripheral Blood Mononuclear Cells
+GSE9476,RandomForest,1,4,52,0,-1.0526156054289286,0,Peripheral Blood Mononuclear Cells
+GSE9476,RandomForest,1,4,56,0,-0.6391762428127337,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,RandomForest,1,4,60,0,-0.8394334646328625,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BPSO,1,4,4,0,-1.8674422672118542,0,Bone Marrow Mononuclear Cells
+GSE9476,BPSO,1,4,15,0,-1.5520028526925307,0,Bone Marrow CD34+ selected cells
+GSE9476,BPSO,1,4,34,1,1.2036081407841868,1,AML clinical blast
+GSE9476,BPSO,1,4,37,1,0.01576098967294781,1,AML clinical blast
+GSE9476,BPSO,1,4,39,1,1.0491827163474114,1,AML clinical blast
+GSE9476,BPSO,1,4,40,1,-0.3635188838093275,0,AML clinical blast
+GSE9476,BPSO,1,4,43,1,0.2816250094617666,1,AML clinical blast
+GSE9476,BPSO,1,4,44,0,-0.9397912691383761,0,Peripheral Blood Mononuclear Cells
+GSE9476,BPSO,1,4,50,0,-1.2131966201894524,0,Peripheral Blood Mononuclear Cells
+GSE9476,BPSO,1,4,52,0,-0.9477484679106206,0,Peripheral Blood Mononuclear Cells
+GSE9476,BPSO,1,4,56,0,-0.8119999199590058,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BPSO,1,4,60,0,-1.4726895200235093,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BQPSO,1,4,4,0,-1.8674422672118542,0,Bone Marrow Mononuclear Cells
+GSE9476,BQPSO,1,4,15,0,-1.5520028526925307,0,Bone Marrow CD34+ selected cells
+GSE9476,BQPSO,1,4,34,1,1.2036081407841868,1,AML clinical blast
+GSE9476,BQPSO,1,4,37,1,0.01576098967294781,1,AML clinical blast
+GSE9476,BQPSO,1,4,39,1,1.0491827163474114,1,AML clinical blast
+GSE9476,BQPSO,1,4,40,1,-0.3635188838093275,0,AML clinical blast
+GSE9476,BQPSO,1,4,43,1,0.2816250094617666,1,AML clinical blast
+GSE9476,BQPSO,1,4,44,0,-0.9397912691383761,0,Peripheral Blood Mononuclear Cells
+GSE9476,BQPSO,1,4,50,0,-1.2131966201894524,0,Peripheral Blood Mononuclear Cells
+GSE9476,BQPSO,1,4,52,0,-0.9477484679106206,0,Peripheral Blood Mononuclear Cells
+GSE9476,BQPSO,1,4,56,0,-0.8119999199590058,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BQPSO,1,4,60,0,-1.4726895200235093,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Stability-BQPSO,1,4,4,0,-1.2948698714762907,0,Bone Marrow Mononuclear Cells
+GSE9476,Stability-BQPSO,1,4,15,0,-1.8895781257860915,0,Bone Marrow CD34+ selected cells
+GSE9476,Stability-BQPSO,1,4,34,1,2.8655968628469184,1,AML clinical blast
+GSE9476,Stability-BQPSO,1,4,37,1,0.7129579767965759,1,AML clinical blast
+GSE9476,Stability-BQPSO,1,4,39,1,1.9642918820088393,1,AML clinical blast
+GSE9476,Stability-BQPSO,1,4,40,1,-0.09641667688035122,0,AML clinical blast
+GSE9476,Stability-BQPSO,1,4,43,1,-0.8770832434625199,0,AML clinical blast
+GSE9476,Stability-BQPSO,1,4,44,0,-2.3571640818004536,0,Peripheral Blood Mononuclear Cells
+GSE9476,Stability-BQPSO,1,4,50,0,-1.9169968637120658,0,Peripheral Blood Mononuclear Cells
+GSE9476,Stability-BQPSO,1,4,52,0,-1.4765451417832423,0,Peripheral Blood Mononuclear Cells
+GSE9476,Stability-BQPSO,1,4,56,0,-1.0724086407586468,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Stability-BQPSO,1,4,60,0,-1.7558663913002623,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Random15,1,4,4,0,-1.368323403920808,0,Bone Marrow Mononuclear Cells
+GSE9476,Random15,1,4,15,0,-0.3510775277578936,0,Bone Marrow CD34+ selected cells
+GSE9476,Random15,1,4,34,1,2.602703177146898,1,AML clinical blast
+GSE9476,Random15,1,4,37,1,0.3452639110535015,1,AML clinical blast
+GSE9476,Random15,1,4,39,1,-0.5208179275397447,0,AML clinical blast
+GSE9476,Random15,1,4,40,1,-0.7552986778312573,0,AML clinical blast
+GSE9476,Random15,1,4,43,1,-0.8087311426679089,0,AML clinical blast
+GSE9476,Random15,1,4,44,0,-2.7592468003443686,0,Peripheral Blood Mononuclear Cells
+GSE9476,Random15,1,4,50,0,-3.1961063176643583,0,Peripheral Blood Mononuclear Cells
+GSE9476,Random15,1,4,52,0,-1.462278439904972,0,Peripheral Blood Mononuclear Cells
+GSE9476,Random15,1,4,56,0,0.5475938399375878,1,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Random15,1,4,60,0,-1.3020896479000696,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ANOVA,2,0,13,0,-1.9472564799719982,0,Bone Marrow CD34+ selected cells
+GSE9476,ANOVA,2,0,26,1,2.9694390109255817,1,AML clinical blast
+GSE9476,ANOVA,2,0,27,1,2.239413879619375,1,AML clinical blast
+GSE9476,ANOVA,2,0,34,1,0.32646494084860583,1,AML clinical blast
+GSE9476,ANOVA,2,0,39,1,1.0204623591991513,1,AML clinical blast
+GSE9476,ANOVA,2,0,42,1,0.8287850005714403,1,AML clinical blast
+GSE9476,ANOVA,2,0,47,0,-0.9195350006305414,0,Peripheral Blood Mononuclear Cells
+GSE9476,ANOVA,2,0,50,0,-1.4840580274179387,0,Peripheral Blood Mononuclear Cells
+GSE9476,ANOVA,2,0,51,0,-1.5212300565223438,0,Peripheral Blood Mononuclear Cells
+GSE9476,ANOVA,2,0,54,0,-1.598747391945123,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ANOVA,2,0,56,0,-1.6929475134715453,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ANOVA,2,0,58,0,-1.8145857289414111,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ANOVA,2,0,62,0,-1.990493770808678,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,L1,2,0,13,0,-2.0901945350443563,0,Bone Marrow CD34+ selected cells
+GSE9476,L1,2,0,26,1,2.8002576325998265,1,AML clinical blast
+GSE9476,L1,2,0,27,1,1.1961669593078137,1,AML clinical blast
+GSE9476,L1,2,0,34,1,1.4286204579005757,1,AML clinical blast
+GSE9476,L1,2,0,39,1,-0.18566547574071035,0,AML clinical blast
+GSE9476,L1,2,0,42,1,0.2643150498932124,1,AML clinical blast
+GSE9476,L1,2,0,47,0,-0.7953804963973222,0,Peripheral Blood Mononuclear Cells
+GSE9476,L1,2,0,50,0,-1.366190787695609,0,Peripheral Blood Mononuclear Cells
+GSE9476,L1,2,0,51,0,-1.6865852955973635,0,Peripheral Blood Mononuclear Cells
+GSE9476,L1,2,0,54,0,-1.2484229217168745,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,L1,2,0,56,0,-1.0920701357616722,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,L1,2,0,58,0,-1.4386030520427155,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,L1,2,0,62,0,-1.3297488593952556,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ElasticNet,2,0,13,0,-1.4116806196226943,0,Bone Marrow CD34+ selected cells
+GSE9476,ElasticNet,2,0,26,1,1.8155053133179249,1,AML clinical blast
+GSE9476,ElasticNet,2,0,27,1,1.2683814871898662,1,AML clinical blast
+GSE9476,ElasticNet,2,0,34,1,0.8752298293104439,1,AML clinical blast
+GSE9476,ElasticNet,2,0,39,1,0.3890818162055858,1,AML clinical blast
+GSE9476,ElasticNet,2,0,42,1,0.8463905786297196,1,AML clinical blast
+GSE9476,ElasticNet,2,0,47,0,-0.7014347105599326,0,Peripheral Blood Mononuclear Cells
+GSE9476,ElasticNet,2,0,50,0,-1.3453337125645102,0,Peripheral Blood Mononuclear Cells
+GSE9476,ElasticNet,2,0,51,0,-1.2606117723892958,0,Peripheral Blood Mononuclear Cells
+GSE9476,ElasticNet,2,0,54,0,-1.1323145996098662,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ElasticNet,2,0,56,0,-0.8772064940896012,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ElasticNet,2,0,58,0,-1.3359508946886918,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ElasticNet,2,0,62,0,-1.088649609336187,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,RandomForest,2,0,13,0,-2.571617598917689,0,Bone Marrow CD34+ selected cells
+GSE9476,RandomForest,2,0,26,1,3.039659127557573,1,AML clinical blast
+GSE9476,RandomForest,2,0,27,1,1.2407826228280836,1,AML clinical blast
+GSE9476,RandomForest,2,0,34,1,1.230818602427556,1,AML clinical blast
+GSE9476,RandomForest,2,0,39,1,0.32355186725701934,1,AML clinical blast
+GSE9476,RandomForest,2,0,42,1,0.7179177790003944,1,AML clinical blast
+GSE9476,RandomForest,2,0,47,0,-0.6360303678267865,0,Peripheral Blood Mononuclear Cells
+GSE9476,RandomForest,2,0,50,0,-1.3680434874667573,0,Peripheral Blood Mononuclear Cells
+GSE9476,RandomForest,2,0,51,0,-2.1637199851907187,0,Peripheral Blood Mononuclear Cells
+GSE9476,RandomForest,2,0,54,0,-1.273477761021275,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,RandomForest,2,0,56,0,-1.375543167318741,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,RandomForest,2,0,58,0,-1.659607362635766,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,RandomForest,2,0,62,0,-0.9293825554527674,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BPSO,2,0,13,0,-1.5283637930368885,0,Bone Marrow CD34+ selected cells
+GSE9476,BPSO,2,0,26,1,2.5919349964782583,1,AML clinical blast
+GSE9476,BPSO,2,0,27,1,2.806981220398617,1,AML clinical blast
+GSE9476,BPSO,2,0,34,1,1.2192288120646568,1,AML clinical blast
+GSE9476,BPSO,2,0,39,1,3.036034115923232,1,AML clinical blast
+GSE9476,BPSO,2,0,42,1,1.8030006176380602,1,AML clinical blast
+GSE9476,BPSO,2,0,47,0,-1.9006431083786337,0,Peripheral Blood Mononuclear Cells
+GSE9476,BPSO,2,0,50,0,-1.5323880010887823,0,Peripheral Blood Mononuclear Cells
+GSE9476,BPSO,2,0,51,0,-0.9548845100924623,0,Peripheral Blood Mononuclear Cells
+GSE9476,BPSO,2,0,54,0,-1.3833216116660385,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BPSO,2,0,56,0,-1.296079324920542,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BPSO,2,0,58,0,-1.8232981362321166,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BPSO,2,0,62,0,-1.9925156126836097,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BQPSO,2,0,13,0,-1.5283637930368885,0,Bone Marrow CD34+ selected cells
+GSE9476,BQPSO,2,0,26,1,2.5919349964782583,1,AML clinical blast
+GSE9476,BQPSO,2,0,27,1,2.806981220398617,1,AML clinical blast
+GSE9476,BQPSO,2,0,34,1,1.2192288120646568,1,AML clinical blast
+GSE9476,BQPSO,2,0,39,1,3.036034115923232,1,AML clinical blast
+GSE9476,BQPSO,2,0,42,1,1.8030006176380602,1,AML clinical blast
+GSE9476,BQPSO,2,0,47,0,-1.9006431083786337,0,Peripheral Blood Mononuclear Cells
+GSE9476,BQPSO,2,0,50,0,-1.5323880010887823,0,Peripheral Blood Mononuclear Cells
+GSE9476,BQPSO,2,0,51,0,-0.9548845100924623,0,Peripheral Blood Mononuclear Cells
+GSE9476,BQPSO,2,0,54,0,-1.3833216116660385,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BQPSO,2,0,56,0,-1.296079324920542,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BQPSO,2,0,58,0,-1.8232981362321166,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BQPSO,2,0,62,0,-1.9925156126836097,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Stability-BQPSO,2,0,13,0,-1.9452746702756034,0,Bone Marrow CD34+ selected cells
+GSE9476,Stability-BQPSO,2,0,26,1,2.705981529974685,1,AML clinical blast
+GSE9476,Stability-BQPSO,2,0,27,1,2.2303107736719987,1,AML clinical blast
+GSE9476,Stability-BQPSO,2,0,34,1,1.1210062933089302,1,AML clinical blast
+GSE9476,Stability-BQPSO,2,0,39,1,1.1046197318237208,1,AML clinical blast
+GSE9476,Stability-BQPSO,2,0,42,1,0.8645392334779186,1,AML clinical blast
+GSE9476,Stability-BQPSO,2,0,47,0,-0.44011854264859596,0,Peripheral Blood Mononuclear Cells
+GSE9476,Stability-BQPSO,2,0,50,0,-1.661831065732824,0,Peripheral Blood Mononuclear Cells
+GSE9476,Stability-BQPSO,2,0,51,0,-1.3115498970999553,0,Peripheral Blood Mononuclear Cells
+GSE9476,Stability-BQPSO,2,0,54,0,-0.7305741776712572,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Stability-BQPSO,2,0,56,0,-0.5573895494460137,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Stability-BQPSO,2,0,58,0,-0.930292901211376,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Stability-BQPSO,2,0,62,0,-1.3047544919319443,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Random15,2,0,13,0,0.371537676169796,1,Bone Marrow CD34+ selected cells
+GSE9476,Random15,2,0,26,1,2.7367765375109503,1,AML clinical blast
+GSE9476,Random15,2,0,27,1,1.4613234136351043,1,AML clinical blast
+GSE9476,Random15,2,0,34,1,2.9696180167862543,1,AML clinical blast
+GSE9476,Random15,2,0,39,1,0.6574060031078983,1,AML clinical blast
+GSE9476,Random15,2,0,42,1,-2.3897269628932643,0,AML clinical blast
+GSE9476,Random15,2,0,47,0,-2.8964994831121715,0,Peripheral Blood Mononuclear Cells
+GSE9476,Random15,2,0,50,0,-0.7021170060118845,0,Peripheral Blood Mononuclear Cells
+GSE9476,Random15,2,0,51,0,-0.951387149175851,0,Peripheral Blood Mononuclear Cells
+GSE9476,Random15,2,0,54,0,-0.2049429992601577,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Random15,2,0,56,0,-1.8874339688254163,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Random15,2,0,58,0,0.14375197807246204,1,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Random15,2,0,62,0,-1.241033577802839,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ANOVA,2,1,1,0,-0.8648998259134235,0,Bone Marrow Mononuclear Cells
+GSE9476,ANOVA,2,1,2,0,-0.9020954953829684,0,Bone Marrow Mononuclear Cells
+GSE9476,ANOVA,2,1,4,0,-1.1591311178834374,0,Bone Marrow Mononuclear Cells
+GSE9476,ANOVA,2,1,10,0,-1.2084026127967067,0,Bone Marrow Mononuclear Cells
+GSE9476,ANOVA,2,1,15,0,-1.7683993174701162,0,Bone Marrow CD34+ selected cells
+GSE9476,ANOVA,2,1,19,1,1.1103044283630759,1,AML clinical blast
+GSE9476,ANOVA,2,1,29,1,0.47597051069390856,1,AML clinical blast
+GSE9476,ANOVA,2,1,33,1,2.5000584561956365,1,AML clinical blast
+GSE9476,ANOVA,2,1,38,1,1.1187382974253848,1,AML clinical blast
+GSE9476,ANOVA,2,1,41,1,2.369571148566831,1,AML clinical blast
+GSE9476,ANOVA,2,1,52,0,-1.6898139314722376,0,Peripheral Blood Mononuclear Cells
+GSE9476,ANOVA,2,1,60,0,-1.3483157713644656,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ANOVA,2,1,61,0,-1.469820969092904,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,L1,2,1,1,0,-0.9151585996092857,0,Bone Marrow Mononuclear Cells
+GSE9476,L1,2,1,2,0,-1.0279310178482208,0,Bone Marrow Mononuclear Cells
+GSE9476,L1,2,1,4,0,-1.151634982921963,0,Bone Marrow Mononuclear Cells
+GSE9476,L1,2,1,10,0,-1.1423410083768784,0,Bone Marrow Mononuclear Cells
+GSE9476,L1,2,1,15,0,-1.8414739579306534,0,Bone Marrow CD34+ selected cells
+GSE9476,L1,2,1,19,1,0.8783281312939101,1,AML clinical blast
+GSE9476,L1,2,1,29,1,0.030278926239863627,1,AML clinical blast
+GSE9476,L1,2,1,33,1,2.3566216358040575,1,AML clinical blast
+GSE9476,L1,2,1,38,1,1.4135247475867383,1,AML clinical blast
+GSE9476,L1,2,1,41,1,1.9123783037724884,1,AML clinical blast
+GSE9476,L1,2,1,52,0,-1.4578349406435869,0,Peripheral Blood Mononuclear Cells
+GSE9476,L1,2,1,60,0,-1.500659261038359,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,L1,2,1,61,0,-1.5133920095651558,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ElasticNet,2,1,1,0,-1.5488371989442993,0,Bone Marrow Mononuclear Cells
+GSE9476,ElasticNet,2,1,2,0,-0.9914995699479745,0,Bone Marrow Mononuclear Cells
+GSE9476,ElasticNet,2,1,4,0,-1.171941764417004,0,Bone Marrow Mononuclear Cells
+GSE9476,ElasticNet,2,1,10,0,-1.1937582509652167,0,Bone Marrow Mononuclear Cells
+GSE9476,ElasticNet,2,1,15,0,-1.8783452693240303,0,Bone Marrow CD34+ selected cells
+GSE9476,ElasticNet,2,1,19,1,0.8337867793482444,1,AML clinical blast
+GSE9476,ElasticNet,2,1,29,1,0.14156330369304973,1,AML clinical blast
+GSE9476,ElasticNet,2,1,33,1,2.13625724314933,1,AML clinical blast
+GSE9476,ElasticNet,2,1,38,1,1.8453248015906443,1,AML clinical blast
+GSE9476,ElasticNet,2,1,41,1,1.2571617433473785,1,AML clinical blast
+GSE9476,ElasticNet,2,1,52,0,-1.529753441708292,0,Peripheral Blood Mononuclear Cells
+GSE9476,ElasticNet,2,1,60,0,-1.4282662550928753,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ElasticNet,2,1,61,0,-1.6225264974900462,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,RandomForest,2,1,1,0,-1.5660441235449227,0,Bone Marrow Mononuclear Cells
+GSE9476,RandomForest,2,1,2,0,-1.3564269572598238,0,Bone Marrow Mononuclear Cells
+GSE9476,RandomForest,2,1,4,0,-1.2946215511835375,0,Bone Marrow Mononuclear Cells
+GSE9476,RandomForest,2,1,10,0,-1.19495648956733,0,Bone Marrow Mononuclear Cells
+GSE9476,RandomForest,2,1,15,0,-2.0592536189379755,0,Bone Marrow CD34+ selected cells
+GSE9476,RandomForest,2,1,19,1,-0.6541226010243365,0,AML clinical blast
+GSE9476,RandomForest,2,1,29,1,0.5482535176922992,1,AML clinical blast
+GSE9476,RandomForest,2,1,33,1,2.4837711569614984,1,AML clinical blast
+GSE9476,RandomForest,2,1,38,1,1.6210934374402743,1,AML clinical blast
+GSE9476,RandomForest,2,1,41,1,1.915665121367111,1,AML clinical blast
+GSE9476,RandomForest,2,1,52,0,-1.8065996167110847,0,Peripheral Blood Mononuclear Cells
+GSE9476,RandomForest,2,1,60,0,-1.1286523931084866,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,RandomForest,2,1,61,0,-1.5862438224979327,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BPSO,2,1,1,0,-0.7790260658125214,0,Bone Marrow Mononuclear Cells
+GSE9476,BPSO,2,1,2,0,-0.8702859345774879,0,Bone Marrow Mononuclear Cells
+GSE9476,BPSO,2,1,4,0,-1.0056987282545484,0,Bone Marrow Mononuclear Cells
+GSE9476,BPSO,2,1,10,0,-1.243129169594331,0,Bone Marrow Mononuclear Cells
+GSE9476,BPSO,2,1,15,0,-2.103212467656423,0,Bone Marrow CD34+ selected cells
+GSE9476,BPSO,2,1,19,1,1.0919471812728385,1,AML clinical blast
+GSE9476,BPSO,2,1,29,1,1.4259826645602114,1,AML clinical blast
+GSE9476,BPSO,2,1,33,1,2.5283727515274026,1,AML clinical blast
+GSE9476,BPSO,2,1,38,1,1.0181506931901163,1,AML clinical blast
+GSE9476,BPSO,2,1,41,1,2.4865564830946147,1,AML clinical blast
+GSE9476,BPSO,2,1,52,0,-1.1107932834484082,0,Peripheral Blood Mononuclear Cells
+GSE9476,BPSO,2,1,60,0,-0.7258447350963869,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BPSO,2,1,61,0,-2.2669973600030837,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BQPSO,2,1,1,0,-1.3650662136207379,0,Bone Marrow Mononuclear Cells
+GSE9476,BQPSO,2,1,2,0,-1.3787100623911965,0,Bone Marrow Mononuclear Cells
+GSE9476,BQPSO,2,1,4,0,-1.3535990031640508,0,Bone Marrow Mononuclear Cells
+GSE9476,BQPSO,2,1,10,0,-1.5448278320953464,0,Bone Marrow Mononuclear Cells
+GSE9476,BQPSO,2,1,15,0,-1.3774652288746714,0,Bone Marrow CD34+ selected cells
+GSE9476,BQPSO,2,1,19,1,0.4202154624109951,1,AML clinical blast
+GSE9476,BQPSO,2,1,29,1,-0.18957207910152254,0,AML clinical blast
+GSE9476,BQPSO,2,1,33,1,2.750338378431745,1,AML clinical blast
+GSE9476,BQPSO,2,1,38,1,1.5213845848007626,1,AML clinical blast
+GSE9476,BQPSO,2,1,41,1,2.67972154779721,1,AML clinical blast
+GSE9476,BQPSO,2,1,52,0,-2.239519375211946,0,Peripheral Blood Mononuclear Cells
+GSE9476,BQPSO,2,1,60,0,-1.0699794112549619,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BQPSO,2,1,61,0,-1.3692616347127367,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Stability-BQPSO,2,1,1,0,-1.3316624933006567,0,Bone Marrow Mononuclear Cells
+GSE9476,Stability-BQPSO,2,1,2,0,-0.9953418982923234,0,Bone Marrow Mononuclear Cells
+GSE9476,Stability-BQPSO,2,1,4,0,-1.4398318093566491,0,Bone Marrow Mononuclear Cells
+GSE9476,Stability-BQPSO,2,1,10,0,-1.5524162770946182,0,Bone Marrow Mononuclear Cells
+GSE9476,Stability-BQPSO,2,1,15,0,-1.9942782932768153,0,Bone Marrow CD34+ selected cells
+GSE9476,Stability-BQPSO,2,1,19,1,0.6671582518477817,1,AML clinical blast
+GSE9476,Stability-BQPSO,2,1,29,1,0.6510989330120821,1,AML clinical blast
+GSE9476,Stability-BQPSO,2,1,33,1,2.487888034505804,1,AML clinical blast
+GSE9476,Stability-BQPSO,2,1,38,1,1.2702450897542938,1,AML clinical blast
+GSE9476,Stability-BQPSO,2,1,41,1,2.0831862844406146,1,AML clinical blast
+GSE9476,Stability-BQPSO,2,1,52,0,-1.8292822258422015,0,Peripheral Blood Mononuclear Cells
+GSE9476,Stability-BQPSO,2,1,60,0,-1.4095784609360635,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Stability-BQPSO,2,1,61,0,-1.7910938024782286,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Random15,2,1,1,0,0.36814656330659,1,Bone Marrow Mononuclear Cells
+GSE9476,Random15,2,1,2,0,-2.1857711281655283,0,Bone Marrow Mononuclear Cells
+GSE9476,Random15,2,1,4,0,-1.488730623017489,0,Bone Marrow Mononuclear Cells
+GSE9476,Random15,2,1,10,0,-1.7563949178459763,0,Bone Marrow Mononuclear Cells
+GSE9476,Random15,2,1,15,0,-0.6451924030457535,0,Bone Marrow CD34+ selected cells
+GSE9476,Random15,2,1,19,1,-1.0889869529676384,0,AML clinical blast
+GSE9476,Random15,2,1,29,1,-1.3868308919812407,0,AML clinical blast
+GSE9476,Random15,2,1,33,1,3.912441348005626,1,AML clinical blast
+GSE9476,Random15,2,1,38,1,6.227190742231021,1,AML clinical blast
+GSE9476,Random15,2,1,41,1,0.32798804999467635,1,AML clinical blast
+GSE9476,Random15,2,1,52,0,-1.0138933312318597,0,Peripheral Blood Mononuclear Cells
+GSE9476,Random15,2,1,60,0,-0.619909235585767,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Random15,2,1,61,0,-1.5156207679170475,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ANOVA,2,2,0,0,-0.21960745352980632,0,Bone Marrow CD34+ selected cells
+GSE9476,ANOVA,2,2,6,0,-0.9160039353506845,0,Bone Marrow Mononuclear Cells
+GSE9476,ANOVA,2,2,9,0,-1.1014011430081376,0,Bone Marrow Mononuclear Cells
+GSE9476,ANOVA,2,2,11,0,-0.3368456023114968,0,Bone Marrow CD34+ selected cells
+GSE9476,ANOVA,2,2,18,1,0.02881138812161023,1,AML clinical blast
+GSE9476,ANOVA,2,2,31,1,2.550062519290867,1,AML clinical blast
+GSE9476,ANOVA,2,2,32,1,2.7069368473110744,1,AML clinical blast
+GSE9476,ANOVA,2,2,35,1,2.284267893711918,1,AML clinical blast
+GSE9476,ANOVA,2,2,36,1,2.491828037196482,1,AML clinical blast
+GSE9476,ANOVA,2,2,45,0,-1.77930143361376,0,Peripheral Blood Mononuclear Cells
+GSE9476,ANOVA,2,2,48,0,-1.7935367376954918,0,Peripheral Blood Mononuclear Cells
+GSE9476,ANOVA,2,2,55,0,-0.9615725620618754,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ANOVA,2,2,63,0,-0.6484561592175287,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,L1,2,2,0,0,-0.6785644636431563,0,Bone Marrow CD34+ selected cells
+GSE9476,L1,2,2,6,0,-0.9911015951681343,0,Bone Marrow Mononuclear Cells
+GSE9476,L1,2,2,9,0,-1.1262607637453055,0,Bone Marrow Mononuclear Cells
+GSE9476,L1,2,2,11,0,-0.6495611999472435,0,Bone Marrow CD34+ selected cells
+GSE9476,L1,2,2,18,1,0.28347599573218457,1,AML clinical blast
+GSE9476,L1,2,2,31,1,1.7004834061372667,1,AML clinical blast
+GSE9476,L1,2,2,32,1,2.0788624767972643,1,AML clinical blast
+GSE9476,L1,2,2,35,1,0.5111379674981196,1,AML clinical blast
+GSE9476,L1,2,2,36,1,1.750646856381948,1,AML clinical blast
+GSE9476,L1,2,2,45,0,-1.0632599114668984,0,Peripheral Blood Mononuclear Cells
+GSE9476,L1,2,2,48,0,-1.2834816491319248,0,Peripheral Blood Mononuclear Cells
+GSE9476,L1,2,2,55,0,-0.9163598110620514,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,L1,2,2,63,0,-0.8714315029660884,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ElasticNet,2,2,0,0,-0.5710454109152723,0,Bone Marrow CD34+ selected cells
+GSE9476,ElasticNet,2,2,6,0,-1.209265461154814,0,Bone Marrow Mononuclear Cells
+GSE9476,ElasticNet,2,2,9,0,-1.1052587969947196,0,Bone Marrow Mononuclear Cells
+GSE9476,ElasticNet,2,2,11,0,-0.8157078290484835,0,Bone Marrow CD34+ selected cells
+GSE9476,ElasticNet,2,2,18,1,0.15790112001109363,1,AML clinical blast
+GSE9476,ElasticNet,2,2,31,1,1.5432249239103344,1,AML clinical blast
+GSE9476,ElasticNet,2,2,32,1,2.1053561968289065,1,AML clinical blast
+GSE9476,ElasticNet,2,2,35,1,0.3615689833846474,1,AML clinical blast
+GSE9476,ElasticNet,2,2,36,1,1.568584186545291,1,AML clinical blast
+GSE9476,ElasticNet,2,2,45,0,-0.8949423773566249,0,Peripheral Blood Mononuclear Cells
+GSE9476,ElasticNet,2,2,48,0,-1.4997532548845895,0,Peripheral Blood Mononuclear Cells
+GSE9476,ElasticNet,2,2,55,0,-1.009858634830819,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ElasticNet,2,2,63,0,-0.8854098772959698,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,RandomForest,2,2,0,0,-0.2873902652871594,0,Bone Marrow CD34+ selected cells
+GSE9476,RandomForest,2,2,6,0,-0.8111625489191727,0,Bone Marrow Mononuclear Cells
+GSE9476,RandomForest,2,2,9,0,-1.1356464109480047,0,Bone Marrow Mononuclear Cells
+GSE9476,RandomForest,2,2,11,0,-0.5935487714549648,0,Bone Marrow CD34+ selected cells
+GSE9476,RandomForest,2,2,18,1,0.5971076233954893,1,AML clinical blast
+GSE9476,RandomForest,2,2,31,1,2.927599613934372,1,AML clinical blast
+GSE9476,RandomForest,2,2,32,1,2.8352110585278694,1,AML clinical blast
+GSE9476,RandomForest,2,2,35,1,2.43069354878874,1,AML clinical blast
+GSE9476,RandomForest,2,2,36,1,2.1785731310296765,1,AML clinical blast
+GSE9476,RandomForest,2,2,45,0,-1.4752469959372396,0,Peripheral Blood Mononuclear Cells
+GSE9476,RandomForest,2,2,48,0,-1.904250521066198,0,Peripheral Blood Mononuclear Cells
+GSE9476,RandomForest,2,2,55,0,-0.8173902193571386,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,RandomForest,2,2,63,0,-0.34292321712289164,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BPSO,2,2,0,0,-0.3239636775958226,0,Bone Marrow CD34+ selected cells
+GSE9476,BPSO,2,2,6,0,-0.988275400456521,0,Bone Marrow Mononuclear Cells
+GSE9476,BPSO,2,2,9,0,-1.1516873495914317,0,Bone Marrow Mononuclear Cells
+GSE9476,BPSO,2,2,11,0,-0.8327953813357277,0,Bone Marrow CD34+ selected cells
+GSE9476,BPSO,2,2,18,1,-0.30675909761855574,0,AML clinical blast
+GSE9476,BPSO,2,2,31,1,1.7691779684883149,1,AML clinical blast
+GSE9476,BPSO,2,2,32,1,2.58822562659895,1,AML clinical blast
+GSE9476,BPSO,2,2,35,1,1.5009631033912285,1,AML clinical blast
+GSE9476,BPSO,2,2,36,1,2.683019097638206,1,AML clinical blast
+GSE9476,BPSO,2,2,45,0,-0.9158262681368494,0,Peripheral Blood Mononuclear Cells
+GSE9476,BPSO,2,2,48,0,-1.597245232126445,0,Peripheral Blood Mononuclear Cells
+GSE9476,BPSO,2,2,55,0,-1.4036294106792153,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BPSO,2,2,63,0,-0.85536660013075,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BQPSO,2,2,0,0,-0.3239636775958226,0,Bone Marrow CD34+ selected cells
+GSE9476,BQPSO,2,2,6,0,-0.988275400456521,0,Bone Marrow Mononuclear Cells
+GSE9476,BQPSO,2,2,9,0,-1.1516873495914317,0,Bone Marrow Mononuclear Cells
+GSE9476,BQPSO,2,2,11,0,-0.8327953813357277,0,Bone Marrow CD34+ selected cells
+GSE9476,BQPSO,2,2,18,1,-0.30675909761855574,0,AML clinical blast
+GSE9476,BQPSO,2,2,31,1,1.7691779684883149,1,AML clinical blast
+GSE9476,BQPSO,2,2,32,1,2.58822562659895,1,AML clinical blast
+GSE9476,BQPSO,2,2,35,1,1.5009631033912285,1,AML clinical blast
+GSE9476,BQPSO,2,2,36,1,2.683019097638206,1,AML clinical blast
+GSE9476,BQPSO,2,2,45,0,-0.9158262681368494,0,Peripheral Blood Mononuclear Cells
+GSE9476,BQPSO,2,2,48,0,-1.597245232126445,0,Peripheral Blood Mononuclear Cells
+GSE9476,BQPSO,2,2,55,0,-1.4036294106792153,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BQPSO,2,2,63,0,-0.85536660013075,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Stability-BQPSO,2,2,0,0,0.03942344519160783,1,Bone Marrow CD34+ selected cells
+GSE9476,Stability-BQPSO,2,2,6,0,-1.454185570104453,0,Bone Marrow Mononuclear Cells
+GSE9476,Stability-BQPSO,2,2,9,0,-1.3595055451421703,0,Bone Marrow Mononuclear Cells
+GSE9476,Stability-BQPSO,2,2,11,0,-0.4353660289545244,0,Bone Marrow CD34+ selected cells
+GSE9476,Stability-BQPSO,2,2,18,1,-0.6121849672048593,0,AML clinical blast
+GSE9476,Stability-BQPSO,2,2,31,1,2.1079060976689665,1,AML clinical blast
+GSE9476,Stability-BQPSO,2,2,32,1,2.7290239809263306,1,AML clinical blast
+GSE9476,Stability-BQPSO,2,2,35,1,0.3695217445878046,1,AML clinical blast
+GSE9476,Stability-BQPSO,2,2,36,1,1.7235837180252644,1,AML clinical blast
+GSE9476,Stability-BQPSO,2,2,45,0,-1.3313309697991889,0,Peripheral Blood Mononuclear Cells
+GSE9476,Stability-BQPSO,2,2,48,0,-1.8823331038126898,0,Peripheral Blood Mononuclear Cells
+GSE9476,Stability-BQPSO,2,2,55,0,-1.4217067953528713,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Stability-BQPSO,2,2,63,0,-1.027459225637357,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Random15,2,2,0,0,0.9109352419045603,1,Bone Marrow CD34+ selected cells
+GSE9476,Random15,2,2,6,0,-0.34686634364770585,0,Bone Marrow Mononuclear Cells
+GSE9476,Random15,2,2,9,0,-1.9689989723335741,0,Bone Marrow Mononuclear Cells
+GSE9476,Random15,2,2,11,0,-1.7387232334450828,0,Bone Marrow CD34+ selected cells
+GSE9476,Random15,2,2,18,1,0.29470979082261184,1,AML clinical blast
+GSE9476,Random15,2,2,31,1,2.4318450433172627,1,AML clinical blast
+GSE9476,Random15,2,2,32,1,0.6709938348901313,1,AML clinical blast
+GSE9476,Random15,2,2,35,1,4.359324852002728,1,AML clinical blast
+GSE9476,Random15,2,2,36,1,2.41967449280347,1,AML clinical blast
+GSE9476,Random15,2,2,45,0,0.11394677981634402,1,Peripheral Blood Mononuclear Cells
+GSE9476,Random15,2,2,48,0,-0.8442352274989997,0,Peripheral Blood Mononuclear Cells
+GSE9476,Random15,2,2,55,0,-3.887220931268212,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Random15,2,2,63,0,-2.3273762536871745,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ANOVA,2,3,3,0,-2.699993396255966,0,Bone Marrow Mononuclear Cells
+GSE9476,ANOVA,2,3,7,0,-0.9917098738047432,0,Bone Marrow Mononuclear Cells
+GSE9476,ANOVA,2,3,12,0,-1.237026031278369,0,Bone Marrow CD34+ selected cells
+GSE9476,ANOVA,2,3,14,0,-0.9479505432178872,0,Bone Marrow CD34+ selected cells
+GSE9476,ANOVA,2,3,16,0,-0.5642871430489136,0,Bone Marrow CD34+ selected cells
+GSE9476,ANOVA,2,3,20,1,4.182194760387147,1,AML clinical blast
+GSE9476,ANOVA,2,3,22,1,2.5888186191708358,1,AML clinical blast
+GSE9476,ANOVA,2,3,23,1,1.833518743278732,1,AML clinical blast
+GSE9476,ANOVA,2,3,30,1,3.3787437751395237,1,AML clinical blast
+GSE9476,ANOVA,2,3,37,1,0.5130783455949868,1,AML clinical blast
+GSE9476,ANOVA,2,3,40,1,0.05638341453537776,1,AML clinical blast
+GSE9476,ANOVA,2,3,49,0,-2.094875031575066,0,Peripheral Blood Mononuclear Cells
+GSE9476,ANOVA,2,3,53,0,-1.8687743782748139,0,Peripheral Blood Mononuclear Cells
+GSE9476,L1,2,3,3,0,-2.241209322503393,0,Bone Marrow Mononuclear Cells
+GSE9476,L1,2,3,7,0,-1.3837895895319656,0,Bone Marrow Mononuclear Cells
+GSE9476,L1,2,3,12,0,-1.3551091210300044,0,Bone Marrow CD34+ selected cells
+GSE9476,L1,2,3,14,0,-0.562797832021164,0,Bone Marrow CD34+ selected cells
+GSE9476,L1,2,3,16,0,-0.7110223481649862,0,Bone Marrow CD34+ selected cells
+GSE9476,L1,2,3,20,1,2.4723133376104,1,AML clinical blast
+GSE9476,L1,2,3,22,1,2.375219075512966,1,AML clinical blast
+GSE9476,L1,2,3,23,1,2.157934690735112,1,AML clinical blast
+GSE9476,L1,2,3,30,1,2.9625472813367852,1,AML clinical blast
+GSE9476,L1,2,3,37,1,0.09564624071667294,1,AML clinical blast
+GSE9476,L1,2,3,40,1,0.13947856995838082,1,AML clinical blast
+GSE9476,L1,2,3,49,0,-1.2589503739814045,0,Peripheral Blood Mononuclear Cells
+GSE9476,L1,2,3,53,0,-0.8671157516510586,0,Peripheral Blood Mononuclear Cells
+GSE9476,ElasticNet,2,3,3,0,-1.6724676488648504,0,Bone Marrow Mononuclear Cells
+GSE9476,ElasticNet,2,3,7,0,-1.4776647337235105,0,Bone Marrow Mononuclear Cells
+GSE9476,ElasticNet,2,3,12,0,-1.3073637678586791,0,Bone Marrow CD34+ selected cells
+GSE9476,ElasticNet,2,3,14,0,-0.5199455870566604,0,Bone Marrow CD34+ selected cells
+GSE9476,ElasticNet,2,3,16,0,-0.5029595735155349,0,Bone Marrow CD34+ selected cells
+GSE9476,ElasticNet,2,3,20,1,2.6584540397768266,1,AML clinical blast
+GSE9476,ElasticNet,2,3,22,1,1.8535112014983464,1,AML clinical blast
+GSE9476,ElasticNet,2,3,23,1,1.296651875465677,1,AML clinical blast
+GSE9476,ElasticNet,2,3,30,1,1.987753155010241,1,AML clinical blast
+GSE9476,ElasticNet,2,3,37,1,0.9189214809679996,1,AML clinical blast
+GSE9476,ElasticNet,2,3,40,1,-0.02381614240435828,0,AML clinical blast
+GSE9476,ElasticNet,2,3,49,0,-1.3021203150937404,0,Peripheral Blood Mononuclear Cells
+GSE9476,ElasticNet,2,3,53,0,-1.1748714190474971,0,Peripheral Blood Mononuclear Cells
+GSE9476,RandomForest,2,3,3,0,-1.8246770437461717,0,Bone Marrow Mononuclear Cells
+GSE9476,RandomForest,2,3,7,0,-1.7482225361076567,0,Bone Marrow Mononuclear Cells
+GSE9476,RandomForest,2,3,12,0,-1.4711651956210723,0,Bone Marrow CD34+ selected cells
+GSE9476,RandomForest,2,3,14,0,-0.5741671456123508,0,Bone Marrow CD34+ selected cells
+GSE9476,RandomForest,2,3,16,0,-0.08171304470175458,0,Bone Marrow CD34+ selected cells
+GSE9476,RandomForest,2,3,20,1,2.8046804377948042,1,AML clinical blast
+GSE9476,RandomForest,2,3,22,1,2.2632109114775956,1,AML clinical blast
+GSE9476,RandomForest,2,3,23,1,2.477656095271259,1,AML clinical blast
+GSE9476,RandomForest,2,3,30,1,0.9725365452224121,1,AML clinical blast
+GSE9476,RandomForest,2,3,37,1,0.9015648760616924,1,AML clinical blast
+GSE9476,RandomForest,2,3,40,1,-0.3049804320820245,0,AML clinical blast
+GSE9476,RandomForest,2,3,49,0,-1.6484147093232226,0,Peripheral Blood Mononuclear Cells
+GSE9476,RandomForest,2,3,53,0,-1.334028319608719,0,Peripheral Blood Mononuclear Cells
+GSE9476,BPSO,2,3,3,0,-1.8116237051477673,0,Bone Marrow Mononuclear Cells
+GSE9476,BPSO,2,3,7,0,-1.1980838122501767,0,Bone Marrow Mononuclear Cells
+GSE9476,BPSO,2,3,12,0,-0.841914790692233,0,Bone Marrow CD34+ selected cells
+GSE9476,BPSO,2,3,14,0,-0.6331267582931847,0,Bone Marrow CD34+ selected cells
+GSE9476,BPSO,2,3,16,0,-0.7601352005310789,0,Bone Marrow CD34+ selected cells
+GSE9476,BPSO,2,3,20,1,3.290697048270071,1,AML clinical blast
+GSE9476,BPSO,2,3,22,1,2.8650345636438606,1,AML clinical blast
+GSE9476,BPSO,2,3,23,1,1.4192893911563111,1,AML clinical blast
+GSE9476,BPSO,2,3,30,1,2.8235795128350025,1,AML clinical blast
+GSE9476,BPSO,2,3,37,1,0.5232737875327945,1,AML clinical blast
+GSE9476,BPSO,2,3,40,1,0.6191602156591354,1,AML clinical blast
+GSE9476,BPSO,2,3,49,0,-1.4232227617690636,0,Peripheral Blood Mononuclear Cells
+GSE9476,BPSO,2,3,53,0,-1.0808231826730408,0,Peripheral Blood Mononuclear Cells
+GSE9476,BQPSO,2,3,3,0,-1.8116237051477673,0,Bone Marrow Mononuclear Cells
+GSE9476,BQPSO,2,3,7,0,-1.1980838122501767,0,Bone Marrow Mononuclear Cells
+GSE9476,BQPSO,2,3,12,0,-0.841914790692233,0,Bone Marrow CD34+ selected cells
+GSE9476,BQPSO,2,3,14,0,-0.6331267582931847,0,Bone Marrow CD34+ selected cells
+GSE9476,BQPSO,2,3,16,0,-0.7601352005310789,0,Bone Marrow CD34+ selected cells
+GSE9476,BQPSO,2,3,20,1,3.290697048270071,1,AML clinical blast
+GSE9476,BQPSO,2,3,22,1,2.8650345636438606,1,AML clinical blast
+GSE9476,BQPSO,2,3,23,1,1.4192893911563111,1,AML clinical blast
+GSE9476,BQPSO,2,3,30,1,2.8235795128350025,1,AML clinical blast
+GSE9476,BQPSO,2,3,37,1,0.5232737875327945,1,AML clinical blast
+GSE9476,BQPSO,2,3,40,1,0.6191602156591354,1,AML clinical blast
+GSE9476,BQPSO,2,3,49,0,-1.4232227617690636,0,Peripheral Blood Mononuclear Cells
+GSE9476,BQPSO,2,3,53,0,-1.0808231826730408,0,Peripheral Blood Mononuclear Cells
+GSE9476,Stability-BQPSO,2,3,3,0,-2.1818947532762145,0,Bone Marrow Mononuclear Cells
+GSE9476,Stability-BQPSO,2,3,7,0,-1.5759943723392882,0,Bone Marrow Mononuclear Cells
+GSE9476,Stability-BQPSO,2,3,12,0,-1.3592781501640652,0,Bone Marrow CD34+ selected cells
+GSE9476,Stability-BQPSO,2,3,14,0,-0.9014287496153279,0,Bone Marrow CD34+ selected cells
+GSE9476,Stability-BQPSO,2,3,16,0,-0.6207122218949436,0,Bone Marrow CD34+ selected cells
+GSE9476,Stability-BQPSO,2,3,20,1,1.7299159722074928,1,AML clinical blast
+GSE9476,Stability-BQPSO,2,3,22,1,2.802277500167342,1,AML clinical blast
+GSE9476,Stability-BQPSO,2,3,23,1,3.2161145315102915,1,AML clinical blast
+GSE9476,Stability-BQPSO,2,3,30,1,2.206520520062965,1,AML clinical blast
+GSE9476,Stability-BQPSO,2,3,37,1,0.6485831805097044,1,AML clinical blast
+GSE9476,Stability-BQPSO,2,3,40,1,-0.37961494800613926,0,AML clinical blast
+GSE9476,Stability-BQPSO,2,3,49,0,-1.9340108473293336,0,Peripheral Blood Mononuclear Cells
+GSE9476,Stability-BQPSO,2,3,53,0,-1.271596584444137,0,Peripheral Blood Mononuclear Cells
+GSE9476,Random15,2,3,3,0,-0.8351332237457341,0,Bone Marrow Mononuclear Cells
+GSE9476,Random15,2,3,7,0,-1.4595348304934095,0,Bone Marrow Mononuclear Cells
+GSE9476,Random15,2,3,12,0,-0.4547754558047829,0,Bone Marrow CD34+ selected cells
+GSE9476,Random15,2,3,14,0,-1.5835372136066763,0,Bone Marrow CD34+ selected cells
+GSE9476,Random15,2,3,16,0,1.377762419966284,1,Bone Marrow CD34+ selected cells
+GSE9476,Random15,2,3,20,1,1.3566308030596572,1,AML clinical blast
+GSE9476,Random15,2,3,22,1,0.6665482236745819,1,AML clinical blast
+GSE9476,Random15,2,3,23,1,-0.2404225147832031,0,AML clinical blast
+GSE9476,Random15,2,3,30,1,-0.016953522519695702,0,AML clinical blast
+GSE9476,Random15,2,3,37,1,0.27714777084400466,1,AML clinical blast
+GSE9476,Random15,2,3,40,1,-0.1861101660276638,0,AML clinical blast
+GSE9476,Random15,2,3,49,0,-1.8099835289550026,0,Peripheral Blood Mononuclear Cells
+GSE9476,Random15,2,3,53,0,-1.8106372847793417,0,Peripheral Blood Mononuclear Cells
+GSE9476,ANOVA,2,4,5,0,-1.2591244388477671,0,Bone Marrow Mononuclear Cells
+GSE9476,ANOVA,2,4,8,0,-0.7873012724195665,0,Bone Marrow Mononuclear Cells
+GSE9476,ANOVA,2,4,17,0,-2.082120549226226,0,Bone Marrow CD34+ selected cells
+GSE9476,ANOVA,2,4,21,1,1.6860363499092625,1,AML clinical blast
+GSE9476,ANOVA,2,4,24,1,0.8781228860300061,1,AML clinical blast
+GSE9476,ANOVA,2,4,25,1,2.0651857973163072,1,AML clinical blast
+GSE9476,ANOVA,2,4,28,1,-0.05820222519488211,0,AML clinical blast
+GSE9476,ANOVA,2,4,43,1,0.13963108072177507,1,AML clinical blast
+GSE9476,ANOVA,2,4,44,0,-1.234386316962265,0,Peripheral Blood Mononuclear Cells
+GSE9476,ANOVA,2,4,46,0,-1.1389262807331173,0,Peripheral Blood Mononuclear Cells
+GSE9476,ANOVA,2,4,57,0,-1.8980956088822996,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ANOVA,2,4,59,0,-1.8662417692174296,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,L1,2,4,5,0,-1.358047898686765,0,Bone Marrow Mononuclear Cells
+GSE9476,L1,2,4,8,0,-0.8945491210854633,0,Bone Marrow Mononuclear Cells
+GSE9476,L1,2,4,17,0,-1.2675985755464838,0,Bone Marrow CD34+ selected cells
+GSE9476,L1,2,4,21,1,1.6761352095759008,1,AML clinical blast
+GSE9476,L1,2,4,24,1,1.078204441141671,1,AML clinical blast
+GSE9476,L1,2,4,25,1,1.876038736162052,1,AML clinical blast
+GSE9476,L1,2,4,28,1,-0.022800767665429045,0,AML clinical blast
+GSE9476,L1,2,4,43,1,-0.5781593406788605,0,AML clinical blast
+GSE9476,L1,2,4,44,0,-1.7187550544435777,0,Peripheral Blood Mononuclear Cells
+GSE9476,L1,2,4,46,0,-1.2603348438645725,0,Peripheral Blood Mononuclear Cells
+GSE9476,L1,2,4,57,0,-1.8494081384455117,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,L1,2,4,59,0,-1.478063905538264,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ElasticNet,2,4,5,0,-1.1951369965815986,0,Bone Marrow Mononuclear Cells
+GSE9476,ElasticNet,2,4,8,0,-0.8379737747085156,0,Bone Marrow Mononuclear Cells
+GSE9476,ElasticNet,2,4,17,0,-1.2494831357264267,0,Bone Marrow CD34+ selected cells
+GSE9476,ElasticNet,2,4,21,1,1.5108674257937138,1,AML clinical blast
+GSE9476,ElasticNet,2,4,24,1,0.7771462054659171,1,AML clinical blast
+GSE9476,ElasticNet,2,4,25,1,1.4624685929954004,1,AML clinical blast
+GSE9476,ElasticNet,2,4,28,1,0.2535645777557578,1,AML clinical blast
+GSE9476,ElasticNet,2,4,43,1,-0.2447257024217565,0,AML clinical blast
+GSE9476,ElasticNet,2,4,44,0,-1.230807482404607,0,Peripheral Blood Mononuclear Cells
+GSE9476,ElasticNet,2,4,46,0,-0.9160486597358695,0,Peripheral Blood Mononuclear Cells
+GSE9476,ElasticNet,2,4,57,0,-1.1721294683121026,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,ElasticNet,2,4,59,0,-1.1094238679553339,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,RandomForest,2,4,5,0,-1.0146147385819364,0,Bone Marrow Mononuclear Cells
+GSE9476,RandomForest,2,4,8,0,-0.4194785105260499,0,Bone Marrow Mononuclear Cells
+GSE9476,RandomForest,2,4,17,0,-2.4664225976264635,0,Bone Marrow CD34+ selected cells
+GSE9476,RandomForest,2,4,21,1,2.8070343165705487,1,AML clinical blast
+GSE9476,RandomForest,2,4,24,1,-0.1097747481324284,0,AML clinical blast
+GSE9476,RandomForest,2,4,25,1,2.973474928449397,1,AML clinical blast
+GSE9476,RandomForest,2,4,28,1,0.6207670359127455,1,AML clinical blast
+GSE9476,RandomForest,2,4,43,1,0.08913213149620111,1,AML clinical blast
+GSE9476,RandomForest,2,4,44,0,-1.1504427530093586,0,Peripheral Blood Mononuclear Cells
+GSE9476,RandomForest,2,4,46,0,-0.9245744992234765,0,Peripheral Blood Mononuclear Cells
+GSE9476,RandomForest,2,4,57,0,-2.152070495644503,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,RandomForest,2,4,59,0,-2.1095153721302076,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BPSO,2,4,5,0,-1.2015857822991292,0,Bone Marrow Mononuclear Cells
+GSE9476,BPSO,2,4,8,0,-1.1256489442433972,0,Bone Marrow Mononuclear Cells
+GSE9476,BPSO,2,4,17,0,-1.3887097152253873,0,Bone Marrow CD34+ selected cells
+GSE9476,BPSO,2,4,21,1,1.7872937972335265,1,AML clinical blast
+GSE9476,BPSO,2,4,24,1,0.7211108083811658,1,AML clinical blast
+GSE9476,BPSO,2,4,25,1,2.3098184476787296,1,AML clinical blast
+GSE9476,BPSO,2,4,28,1,-0.3093451148133858,0,AML clinical blast
+GSE9476,BPSO,2,4,43,1,0.07722560672574669,1,AML clinical blast
+GSE9476,BPSO,2,4,44,0,-1.4009361747662334,0,Peripheral Blood Mononuclear Cells
+GSE9476,BPSO,2,4,46,0,-1.4396854098763918,0,Peripheral Blood Mononuclear Cells
+GSE9476,BPSO,2,4,57,0,-1.7522937599321107,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BPSO,2,4,59,0,-1.7138534576764448,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BQPSO,2,4,5,0,-1.2015857822991292,0,Bone Marrow Mononuclear Cells
+GSE9476,BQPSO,2,4,8,0,-1.1256489442433972,0,Bone Marrow Mononuclear Cells
+GSE9476,BQPSO,2,4,17,0,-1.3887097152253873,0,Bone Marrow CD34+ selected cells
+GSE9476,BQPSO,2,4,21,1,1.7872937972335265,1,AML clinical blast
+GSE9476,BQPSO,2,4,24,1,0.7211108083811658,1,AML clinical blast
+GSE9476,BQPSO,2,4,25,1,2.3098184476787296,1,AML clinical blast
+GSE9476,BQPSO,2,4,28,1,-0.3093451148133858,0,AML clinical blast
+GSE9476,BQPSO,2,4,43,1,0.07722560672574669,1,AML clinical blast
+GSE9476,BQPSO,2,4,44,0,-1.4009361747662334,0,Peripheral Blood Mononuclear Cells
+GSE9476,BQPSO,2,4,46,0,-1.4396854098763918,0,Peripheral Blood Mononuclear Cells
+GSE9476,BQPSO,2,4,57,0,-1.7522937599321107,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,BQPSO,2,4,59,0,-1.7138534576764448,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Stability-BQPSO,2,4,5,0,-1.1413969803114608,0,Bone Marrow Mononuclear Cells
+GSE9476,Stability-BQPSO,2,4,8,0,-1.0482796426764227,0,Bone Marrow Mononuclear Cells
+GSE9476,Stability-BQPSO,2,4,17,0,-1.7232618792821444,0,Bone Marrow CD34+ selected cells
+GSE9476,Stability-BQPSO,2,4,21,1,1.4841987881662737,1,AML clinical blast
+GSE9476,Stability-BQPSO,2,4,24,1,0.7747952588630271,1,AML clinical blast
+GSE9476,Stability-BQPSO,2,4,25,1,2.9839351666574565,1,AML clinical blast
+GSE9476,Stability-BQPSO,2,4,28,1,0.6422535949570536,1,AML clinical blast
+GSE9476,Stability-BQPSO,2,4,43,1,-0.5499793359332813,0,AML clinical blast
+GSE9476,Stability-BQPSO,2,4,44,0,-1.472259479728725,0,Peripheral Blood Mononuclear Cells
+GSE9476,Stability-BQPSO,2,4,46,0,-1.0554884080918387,0,Peripheral Blood Mononuclear Cells
+GSE9476,Stability-BQPSO,2,4,57,0,-1.6253825305966432,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Stability-BQPSO,2,4,59,0,-1.6699407180943404,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Random15,2,4,5,0,-2.2591372419915956,0,Bone Marrow Mononuclear Cells
+GSE9476,Random15,2,4,8,0,-3.7224525280959138,0,Bone Marrow Mononuclear Cells
+GSE9476,Random15,2,4,17,0,-0.6700339708661884,0,Bone Marrow CD34+ selected cells
+GSE9476,Random15,2,4,21,1,1.3765057237676601,1,AML clinical blast
+GSE9476,Random15,2,4,24,1,-2.7925579020264717,0,AML clinical blast
+GSE9476,Random15,2,4,25,1,6.184141615285694,1,AML clinical blast
+GSE9476,Random15,2,4,28,1,3.433132599502931,1,AML clinical blast
+GSE9476,Random15,2,4,43,1,-5.730373710018184,0,AML clinical blast
+GSE9476,Random15,2,4,44,0,-1.1226170976432128,0,Peripheral Blood Mononuclear Cells
+GSE9476,Random15,2,4,46,0,-1.7506486806627841,0,Peripheral Blood Mononuclear Cells
+GSE9476,Random15,2,4,57,0,-1.5289167636241896,0,CD34 selected cells from G-CSF mobilized PBSC
+GSE9476,Random15,2,4,59,0,-1.753362573430003,0,CD34 selected cells from G-CSF mobilized PBSC
