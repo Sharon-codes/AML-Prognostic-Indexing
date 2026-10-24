@@ -1,0 +1,11 @@
+{
+  "annotation_url": "https://ftp.ncbi.nlm.nih.gov/geo/platforms/GPLnnn/GPL96/annot/GPL96.annot.gz",
+  "annotation_sha256": "88e0b22362bac779eb220b3b185c80faa6510a92b9358eaad159a561ab4351c4",
+  "probe_column": "ID",
+  "gene_column": "Gene symbol",
+  "geo_sha256": "638e7a34ebef468e9311a5d29089773eaaeb2c229f6da9ca498f202b543614fa",
+  "n_curated_mapped": 23,
+  "n_curated_total": 30,
+  "bh_family": "Curated-panel mapped genes with assay coverage",
+  "validation_boundary": "Unadjusted for subtype and cell composition; exploratory differential expression of pooled probes, not independent signature-performance validation."
+}

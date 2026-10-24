@@ -1,0 +1,16 @@
+[
+  {
+    "dataset": "Golub-1999",
+    "download_url": "https://hastie.su.domains/CASI_files/DATA/leukemia_big.csv",
+    "file": "jbcb_revision/bench_results/downloads/leukemia_big.csv",
+    "bytes": 6364027,
+    "sha256": "35e84928da625da0787efb31a451dedbdf390e821a94ef74b7b7ab6cab9466d4"
+  },
+  {
+    "dataset": "GSE9476",
+    "download_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE9nnn/GSE9476/matrix/GSE9476_series_matrix.txt.gz",
+    "file": "jbcb_revision/bench_results/downloads/GSE9476_series_matrix.txt.gz",
+    "bytes": 7910880,
+    "sha256": "638e7a34ebef468e9311a5d29089773eaaeb2c229f6da9ca498f202b543614fa"
+  }
+]

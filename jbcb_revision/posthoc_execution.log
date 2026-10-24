@@ -1,0 +1,102 @@
+PAIRED AUDIT [
+  {
+    "dataset": "Golub-1999",
+    "comparison": "Stability-BQPSO minus BQPSO",
+    "chosen_repeat": 0,
+    "n_unique_patients": 72,
+    "bootstrap_replicates": 4000,
+    "auc_delta": 0.007659574468085073,
+    "auc_delta_95_percentile": [
+      -0.0034042553191488967,
+      0.02468085106382978
+    ],
+    "balanced_accuracy_delta": 0.05063829787234042,
+    "balanced_accuracy_delta_95_percentile": [
+      0.0,
+      0.11191489361702123
+    ],
+    "bootstrapping_scope": "Patient resampling of one set of out-of-fold predictions; selected features and fold-fitted models held fixed. Conditional uncertainty only."
+  },
+  {
+    "dataset": "GSE9476",
+    "comparison": "Stability-BQPSO minus BQPSO",
+    "chosen_repeat": 0,
+    "n_unique_patients": 64,
+    "bootstrap_replicates": 4000,
+    "auc_delta": -0.002024291497975783,
+    "auc_delta_95_percentile": [
+      -0.012145748987854255,
+      0.002024291497975672
+    ],
+    "balanced_accuracy_delta": 0.0,
+    "balanced_accuracy_delta_95_percentile": [
+      0.0,
+      0.0
+    ],
+    "bootstrapping_scope": "Patient resampling of one set of out-of-fold predictions; selected features and fold-fitted models held fixed. Conditional uncertainty only."
+  }
+]
+ANNOTATION 4522748 88e0b22362bac779eb220b3b185c80faa6510a92b9358eaad159a561ab4351c4 ^Annotation
+!Annotation_date = Aug 09 2016
+!Annotation_platform = GPL96
+!Annotation_platform_title = [HG-U133A] Affymetrix Human Genome U133A Array
+!Annotation_platform_organism = Homo sapiens
+#ID = I
+ANNOT COLUMNS ['ID', 'Gene title', 'Gene symbol', 'Gene ID', 'UniGene title', 'UniGene symbol', 'UniGene ID', 'Nucleotide Title', 'GI', 'GenBank Accession', 'Platform_CLONEID', 'Platform_ORF', 'Platform_SPOTID', 'Chromosome location', 'Chromosome annotation', 'GO:Function', 'GO:Process', 'GO:Component', 'GO:Function ID', 'GO:Process ID', 'GO:Component ID'] (22283, 21)
+TOP SG genes     feature     gene_symbol  count
+  206148_at           IL3RA      8
+209586_s_at          PRUNE1      7
+208773_s_at ANKHD1-EIF4EBP3      7
+200736_s_at            GPX1      6
+201765_s_at            HEXA      6
+  212224_at         ALDH1A1      6
+218472_s_at            PELO      6
+205632_s_at         PIP5K1B      5
+219315_s_at         TMEM204      5
+206067_s_at             WT1      5
+  205790_at           SKAP1      5
+  201998_at         ST6GAL1      4
+205603_s_at          DIAPH2      4
+208943_s_at           SEC62      4
+211070_x_at             DBI      4
+215489_x_at          HOMER3      4
+  203414_at             MMD      4
+  209798_at            NPAT      3
+207809_s_at         ATP6AP1      3
+  213241_at          PLXNC1      3
+201845_s_at            RYBP      3
+210988_s_at          PRUNE1      3
+  206470_at          PLXNC1      3
+   44040_at    LOC101927826      3
+  219624_at            BAG4      3
+CURATED PANEL          gene  probe_count  mean_aml  mean_control  mean_difference      welch_p  bh_q_within_available_curated_genes
+         OAZ1            2 12.680638     12.593557         0.087080 4.581290e-01                         5.268483e-01
+        EVA1C            0       NaN           NaN              NaN          NaN                                  NaN
+         RPA3            1  7.438577      8.184112        -0.745534 8.194966e-03                         1.884842e-02
+       KIF18B            1  4.011905      4.634146        -0.622241 4.282359e-02                         7.035303e-02
+        TREM1            1  5.975295      6.269706        -0.294411 6.520895e-01                         6.817300e-01
+        PRPF8            1  9.128606      9.069241         0.059364 6.442198e-01                         6.817300e-01
+        CCNA2            2  4.722003      5.338371        -0.616368 1.059680e-01                         1.523290e-01
+      SMPDL3A            1  3.937245      4.263644        -0.326399 4.105028e-01                         4.969244e-01
+        PROK2            0       NaN           NaN              NaN          NaN                                  NaN
+        PCMT1            3  8.541151      9.008521        -0.467369 2.328610e-02                         4.119849e-02
+       CARD16            0       NaN           NaN              NaN          NaN                                  NaN
+       CDKN2A            3  5.151275      4.667732         0.483543 6.333754e-10                         1.456763e-08
+          GBA            0       NaN           NaN              NaN          NaN                                  NaN
+    MIA-RAB4B            1  4.905302      4.932669        -0.027367 8.065189e-01                         8.065189e-01
+       AKR1C2            0       NaN           NaN              NaN          NaN                                  NaN
+         TPM1            4  5.348106      6.756156        -1.408050 6.176455e-06                         4.735282e-05
+      IRF2BP1            1  6.588380      6.507139         0.081240 1.024079e-01                         1.523290e-01
+         XCL1            2  2.689124      3.340855        -0.651730 7.724560e-04                         2.961081e-03
+        CMTM5            0       NaN           NaN              NaN          NaN                                  NaN
+        SORT1            2  3.772636      3.283280         0.489356 2.213425e-02                         4.119849e-02
+         RTN1            2  2.865735      4.511938        -1.646203 3.911708e-06                         4.498464e-05
+        ACKR1            1  2.633052      2.811811        -0.178759 2.094568e-02                         4.119849e-02
+GIMAP1-GIMAP5            3  5.071134      5.980299        -0.909165 2.097038e-03                         6.028985e-03
+       DUSP13            1  3.005132      2.978361         0.026771 3.676359e-01                         4.697570e-01
+        PPEF1            1  2.829285      2.803497         0.025788 3.645615e-01                         4.697570e-01
+      SLC22A4            1  4.678021      5.955998        -1.277977 1.758024e-04                         1.010864e-03
+          RHD            5  2.517005      3.343469        -0.826464 1.727927e-03                         5.677475e-03
+          WLS            1  3.552851      4.475900        -0.923049 3.597519e-04                         1.654859e-03
+         CTSE            1  4.792043      5.298673        -0.506629 7.754237e-03                         1.884842e-02
+        GP1BB            0       NaN           NaN              NaN          NaN                                  NaN

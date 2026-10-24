@@ -1,0 +1,38 @@
+[
+  {
+    "dataset": "Golub-1999",
+    "comparison": "Stability-BQPSO minus BQPSO",
+    "chosen_repeat": 0,
+    "n_unique_patients": 72,
+    "bootstrap_replicates": 4000,
+    "auc_delta": 0.007659574468085073,
+    "auc_delta_95_percentile": [
+      -0.0034042553191488967,
+      0.02468085106382978
+    ],
+    "balanced_accuracy_delta": 0.05063829787234042,
+    "balanced_accuracy_delta_95_percentile": [
+      0.0,
+      0.11191489361702123
+    ],
+    "bootstrapping_scope": "Patient resampling of one set of out-of-fold predictions; selected features and fold-fitted models held fixed. Conditional uncertainty only."
+  },
+  {
+    "dataset": "GSE9476",
+    "comparison": "Stability-BQPSO minus BQPSO",
+    "chosen_repeat": 0,
+    "n_unique_patients": 64,
+    "bootstrap_replicates": 4000,
+    "auc_delta": -0.002024291497975783,
+    "auc_delta_95_percentile": [
+      -0.012145748987854255,
+      0.002024291497975672
+    ],
+    "balanced_accuracy_delta": 0.0,
+    "balanced_accuracy_delta_95_percentile": [
+      0.0,
+      0.0
+    ],
+    "bootstrapping_scope": "Patient resampling of one set of out-of-fold predictions; selected features and fold-fitted models held fixed. Conditional uncertainty only."
+  }
+]

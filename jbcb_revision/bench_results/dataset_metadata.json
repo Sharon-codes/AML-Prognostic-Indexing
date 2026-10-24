@@ -1,0 +1,36 @@
+{
+  "Golub-1999": {
+    "n_aml": 25,
+    "n_comparator": 47,
+    "labels": "AML vs ALL",
+    "technology": "Affymetrix Hgu6800",
+    "annotation": "feature indices (data republisher does not preserve probe-gene mapping)",
+    "nonfinite_features_dropped": 0,
+    "retained_features": 7128,
+    "sample_count": 72
+  },
+  "GSE9476": {
+    "n_aml": 26,
+    "n_comparator": 38,
+    "labels": "AML vs healthy hematopoietic",
+    "technology": "Affymetrix GPL96",
+    "source_label_table": {
+      "healthy|Bone Marrow CD34+ selected cells": 8,
+      "healthy|Bone Marrow": 10,
+      "AML|Leukemia": 25,
+      "AML|Leukemai": 1,
+      "healthy|Peripheral Blood Mononuclear Cells": 10,
+      "healthy|PBSC CD34 selected cells": 9,
+      "healthy|PBSC CD34 Selected cells": 1
+    },
+    "normal_subtypes": {
+      "Bone Marrow CD34+ selected cells": 8,
+      "Bone Marrow Mononuclear Cells": 10,
+      "Peripheral Blood Mononuclear Cells": 10,
+      "CD34 selected cells from G-CSF mobilized PBSC": 10
+    },
+    "nonfinite_features_dropped": 0,
+    "retained_features": 22283,
+    "sample_count": 64
+  }
+}

@@ -1,0 +1,33 @@
+method,control_type,n_profiles,n_test_predictions,specificity_over_repeated_folds
+ANOVA,Bone Marrow CD34+ selected cells,8,24,1.0
+ANOVA,Bone Marrow Mononuclear Cells,10,30,1.0
+ANOVA,CD34 selected cells from G-CSF mobilized PBSC,10,30,1.0
+ANOVA,Peripheral Blood Mononuclear Cells,10,30,1.0
+L1,Bone Marrow CD34+ selected cells,8,24,1.0
+L1,Bone Marrow Mononuclear Cells,10,30,1.0
+L1,CD34 selected cells from G-CSF mobilized PBSC,10,30,1.0
+L1,Peripheral Blood Mononuclear Cells,10,30,1.0
+ElasticNet,Bone Marrow CD34+ selected cells,8,24,1.0
+ElasticNet,Bone Marrow Mononuclear Cells,10,30,1.0
+ElasticNet,CD34 selected cells from G-CSF mobilized PBSC,10,30,1.0
+ElasticNet,Peripheral Blood Mononuclear Cells,10,30,1.0
+RandomForest,Bone Marrow CD34+ selected cells,8,24,1.0
+RandomForest,Bone Marrow Mononuclear Cells,10,30,1.0
+RandomForest,CD34 selected cells from G-CSF mobilized PBSC,10,30,1.0
+RandomForest,Peripheral Blood Mononuclear Cells,10,30,1.0
+BPSO,Bone Marrow CD34+ selected cells,8,24,1.0
+BPSO,Bone Marrow Mononuclear Cells,10,30,1.0
+BPSO,CD34 selected cells from G-CSF mobilized PBSC,10,30,1.0
+BPSO,Peripheral Blood Mononuclear Cells,10,30,1.0
+BQPSO,Bone Marrow CD34+ selected cells,8,24,1.0
+BQPSO,Bone Marrow Mononuclear Cells,10,30,1.0
+BQPSO,CD34 selected cells from G-CSF mobilized PBSC,10,30,1.0
+BQPSO,Peripheral Blood Mononuclear Cells,10,30,1.0
+Stability-BQPSO,Bone Marrow CD34+ selected cells,8,24,0.9583333333333334
+Stability-BQPSO,Bone Marrow Mononuclear Cells,10,30,1.0
+Stability-BQPSO,CD34 selected cells from G-CSF mobilized PBSC,10,30,1.0
+Stability-BQPSO,Peripheral Blood Mononuclear Cells,10,30,1.0
+Random15,Bone Marrow CD34+ selected cells,8,24,0.5833333333333334
+Random15,Bone Marrow Mononuclear Cells,10,30,0.8333333333333334
+Random15,CD34 selected cells from G-CSF mobilized PBSC,10,30,0.7666666666666667
+Random15,Peripheral Blood Mononuclear Cells,10,30,0.7666666666666667
