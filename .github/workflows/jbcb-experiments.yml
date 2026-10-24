@@ -1,0 +1,29 @@
+name: AML benchmark connectivity preflight
+on:
+  push:
+    branches: [jbcb-evidence-revision-20261024]
+    paths: ['.github/workflows/jbcb-experiments.yml', 'jbcb_revision/**']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check data retrieval
+        shell: bash
+        run: |
+          python - <<'PY'
+          import urllib.request
+          urls = [
+          'https://raw.githubusercontent.com/aamirmalik-dr/high-dimensional-genomics-ml/main/data/leukemia_sample.csv',
+          'https://ftp.ncbi.nlm.nih.gov/geo/series/GSE9nnn/GSE9476/matrix/GSE9476_series_matrix.txt.gz'
+          ]
+          for url in urls:
+              try:
+                  with urllib.request.urlopen(url, timeout=45) as r:
+                      chunk=r.read(500);print(url,'status=',r.status,'head=',len(chunk),chunk[:35])
+              except Exception as e: print('UNAVAILABLE',url,repr(e))
+          PY
