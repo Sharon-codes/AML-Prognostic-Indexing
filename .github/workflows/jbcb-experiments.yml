@@ -1,19 +1,38 @@
-name: AML benchmark dataset schema preflight
+name: Reproducible leukemia-expression benchmarking
 on:
   push:
     branches: [jbcb-evidence-revision-20261024]
-    paths: ['.github/workflows/jbcb-experiments.yml', 'jbcb_revision/**']
+    paths: ['.github/workflows/jbcb-experiments.yml', 'jbcb_revision/clinical_benchmark.py']
   workflow_dispatch:
 permissions:
   contents: write
+concurrency:
+  group: jbcb-patient-benchmark
+  cancel-in-progress: false
 jobs:
-  dataset-schema:
+  aml_benchmarks:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: python -m pip install pandas
-      - run: python jbcb_revision/inspect_datasets.py
+      - name: Install scientific stack
+        run: python -m pip install numpy pandas scipy scikit-learn
+      - name: Run nested, source-separated, patient-heldout AML benchmarks
+        env:
+          OPENBLAS_NUM_THREADS: '1'
+          OMP_NUM_THREADS: '1'
+          MKL_NUM_THREADS: '1'
+        run: python -u jbcb_revision/clinical_benchmark.py 2>&1 | tee jbcb_revision/bench_execution.log
+      - name: Remove downloaded expression matrices and commit derived audit tables
+        if: success()
+        shell: bash
+        run: |
+          rm -rf jbcb_revision/bench_results/downloads
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add jbcb_revision/bench_results jbcb_revision/bench_execution.log
+          git diff --cached --quiet || git commit -m 'Record executed leukemia benchmarks with patient-heldout predictions'
+          git push origin HEAD:jbcb-evidence-revision-20261024
