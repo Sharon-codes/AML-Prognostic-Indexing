@@ -1,0 +1,12 @@
+{
+  "source_commit": "fd623b3de754e1cdd2ee9a199e8f693551fa2927",
+  "runs": 30,
+  "genes_per_run": 30,
+  "candidates": 1000,
+  "histogram": {"1":333,"2":147,"3":44,"4":16,"5":4,"6":3,"7":1,"8":1,"9":1,"15":1},
+  "cohorts": {
+    "bulk_array_controls": {"tp":150,"fn":1,"tn":51,"fp":0},
+    "alternative_controls": {"tp":150,"fn":1,"tn":30,"fp":20},
+    "small_GTEx_controls": {"tp":151,"fn":0,"tn":4,"fp":1}
+  }
+}
