@@ -1,0 +1,72 @@
+PAIRED AUDIT [
+  {
+    "dataset": "Golub-1999",
+    "comparison": "Stability-BQPSO minus BQPSO",
+    "chosen_repeat": 0,
+    "n_unique_patients": 72,
+    "bootstrap_replicates": 4000,
+    "auc_delta": 0.007659574468085073,
+    "auc_delta_95_percentile": [
+      -0.0034042553191488967,
+      0.02468085106382978
+    ],
+    "balanced_accuracy_delta": 0.05063829787234042,
+    "balanced_accuracy_delta_95_percentile": [
+      0.0,
+      0.11191489361702123
+    ],
+    "bootstrapping_scope": "Patient resampling of one set of out-of-fold predictions; selected features and fold-fitted models held fixed. Conditional uncertainty only."
+  },
+  {
+    "dataset": "GSE9476",
+    "comparison": "Stability-BQPSO minus BQPSO",
+    "chosen_repeat": 0,
+    "n_unique_patients": 64,
+    "bootstrap_replicates": 4000,
+    "auc_delta": -0.002024291497975783,
+    "auc_delta_95_percentile": [
+      -0.012145748987854255,
+      0.002024291497975672
+    ],
+    "balanced_accuracy_delta": 0.0,
+    "balanced_accuracy_delta_95_percentile": [
+      0.0,
+      0.0
+    ],
+    "bootstrapping_scope": "Patient resampling of one set of out-of-fold predictions; selected features and fold-fitted models held fixed. Conditional uncertainty only."
+  }
+]
+ANNOTATION 4522748 88e0b22362bac779eb220b3b185c80faa6510a92b9358eaad159a561ab4351c4 ^Annotation
+!Annotation_date = Aug 09 2016
+!Annotation_platform = GPL96
+!Annotation_platform_title = [HG-U133A] Affymetrix Human Genome U133A Array
+!Annotation_platform_organism = Homo sapiens
+#ID = I
+ANNOT COLUMNS ['ID', 'Gene title', 'Gene symbol', 'Gene ID', 'UniGene title', 'UniGene symbol', 'UniGene ID', 'Nucleotide Title', 'GI', 'GenBank Accession', 'Platform_CLONEID', 'Platform_ORF', 'Platform_SPOTID', 'Chromosome location', 'Chromosome annotation', 'GO:Function', 'GO:Process', 'GO:Component', 'GO:Function ID', 'GO:Process ID', 'GO:Component ID'] (22283, 21)
+TOP SG genes     feature     gene_symbol  count
+  206148_at           IL3RA      8
+209586_s_at          PRUNE1      7
+208773_s_at ANKHD1-EIF4EBP3      7
+200736_s_at            GPX1      6
+201765_s_at            HEXA      6
+  212224_at         ALDH1A1      6
+218472_s_at            PELO      6
+205632_s_at         PIP5K1B      5
+219315_s_at         TMEM204      5
+206067_s_at             WT1      5
+  205790_at           SKAP1      5
+  201998_at         ST6GAL1      4
+205603_s_at          DIAPH2      4
+208943_s_at           SEC62      4
+211070_x_at             DBI      4
+215489_x_at          HOMER3      4
+  203414_at             MMD      4
+  209798_at            NPAT      3
+207809_s_at         ATP6AP1      3
+  213241_at          PLXNC1      3
+201845_s_at            RYBP      3
+210988_s_at          PRUNE1      3
+  206470_at          PLXNC1      3
+   44040_at    LOC101927826      3
+  219624_at            BAG4      3
+ANNOTATION UNAVAILABLE TypeError("argument of type 'float' is not iterable")
