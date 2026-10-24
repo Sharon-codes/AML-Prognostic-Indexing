@@ -89,7 +89,8 @@ def interpret():
     valid=set(values.index.astype(str))
     by_gene={}
     for probe,symbol in m.items():
-        if probe not in valid or not symbol or symbol=='nan' or '///' in symbol:continue
+        symbol = str(symbol).strip()
+        if probe not in valid or symbol.lower() in ('nan', 'none', '') or '///' in symbol:continue
         by_gene.setdefault(symbol,[]).append(probe)
     records=[]
     for gene in panel:
